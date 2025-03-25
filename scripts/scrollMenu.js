@@ -35,9 +35,6 @@ const scrollSection = (event) =>{
 
 } */
 
-linkNav.forEach(link => {
-    link.addEventListener('click', scrollSection)
-})
 
 const scrollSection = (event) => {
     event.preventDefault();
@@ -45,7 +42,7 @@ const scrollSection = (event) => {
     const element = document.querySelector(href);
 
     if (element) {
-        const positionScroll = element.offsetTop - 40; // Ajuste o offset conforme necessário
+        const positionScroll = element.offsetTop -39.36;
 
         window.scrollTo({
             top: positionScroll,
