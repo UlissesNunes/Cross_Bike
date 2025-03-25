@@ -88,10 +88,10 @@ header nav ul li a.active {
 
 header img {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 70px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 70px;
+    height: auto;  
 }
 
 
@@ -211,6 +211,8 @@ position: relative;
 main{
     background-color: #ffffff;
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 98%;
     width: 98%;
     padding: 20px;
@@ -218,6 +220,8 @@ main{
 }
 
 h1 {
+    text-align: center;
+    flex: auto;
     font-size: 2em;
     color: var(--cor-vermelhofooter);
     margin-top: 15px;
@@ -234,13 +238,22 @@ main p {
     text-align: justify;
     text-indent: 20px;
     flex: auto;
+    
    
 }
 
 img {
-    flex: auto;
-    width: 100%;
-    width: 150px;
+   
+    /*width: 100%;
+    width: 150px; 
+    */
+    max-width: 185px;
+    height: auto;  
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2%;
     
 }
 
