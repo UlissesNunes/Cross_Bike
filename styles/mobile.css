@@ -254,11 +254,12 @@ div.home {
 
 
 .img-home {
-   width: 90%;
-    max-width: 95%;
+    
+    width: 87%;
+    max-width: 400px;
     height: 160px;
     margin: 10px auto 0;
-    flex: 0 0 none;
+    flex: auto;
     border-radius: 1.5%;
    
 }
@@ -270,23 +271,69 @@ span {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.093);
 }
 
-div.depoimentos{
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
-    max-width: 900px;
+
+
+.conteiner-D{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
-    gap: 50px;
-
-
-}
-    
-
-.cards-depoimentos {
-    
+    padding: 0 0 0 0;
+    background-color: #ffffff;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
 }
 
+/* depoimentos-D */
+.depoimentos-D {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    background-color: #f1e8e8;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+}
 
-.small {
-    width: 100px;
+/*cards-D*/
+/* cards-itens-D */
+/* cards-link-D */
+
+/* p-D */
+.p-D {
+    padding: 0 0 0 0;
+    line-height: 1.4em;
+    font-size: .9em;
+    color: #000;
+    text-align: justify;
+    
+}
+
+/* h3-D */
+.h3-D {
+    font-size: 1em;
+    color: var(--cor-vermelhoclaro);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.093);
+}
+
+/* img-D */
+.img-D {
+    width: 50%;
+    max-width: 200px;
     height: 100px;
+    margin: 0 auto;
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
 }
+
+/* card-button-D */
