@@ -297,43 +297,113 @@ span {
     width: calc(100% - 40px);
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 0 0 0;
+    padding: 0px;
     background-color: #f1e8e8;
     color: #fff;
-    font-size: 1em;
-    text-align: center;
 }
 
 /*cards-D*/
+
+.cards-D {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: #f1e8e8;
+    color: #fff; 
+    list-style: none;   
+}
 /* cards-itens-D */
+
+.cards-itens-D {
+    transition: all .3s linear; 
+}
+
+
 /* cards-link-D */
+
+.cards-link-D {
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: #fff9e1;
+    color: #000000;
+    text-decoration: none;
+    transition: all .3s linear; 
+}
+
+.cards-link-D:hover {
+    background: #fef2c2;
+    transition: all .3s linear;
+    color: #000;
+
+}
 
 /* p-D */
 .p-D {
-    padding: 0 0 0 0;
-    line-height: 1.4em;
+    background: linear-gradient( #ffffff 40%, #d5d5d5);
+    width: fit-content;
+    padding: 5px;
+    margin: 1em 0em 1em;
     font-size: .9em;
-    color: #000;
+    color: var(--cor-vermelhoclaro);
     text-align: justify;
+    flex: auto;
+    border-radius: .9em;
+    
+    
     
 }
 
 /* h3-D */
 .h3-D {
+   
     font-size: 1em;
-    color: var(--cor-vermelhoclaro);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.093);
+    background: linear-gradient( #000000 72%, #be3537);
+    background-clip: text;
+    color: transparent;
+    margin: 2px 0px;
+    padding: 2px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178) ;
+    font-weight: 700;
+    text-align: center;
 }
 
 /* img-D */
 .img-D {
-    width: 50%;
-    max-width: 200px;
-    height: 100px;
-    margin: 0 auto;
-    border-radius: 10%;
+    width: 100%;
+    max-width: 140px;
+    height: 140px;
+    margin: 10px auto 0;
+    flex: auto;
+    aspect-ratio: 16/9;
     object-fit: cover;
-    object-position: center;
+    border-radius: 2%;
+    
 }
 
 /* card-button-D */
+.card-button-D {
+    height: 28px;
+    width: 29px;
+    border-radius: 1em;
+    margin: 0 auto;
+    padding: 0px;
+    background : none;
+    border: 1px solid var(--cor-vermelhoclaro);
+    color: var(--cor-vermelhoclaro);
+    cursor: pointer;
+}
+
+.card-button-D:hover {
+    background-color: var(--cor-vermelhoclaro);
+    color: #fff1b8;
+    transition: all .3s linear; 
+}
