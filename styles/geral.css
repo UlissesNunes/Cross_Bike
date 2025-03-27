@@ -1,0 +1,25 @@
+@media screen and (min-width: 420px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .depoimentos-D {
+        max-width: calc(100% - 10px);
+}
+
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .depoimentos-D {
+        max-width: calc(100% - 17px);
+}
+
+}
+
+

@@ -255,8 +255,8 @@ div.home {
 
 .img-home {
     
-    width: 87%;
-    max-width: 400px;
+    width: 240px;
+    max-width: 550px;
     height: 160px;
     margin: 10px auto 0;
     flex: auto;
@@ -278,27 +278,29 @@ span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 0 0 0;
-    background-color: #ffffff;
+    background-color: var(--cor-vermelhoclaro);
     color: #fff;
     font-size: 1em;
     text-align: center;
+    
 }
 
 /* depoimentos-D */
 .depoimentos-D {
+    border-radius: .4em;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: calc(100% - 40px);
-    max-width: 1200px;
+    width: calc(100% - 6px);
+    
     margin: 0 auto;
     padding: 0px;
-    background-color: #f1e8e8;
+    background-color: #ffffff;
     color: #fff;
 }
 
@@ -310,7 +312,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
-    width: 100%;
+    width: 70%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0px;
