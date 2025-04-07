@@ -23,7 +23,7 @@ body {
 }
 
 html { 
-    font-size: 62.5%;
+    font-size: 100%;
     scroll-behavior: smooth;
 }
 
@@ -32,7 +32,7 @@ header{
     top: 0 ;
     width: 100%;
     background-color: var(--cor-amarelalogo);
-    padding: .2em 0;
+    padding: .9em 0;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
     z-index: 2023;
 }
@@ -89,18 +89,13 @@ header nav ul li a.active {
 header img {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
-    max-width: 70px;
+    max-width: 120px;
     height: auto;  
 }
 
 
 
-h1{
-  
-    color: #fff;
-    font-size: 1.8em;
-}
+
 ul {
 list-style: none;
 }
@@ -223,12 +218,11 @@ main{
 h1  {
     text-align: center;
     flex: auto;
-    font-size: 2em;
+    font-size: 2.3em;
     background: linear-gradient(90deg, #be3537 40%, #dcbe2c);
     background-clip: text;
     color: transparent;
-    margin-top: 1px;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
     padding: 5px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178) ;
 }
@@ -255,9 +249,9 @@ div.home {
 
 .img-home {
     
-    width: 220px;
+    width: 400px;
     max-width: 550px;
-    height: 145px;
+    height: 245px;
     margin: 10px auto 0;
     flex: auto;
     border-radius: 1.5%;
@@ -436,7 +430,7 @@ span {
     height: 3px;
 }
 
-.swiper-slide-buttton.hover {
+.swiper-slide-buttton:hover {
     opacity: 1;
     background: var(--cor-vermelhoclaro) !important;
     width: 2px;
