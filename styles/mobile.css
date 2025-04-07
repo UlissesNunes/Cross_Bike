@@ -15,7 +15,7 @@
 
 body {
    
-    background-color: #fff;
+    background-color:var(--cor-vermelhoclaro);
     height: 100%;
     color: #000;
     font-size: 1em;
@@ -53,8 +53,8 @@ header .container-header{
 
 header nav ul li a {
        
-        color: #fffdfd;
-        font-size: .8em;
+        color: white;
+        font-size: 1em;
         font-weight: bold;
         border-radius: .5em;
         text-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
@@ -74,6 +74,7 @@ header nav ul li a:hover {
         border-radius: 5px;
         transition: all .3s ease-in;
         animation:  11s linear infinite;
+        text-decoration: underline;
 
        
 }
@@ -102,26 +103,30 @@ list-style: none;
 
 .section {
     width: 100%;
-    height: calc(100vh - .2em);
+    min-height: calc(100vh - .8em); 
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--cor-vermelhoclaro);
     color: #fff;
+    
    
     
 }
 
 #Home{
-    background-color: var(--cor-vermelhoclaro); 
+    background-color: var(--cor-vermelhoclaro);
+    
 }
 #Serviços{
     background-color: var(--cor-vermelhoclaro);
+    
 }
-#Sobreb{
-    background: var(--cor-vermelhofooter);
+#Sobre{
+    background: var(--cor-vermelhoescuro);
+    
 }
-#Contato{background-color: var(--cor-vermelhoescuro);}
+#Contato{background-color: var(--cor-vermelhofooter);}
 
 
 .container-footer {
@@ -208,7 +213,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 98%;
+    height: fit-content;
     width: 98%;
     padding: 20px;
     border-radius: 1%;
@@ -249,9 +254,9 @@ div.home {
 
 .img-home {
     
-    width: 400px;
+    width: 484px;
     max-width: 550px;
-    height: 245px;
+    height: 300px;
     margin: 10px auto 0;
     flex: auto;
     border-radius: 1.5%;
@@ -266,6 +271,53 @@ span {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.093);
 }
 
+.links-cta {
+    margin: 1px ;
+    display: flex;
+    justify-content: flex-start;
+    box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.164);
+}
+
+
+.links-cta a.bike {
+    background-color: var(--cor-amarelalogo);
+    width: fit-content;
+    margin: 6px;
+    border-radius: 5%;
+    color: var(--cor-vermelhoclaro);
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.193);
+    padding: 10px;
+    font-size: .9em;
+    transition: all .3s linear; 
+}
+.links-cta a.p-a {
+    margin: 6px;
+    padding: 4px;
+    font-size: .9em;
+    background-color: var(--cor-vermelhoclaro);
+    width: fit-content;
+    border-radius: 5%;
+    color: var(--cor-amarelalogo);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .3s linear; 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.193);
+}
+.links-cta a.bike:hover {
+    background-color: var(--cor-vermelhoclaro);
+    color: var(--cor-amarelalogo);
+    transition: all .4s linear; 
+    
+}
+
+.links-cta a.p-a:hover {
+    background-color: var(--cor-amarelalogo);
+    color: var(--cor-vermelhoclaro);
+    transition: all .4s linear; 
+}
+
 
 
 .conteiner-D{
@@ -273,13 +325,13 @@ span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    width: 97%;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 10px 0px 10px 0px ;
     padding: 0 0 0 0;
-    background-color: #fff;
+    background-color: #ffffff;
     text-align: center;
-    border-radius: 2em;
+    border-radius: 2%;
 }
 
 .card-wrapper {
@@ -306,7 +358,7 @@ span {
    
     max-width: 1200px;
     
-    color: #fff; 
+    color: #ffffff; 
     scroll-snap-align: center;
 }
 
@@ -324,22 +376,23 @@ span {
 
 .cards-link-D {
     display: block;
-    height: 60%;
+    height: 100%;
     user-select: none;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0px;
-    background-color: #fff9e1;
+    background-color: #fffcee;
     color: #000000;
     text-decoration: none;
-    transition: all .3s linear; 
+    transition: all .6s linear; 
     border-radius: 2%;
 }
 
 .cards-link-D:hover {
-    background: #faedb5;
+    background: #fdeb9c;
     transition: all .3s linear;
     color: #000;
+    cursor: grab;
 
 }
 
@@ -348,7 +401,7 @@ span {
     width: 50%;
     background: linear-gradient( #ffffff 40%, #d5d5d5);
     width: fit-content;
-    padding: 5px;
+    padding: 8px;
     margin: 1em 0em 1em;
     font-size: .8em;
     color: var(--cor-vermelhoclaro);
@@ -377,9 +430,9 @@ span {
 
 /* img-D */
 .img-D {
-    width: 90%;
-    max-width: 140px;
-    height: 110px;
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
     margin: 20px auto 0;
     flex: auto;
     object-fit: cover;
@@ -404,6 +457,7 @@ span {
     background-color: var(--cor-vermelhoclaro);
     color: #fff1b8;
     transition: all .3s linear; 
+    
 }
 
 .card-wrapper .swiper-pagination-bullet {
@@ -422,19 +476,40 @@ span {
 }
 
 .swiper-slide-buttton {
+    
     color: var(--cor-vermelhoclaro) !important;
     opacity: .1;
-    margin: -39x;
+    margin: -79x;
     padding: -6px;
     width: 2px;
     height: 3px;
+    transition: all .4s linear;
 }
 
 .swiper-slide-buttton:hover {
+   margin: 8px;
     opacity: 1;
-    background: var(--cor-vermelhoclaro) !important;
+    color: var(--cor-vermelhoclaro) !important;
     width: 2px;
     height: 3px;
+    transition: all .4s linear;
+
+}
+
+
+section #Serviços {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    text-align: center;
+    border-radius: 2em;
+    
 }
 
 
@@ -446,17 +521,17 @@ section #Sobre {
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 0 0 0;
+    height: fit-content;
+   
     text-align: center;
     border-radius: 2em;
-    background-color: var(--cor-vermelhoclaro);
+    background-color: rgb(0, 0, 0);
 }
 
 
 .img-sobre {
-    width: 119px;
-    height: 122px;
+    width: 225px;
+    height: 222px;
     margin-top: 10px;
     border-radius: 2%;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
@@ -481,13 +556,13 @@ div.mapa {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 100%;
+    width: 100%;
    
 
 }
 
 div.Destaque {
-    background-color: var(--cor-vermelhoclaro);
+    
     width: 95vw;
     height: 171px;
     border-radius: 2%;
@@ -497,4 +572,16 @@ p.destaque {
     
     text-align: center;
     margin-top: 30px;
+}
+
+h2.destaque {
+    font-size: 1.4em;
+    background: linear-gradient( #000000 20%, #be3537);
+    background-clip: text;
+    color: transparent;
+    margin: 2px 0px;
+    padding: 18px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178) ;
+    font-weight: 500;
+    text-align: left;
 }
