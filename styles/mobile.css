@@ -341,7 +341,7 @@ span {
     flex-direction: column;
     width: 97%;
     max-width: 1000px;
-    margin: 10px 0px 10px 0px ;
+    margin: 1px 0px 1px 0px ;
     padding: 0 0 0 0;
     background-color: #ffffff;
     text-align: center;
@@ -512,21 +512,21 @@ span {
 
 
 section #Serviços {
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
-    height: fit-content;
+    height: 100%;
     margin: 0 auto;
     padding: 0 0 0 0;
     text-align: center;
     border-radius: 2em;
     
+    
 }
-
-
 
 section #Sobre {
     display: flex;
@@ -594,8 +594,8 @@ h2.destaque {
     background-clip: text;
     color: transparent;
     margin: 2px 0px;
-    padding: 18px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178) ;
-    font-weight: 500;
+    padding: 3px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
+    font-weight: bold;
     text-align: left;
 }
