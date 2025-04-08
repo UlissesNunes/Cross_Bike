@@ -15,7 +15,7 @@
 
 body {
    
-    background-color:var(--cor-vermelhoclaro);
+   
     height: 100%;
     color: #000;
     font-size: 1em;
@@ -272,9 +272,11 @@ span {
 }
 
 .links-cta {
+    
     margin: 1px ;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
     box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.164);
 }
 
@@ -315,9 +317,21 @@ span {
 .links-cta a.p-a:hover {
     background-color: var(--cor-amarelalogo);
     color: var(--cor-vermelhoclaro);
-    transition: all .4s linear; 
+    transition: all .6s linear; 
 }
 
+
+.ctaWhats {
+    margin: 2px;
+    width: 20px;
+    height: 20px;
+
+}
+.ctaWhats:hover {
+    padding: 2px;
+    transition: all .4s linear; 
+    
+}
 
 
 .conteiner-D{
