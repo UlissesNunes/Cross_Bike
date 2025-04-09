@@ -108,7 +108,7 @@ list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: var(--cor-vermelhoclaro);
     
     
     
@@ -118,6 +118,7 @@ list-style: none;
 
 #Home{
     background-color: var(--cor-vermelhoclaro);
+    align-items: flex-start;
     
     
     
@@ -125,12 +126,16 @@ list-style: none;
 #Serviços{
     background-color: var(--cor-vermelhoclaro);
     
+    align-items: center;
+    
 }
 #Sobre{
     background: var(--cor-vermelhoescuro);
+    align-items: flex-start;
     
 }
-#Contato{background-color: var(--cor-vermelhofooter);}
+#Contato{background-color: var(--cor-vermelhofooter); align-items: flex-start;
+}
 
 
 .container-footer {
