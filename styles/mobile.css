@@ -108,6 +108,7 @@ list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
     
     
     
@@ -117,8 +118,7 @@ list-style: none;
 
 #Home{
     background-color: var(--cor-vermelhoclaro);
-    margin-top: 0px;
-    padding: 0px;
+    
     
     
 }
@@ -216,12 +216,12 @@ position: relative;
 
 /*  PROBLEMA DE CONTEÚDO É TODO DO MAIN POIS ELE ESTÁ COM O HEIGHT QUE DIFICULTA O SCRIPT, E SE ESTIVER PEQUENO O MAIN FICA EM ESTADO DE VAZAMENTO  */
 main{
-    flex: 1;
+    
     background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: fit-content;
+    height: 100%;
     width: 98%;
     padding-left: 15px;
     padding-right: 15px;
