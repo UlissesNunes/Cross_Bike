@@ -14,7 +14,8 @@
 }
 
 body {
-   
+   margin: 0;
+    padding: 0;
    
     height: 100%;
     color: #000;
@@ -116,6 +117,9 @@ list-style: none;
 
 #Home{
     background-color: var(--cor-vermelhoclaro);
+    margin-top: 0px;
+    padding: 0px;
+    
     
 }
 #Serviços{
@@ -170,11 +174,14 @@ list-style: none;
     color: var(--cor-amarelalogo);
     font-size: .9em;
    text-align: center;
+   margin-bottom: 0;
 }
 
 
 
 .banner { 
+    
+    margin-bottom: 0;
     animation-timing-function: linear;
     justify-content: center;
     align-items: center;
@@ -215,8 +222,10 @@ main{
     align-items: center;
     height: fit-content;
     width: 98%;
-    padding: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     border-radius: 1%;
+    margin-top: 0px;
 
 }
 
@@ -341,7 +350,7 @@ span {
     flex-direction: column;
     width: 97%;
     max-width: 1000px;
-    margin: 1px 0px 1px 0px ;
+    
     padding: 0 0 0 0;
     background-color: #ffffff;
     text-align: center;
@@ -357,6 +366,7 @@ span {
 
 /* depoimentos-D */
 .depoimentos-D {
+    
     border-radius: .4em;
     display: flex;
     justify-content: center;
@@ -382,6 +392,7 @@ span {
     list-style: none;  
      transition: all .3s linear;
      user-select: none; 
+     
 }
 
 
@@ -524,6 +535,7 @@ section #Serviços {
     padding: 0 0 0 0;
     text-align: center;
     border-radius: 2em;
+    margin-top: 0px;
     
     
 }

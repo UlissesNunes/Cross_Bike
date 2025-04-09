@@ -2,7 +2,7 @@
  new Swiper('.depoimentos-D', {
     loop: true,
     spaceBetween: 30,
-  
+    autoplay: { delay: 5000 },
     
     pagination: {
       el: '.swiper-pagination',
