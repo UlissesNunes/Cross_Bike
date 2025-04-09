@@ -119,6 +119,7 @@ list-style: none;
 #Home{
     background-color: var(--cor-vermelhoclaro);
     align-items: flex-start;
+    padding-top: 10px;
     
     
     
@@ -131,10 +132,10 @@ list-style: none;
 }
 #Sobre{
     background: var(--cor-vermelhoescuro);
-    align-items: flex-start;
+    align-items: center
     
 }
-#Contato{background-color: var(--cor-vermelhofooter); align-items: flex-start;
+#Contato{background-color: var(--cor-vermelhofooter); align-items: center;
 }
 
 
@@ -352,7 +353,7 @@ span {
 .conteiner-D{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     width: 97%;
     max-width: 1000px;
@@ -407,7 +408,7 @@ span {
 
 .cards-link-D {
     display: block;
-    height: 100%;
+    height: 393px;
     user-select: none;
     max-width: 1000px;
     margin: 0 auto;
