@@ -104,12 +104,12 @@ list-style: none;
 
 .section {
     width: 100%;
-    min-height: calc(100vh - .8em); 
+    min-height: calc(100vh - .9em); 
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--cor-vermelhoclaro);
-    color: #fff;
+    
+    
     
    
     
@@ -216,6 +216,7 @@ position: relative;
 
 /*  PROBLEMA DE CONTEÚDO É TODO DO MAIN POIS ELE ESTÁ COM O HEIGHT QUE DIFICULTA O SCRIPT, E SE ESTIVER PEQUENO O MAIN FICA EM ESTADO DE VAZAMENTO  */
 main{
+    flex: 1;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
@@ -248,7 +249,7 @@ main p {
     color: #000;
     text-align: justify;
     text-indent: 10px;
-    flex: auto;
+    flex: 1 1 auto;
     
    
 }
