@@ -34,7 +34,7 @@ header{
     width: 100%;
     background-color: var(--cor-amarelalogo);
     padding: .9em 0;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.250);
     z-index: 2023;
 }
 
@@ -57,8 +57,8 @@ header nav ul li a {
         color: white;
         font-size: 1em;
         font-weight: bold;
-        border-radius: .5em;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
+        
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.450);
         transition: all .3s ease-in;
        
 }
@@ -109,6 +109,7 @@ list-style: none;
     justify-content: center;
     align-items: center;
     background-color: var(--cor-vermelhoclaro);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.250);
     
     
     
@@ -181,12 +182,13 @@ list-style: none;
     font-size: .9em;
    text-align: center;
    margin-bottom: 0;
+
 }
 
 
 
 .banner { 
-    
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
     margin-bottom: 0;
     animation-timing-function: linear;
     justify-content: center;
@@ -357,7 +359,7 @@ span {
     flex-direction: column;
     width: 97%;
     max-width: 1000px;
-    
+    height: 530px;
     padding: 0 0 0 0;
     background-color: #ffffff;
     text-align: center;
@@ -495,16 +497,16 @@ span {
 .card-wrapper .swiper-pagination-bullet {
     background: var(--cor-vermelhoclaro) !important;
     opacity: .4;
-    width: 7px;
-    height: 7px;
+    width: 11px;
+    height:11px;
     
 }
 
 .card-wrapper .swiper-pagination-bullet-active {
-    opacity: 1;
+    opacity: .8;
     background: var(--cor-vermelhoclaro) !important;
-    width: 7px;
-    height: 7px;
+    width: 11px;
+    height: 11px;
 }
 
 .swiper-slide-buttton {
