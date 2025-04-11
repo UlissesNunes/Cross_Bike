@@ -118,14 +118,15 @@ list-style: none;
 }
 
 #Home{
-   background-color: white;
+   background-color: var(--cor-vermelhoclaro);
     align-items: flex-start;
+    margin-bottom: -70px;
     
 }
 #Serviços{
    
     background-color: var(--cor-vermelhoclaro);
-    align-items: flex-start;
+    align-items: center;
     
 }
 #Sobre{
