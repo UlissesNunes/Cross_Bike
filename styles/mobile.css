@@ -364,6 +364,7 @@ span {
     background-color: #ffffff;
     text-align: center;
     border-radius: 2%;
+    margin-bottom: 7px;
 }
 
 .card-wrapper {
@@ -379,7 +380,7 @@ span {
     border-radius: .4em;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     width: calc(100% - 6px);
     margin: 0 auto;
