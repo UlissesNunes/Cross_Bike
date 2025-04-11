@@ -16,7 +16,7 @@
 body {
    margin: 0;
     padding: 0;
-   
+   background-color: var(--cor-vermelhoclaro);
     height: 100%;
     color: #000;
     font-size: 1em;
@@ -108,7 +108,7 @@ list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--cor-vermelhoclaro);
+    background-color: white;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.250);
     
     
@@ -118,17 +118,14 @@ list-style: none;
 }
 
 #Home{
-    background-color: var(--cor-vermelhoclaro);
+   background-color: var(--cor-vermelhoclaro);
     align-items: flex-start;
-    padding-top: 10px;
-    
-    
     
 }
 #Serviços{
+   
     background-color: var(--cor-vermelhoclaro);
-    
-    align-items: center;
+    align-items: flex-start;
     
 }
 #Sobre{
@@ -360,11 +357,11 @@ span {
     width: 97%;
     max-width: 1000px;
     height: 530px;
-    padding: 0 0 0 0;
+    
     background-color: #ffffff;
     text-align: center;
     border-radius: 2%;
-    margin-bottom: 7px;
+    
 }
 
 .card-wrapper {
@@ -536,7 +533,7 @@ section #Serviços {
     
     display: flex;
     justify-content: center;
-    align-items: center;
+   
     flex-direction: column;
     width: 100%;
     max-width: 1200px;
