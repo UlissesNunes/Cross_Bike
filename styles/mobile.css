@@ -549,6 +549,80 @@ section #Serviços {
     
 }
 
+.peças {
+    width: 150px;
+    width: 150px;
+}
+
+
+/* CSS */
+.servicoss-pecas {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .servicos-pecas h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .servicos-pecas article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+  }
+  
+  .galeria-imagens {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .galeria-imagens img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s;
+  }
+  
+  .galeria-imagens img:hover {
+    transform: scale(1.05);
+  }
+  
+  .descricao {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #444;
+  }
+  
+  .botao-comprar {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #5d5537;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .botao-comprar:hover {
+    background-color: #3a2e14;
+  }
+
+
+
+  
+  
+
 
 
 section #Sobre {
