@@ -118,7 +118,7 @@ list-style: none;
 }
 
 #Home{
-   background-color: var(--cor-vermelhoclaro);
+   background-color: white;
     align-items: flex-start;
     
 }
