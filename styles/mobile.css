@@ -354,7 +354,7 @@ span {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    width: 97%;
+    width: 98%;
     max-width: 1000px;
     height: 530px;
     
@@ -516,6 +516,7 @@ span {
     width: 2px;
     height: 3px;
     transition: all .4s linear;
+    
 }
 
 .swiper-slide-buttton:hover {
