@@ -536,8 +536,7 @@ section #Serviços {
     
     display: flex;
     justify-content: center;
-   
-    flex-direction: column;
+
     width: 100%;
     max-width: 1200px;
     height: 100%;
@@ -549,6 +548,8 @@ section #Serviços {
     
     
 }
+
+
 
 section #Sobre {
     display: flex;
