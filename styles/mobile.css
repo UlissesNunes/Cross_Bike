@@ -54,7 +54,7 @@ header .container-header{
 
 header nav ul li a {
        
-        color: white;
+        color: #fffef7;;
         font-size: 1em;
         font-weight: bold;
         
@@ -81,7 +81,7 @@ header nav ul li a:hover {
 }
 
 header nav ul li a.active {
-        color: white;
+        color: #fffdf4;
        background-image: linear-gradient(to bottom, var(--cor-vermelhoclaro) 1%, transparent) ;
         border-radius: 5px;
         transition: all .3s ease-in;
@@ -639,18 +639,21 @@ section #Sobre {
     background-color: rgb(0, 0, 0);
 }
 
+
 .img-centro-sobre {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 15px 0;
 }
 
 .img-sobre {
-    width: 80vw;
-    height: 50vh;
+    width: 100%;
+    height: 40vh;
     margin-top: 10px;
     border-radius: 2%;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
+    margin-bottom: 20px;
 }
 
 
@@ -673,22 +676,31 @@ div.mapa {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-   
+    margin: 20px 0px;
+    background-color: var(--cor-amarelalogo);
+    border-radius: 2%;
+}
+
+div.mapa iframe {
+    width: 97%;
+    height: 300px;
+    border-radius: 2%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
 
 }
 
 div.Destaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    width: 95vw;
-    height: 171px;
-    border-radius: 2%;
+   
 }
 
 p.destaque {
     
     text-align: center;
-    margin-top: 30px;
+    margin:30px;
 }
 
 
