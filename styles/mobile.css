@@ -120,7 +120,7 @@ list-style: none;
 #Home{
    background-color: var(--cor-vermelhoclaro);
     align-items: flex-start;
-    margin-bottom: -20px;
+    margin-bottom: -70px;
     padding-top: 15px;
     
 }
@@ -384,7 +384,7 @@ span {
     flex-direction: column;
     width: calc(100% - 6px);
     margin: 0 auto;
-    padding: 20px;
+    
     flex-wrap: wrap;
     gap: 40px;
     border-radius: 2%;
@@ -553,7 +553,7 @@ article .servicos-oferta {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.150);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.066);
 }
 
 article .servicos-oferta > img {
@@ -564,13 +564,13 @@ article .servicos-oferta > img {
 
 article .servicos-oferta > p {
     display: flex;
-    width: 50%;
-    padding: 10px;
+    text-align: justify;
+    padding: 2px;
+    width: 20%;
     font-size: .8em;
     font-weight: bold;
     color: #000;
-    text-align: justify;
-    text-indent: 10px;
+    
     flex: auto;
 }
 article .servicos-oferta > span {
@@ -584,6 +584,11 @@ article .servicos-oferta > span {
 article .servicos-oferta  > .botao-comprar {
     display: flex;
     font-size: .8em;
+    padding: 15px 5px;
+    background-color: var(--cor-amarelalogo);
+    color: var(--cor-vermelhoclaro);
+    font-weight: bold;
+    ;
 
 }
 
@@ -745,13 +750,12 @@ p.destaque {
 
 
 h2.destaque {
-    
-    
+    flex: auto;
     font-size: 1.4em;
     background: linear-gradient( #000000 20%, #be3537);
     background-clip: text;
     color: transparent;
-    margin: 2px 0px;
+    margin-top: 4px;
     padding: 3px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
     font-weight: bold;
