@@ -120,7 +120,7 @@ list-style: none;
 #Home{
    background-color: var(--cor-vermelhoclaro);
     align-items: flex-start;
-    margin-bottom: -70px;
+    margin-bottom: -20px;
     padding-top: 15px;
     
 }
@@ -256,7 +256,7 @@ main p {
     color: #000;
     text-align: justify;
     text-indent: 10px;
-    flex: 1 1 auto;
+    flex: auto;
     
    
 }
@@ -271,8 +271,8 @@ div.home {
 
 .img-home {
     
-    width: 484px;
-    max-width: 550px;
+    width: 90vw;
+    max-width: 90vw;
     height: 350px;
     margin: 10px auto 0;
     flex: auto;
