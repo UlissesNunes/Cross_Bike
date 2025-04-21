@@ -692,6 +692,14 @@ section #Sobre {
     margin: 15px 0;
 }
 
+.img-centro-sobre > iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 2%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
+    aspect-ratio: 16/9;
+}
+
 .img-sobre {
     width: 100%;
     height: 40vh;
