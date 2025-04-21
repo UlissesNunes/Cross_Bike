@@ -55,10 +55,10 @@ header .container-header{
 header nav ul li a {
        
         color: #fffef7;;
-        font-size: 1em;
+        font-size: .9em;
         font-weight: bold;
         
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.450);
+        text-shadow: 1 1px 2px rgba(0, 0, 0, 0.450);
         transition: all .3s ease-in;
        
 }
@@ -120,8 +120,8 @@ list-style: none;
 #Home{
    background-color: var(--cor-vermelhoclaro);
     align-items: flex-start;
-    margin-bottom: -70px;
-    padding-top: 15px;
+    margin-bottom: -80px;
+    padding-top: 7px;
     
 }
 #Serviços{
@@ -200,7 +200,7 @@ position: relative;
 }
 
 .container-banner:hover .banner {
-    animation-play-state: paused;
+    animation: 40s AnimaçãoBanner  infinite linear
 }
 
 .banner img {
@@ -341,12 +341,12 @@ span {
 
 .ctaWhats {
     margin: 2px;
-    width: 20px;
-    height: 20px;
-
+    width: 21px;
+    height: 21px;
+    transition: all .4s linear;
 }
 .ctaWhats:hover {
-    padding: 2px;
+    padding: 3px;
     transition: all .4s linear; 
     
 }
@@ -498,8 +498,9 @@ span {
 .card-wrapper .swiper-pagination-bullet {
     background: var(--cor-vermelhoclaro) !important;
     opacity: .4;
-    width: 11px;
-    height:11px;
+    width: 9px;
+    height:9px;
+    
     
 }
 
