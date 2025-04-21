@@ -120,7 +120,7 @@ list-style: none;
 #Home{
    background-color: var(--cor-vermelhoclaro);
     align-items: flex-start;
-    margin-bottom: -80px;
+    margin-bottom: -90px;
     padding-top: 7px;
     
 }
@@ -694,10 +694,11 @@ section #Sobre {
 
 .img-centro-sobre > iframe {
     width: 100%;
-    height: 300px;
+    height: 100%;
     border-radius: 2%;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
     aspect-ratio: 16/9;
+    filter: contrast(109%);
 }
 
 .img-sobre {
@@ -770,3 +771,5 @@ h2.destaque {
     font-weight: bold;
     text-align: center;
 }
+
+
