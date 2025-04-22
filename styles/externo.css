@@ -248,3 +248,42 @@ h1  {
     padding: 5px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178) ;
 }
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5em;
+    background: var(--cor-vermelhofooter);
+    color: #fff;
+    text-align: center;
+    gap: 5em;
+    
+  }
+
+  .dev-logo,
+  .parceria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dev-logo p, .parceria p {
+    
+    font-size: .9rem;
+  }
+
+  .img-footer {
+    width: clamp(3rem, 25vw, 6rem);
+    height: auto;
+    
+  } 
+  .img-marca-footer {
+    width: clamp(14rem, 25vw, 6rem);
+    
+    
+  }
+
+
+
