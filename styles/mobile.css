@@ -340,6 +340,7 @@ span {
 
 
 .ctaWhats {
+    
     margin: 2px;
     width: 21px;
     height: 21px;
@@ -574,6 +575,7 @@ article .servicos-oferta > img {
 article .servicos-oferta > img:hover {
     transform: scale(1.04);
     transition: all .3s linear;
+    cursor: pointer;
 }
 
 article .servicos-oferta > p {
@@ -597,13 +599,18 @@ article .servicos-oferta > span {
     display: flex;
     width: 100%;
     gap: 10px;
+    align-content: center;
+    
+  
+    
 }
 
 .container-links > a {
+    
     flex: 1 0 calc(50% - 5px);
     box-sizing: border-box;
     font-size: 0.9em;
-    padding: 15px 20px;
+    padding: 15px ;
     background-color: var(--cor-amarelalogo);
     color: var(--cor-vermelhoclaro);
     font-weight: bold;
@@ -614,11 +621,18 @@ article .servicos-oferta > span {
     transition: background-color 0.3s ease;
     margin: 0;
     display: inline-block;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.123);
+    transition: all .3s linear;
 }
 
 .container-links > a:hover {
-    background-color: #baa123;
+    background-color: #cfb329;
+    transform: scale(1.01);
+    transition: all .3s linear;
+    
 }
+
+
 
 .peças {
     width: 150px;
@@ -666,6 +680,7 @@ article .servicos-oferta > span {
   
   .galeria-imagens img:hover {
     transform: scale(1.05);
+    
   }
   
   .descricao {
@@ -798,5 +813,44 @@ h2.destaque {
     font-weight: bold;
     text-align: center;
 }
+
+
+
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5em;
+    background: var(--cor-vermelhofooter);
+    color: #fff;
+    text-align: center;
+    gap: 5em;
+    
+  }
+
+  .dev-logo,
+  .parceria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dev-logo p, .parceria p {
+    
+    font-size: .9rem;
+  }
+
+  .img-footer {
+    width: clamp(3rem, 25vw, 6rem);
+    height: auto;
+    
+  } 
+  .img-marca-footer {
+    width: clamp(14rem, 25vw, 6rem);
+    
+    
+  }
 
 
