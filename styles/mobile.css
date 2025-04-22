@@ -24,7 +24,7 @@ body {
 }
 
 html { 
-    font-size: 100%;
+    font-size: 99%;
     scroll-behavior: smooth;
 }
 
@@ -42,7 +42,7 @@ header .container-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 99%;
+    width: 100%;
     max-width: 1200px;
     margin: 0 auto;    
 }
@@ -120,7 +120,7 @@ list-style: none;
 #Home{
    background-color: var(--cor-vermelhoclaro);
     align-items: flex-start;
-    margin-bottom: -15px;
+    margin-bottom: -45px;
     padding-top: 7px;
     
 }
@@ -160,7 +160,7 @@ list-style: none;
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-70%);
+        transform: translateX(-80%);
     }
     
 }
