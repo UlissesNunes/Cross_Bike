@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'arial', sans-serif;
+   
 }
 
 body {
@@ -133,10 +134,16 @@ list-style: none;
 }
 #Sobre{
     background: var(--cor-vermelhoescuro);
-    align-items: center
+    align-items: center;
+    
+   
     
 }
-#Contato{background-color: var(--cor-vermelhofooter); align-items: center;
+#Contato{
+    background-color: var(--cor-vermelhoescuro);
+     align-items: center;
+     
+
 }
 
 
@@ -819,6 +826,64 @@ h2.destaque {
     font-weight: bold;
     text-align: center;
 }
+
+main .contato {
+    background-color: var(--cor-vermelhoescuro);
+}
+
+.footer-mobile {
+    
+    background-color: var(--cor-vermelhoescuro);
+    padding: 2em 10.4em;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    text-align: center;
+    color: var(--cor-amarelalogo);
+  }
+  
+  .footer__aba h3 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .footer__aba ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer__aba li {
+    margin-bottom: 0.8rem;
+  }
+  
+  .footer__aba a {
+    text-decoration: none;
+    color: var(--cor-amareloclaro);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6em;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__aba a:hover,
+  .footer__aba a:focus {
+    color: var(--cor-vermelhoclaro);
+  }
+  
+  .material-symbols-outlined {
+    font-size: 1.1rem;
+    vertical-align: middle;
+    color: var(--cor-amareloclaro);
+  }
 
 
 
