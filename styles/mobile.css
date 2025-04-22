@@ -120,7 +120,7 @@ list-style: none;
 #Home{
    background-color: var(--cor-vermelhoclaro);
     align-items: flex-start;
-    margin-bottom: -90px;
+    margin-bottom: -15px;
     padding-top: 7px;
     
 }
@@ -552,47 +552,73 @@ section #Serviços {
 
 article .servicos-oferta {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.066);
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 10px;
+    
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
 }
 
 article .servicos-oferta > img {
-    width: 50%;
-    height: 50%;
+    flex: 0 0 35%;
+    max-width: 35%;
+    height: auto;
     border-radius: 2%;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.142);
+    transition: all .3s linear;
+    margin-bottom: 0;
+} 
+
+article .servicos-oferta > img:hover {
+    transform: scale(1.04);
+    transition: all .3s linear;
 }
 
 article .servicos-oferta > p {
-    display: flex;
-    text-align: justify;
-    padding: 2px;
-    width: 20%;
-    font-size: .8em;
+    flex: 1 0 calc(65% - 10px);
+    font-size: 0.9em;
     font-weight: bold;
     color: #000;
-    
-    flex: auto;
+    margin: 0;
+    padding: 5px 0;
 }
+
 article .servicos-oferta > span {
-    font-size: 1.2em;
+    flex: 1 0 100%;
     font-weight: bold;
     color: var(--cor-vermelhoclaro);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.093);
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
-article .servicos-oferta  > .botao-comprar {
+.container-links {
     display: flex;
-    font-size: .8em;
-    padding: 15px 5px;
+    width: 100%;
+    gap: 10px;
+}
+
+.container-links > a {
+    flex: 1 0 calc(50% - 5px);
+    box-sizing: border-box;
+    font-size: 0.9em;
+    padding: 15px 20px;
     background-color: var(--cor-amarelalogo);
     color: var(--cor-vermelhoclaro);
     font-weight: bold;
-    ;
-
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0;
+    display: inline-block;
 }
 
+.container-links > a:hover {
+    background-color: #baa123;
+}
 
 .peças {
     width: 150px;
@@ -649,15 +675,6 @@ article .servicos-oferta  > .botao-comprar {
     color: #444;
   }
   
-  .botao-comprar {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #5d5537;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-  }
   
   .botao-comprar:hover {
     background-color: #3a2e14;
@@ -726,6 +743,15 @@ p.sobre {
    
 }
 
+.especsobre {
+    margin-bottom: 15px;
+    font-weight: bold;
+    padding: 10px;
+    font-size: .8em;
+    margin-top: -35px;
+    color: var(--cor-vermelhofooter);
+}
+
 div.mapa {
     display: flex;
     align-items: center;
@@ -761,11 +787,12 @@ p.destaque {
 
 h2.destaque {
     flex: auto;
-    font-size: 1.4em;
+    font-size: 1.3em;
     background: linear-gradient( #000000 20%, #be3537);
     background-clip: text;
     color: transparent;
-    margin-top: 4px;
+    margin-top: 15px;
+    margin-bottom: 20px;
     padding: 3px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
     font-weight: bold;
