@@ -564,7 +564,7 @@ article .servicos-oferta {
 
 article .servicos-oferta > img {
     flex: 0 0 35%;
-    max-width: 35%;
+    max-width: 50%;
     height: auto;
     border-radius: 2%;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.142);
@@ -579,12 +579,12 @@ article .servicos-oferta > img:hover {
 }
 
 article .servicos-oferta > p {
-    flex: 1 0 calc(65% - 10px);
+    flex: 1 0 calc(35% - 10px);
     font-size: 0.9em;
     font-weight: bold;
     color: #000;
     margin: 0;
-    padding: 5px 0;
+    padding: 2px 0;
 }
 
 article .servicos-oferta > span {
@@ -632,6 +632,12 @@ article .servicos-oferta > span {
     
 }
 
+del {
+    text-decoration: line-through;
+    color: var(--cor-vermelhoclaro); 
+    margin-right: 10px;
+  }
+
 
 
 .peças {
@@ -640,7 +646,7 @@ article .servicos-oferta > span {
 }
 
 
-/* CSS */
+
 .servicoss-pecas {
     padding: 40px 20px;
     background-color: #f9f9f9;
