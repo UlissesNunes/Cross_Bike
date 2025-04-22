@@ -828,11 +828,11 @@ h2.destaque {
     flex-direction: row;
     justify-content: center;
     align-items: flex-start;
-    padding: 5em;
+    padding: 3em;
     background: var(--cor-vermelhofooter);
     color: #fff;
     text-align: center;
-    gap: 5em;
+    gap: 3em;
     
   }
 
@@ -853,10 +853,12 @@ h2.destaque {
     height: auto;
     
   } 
-  .img-marca-footer {
-    width: clamp(14rem, 25vw, 6rem);
+  
+    
+    
+.img-marca-footer {
+    width: 12em;
     
     
   }
-
 
