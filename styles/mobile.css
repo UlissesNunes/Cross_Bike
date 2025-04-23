@@ -951,7 +951,7 @@ main .contato {
 
   .marca-direitos-autorais {
     background-color: var(--cor-amareloclaro);
-    opacity: .8;
+    opacity: .9;
     display: flex;
     justify-content: center;
     align-items: center;
