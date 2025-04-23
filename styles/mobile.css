@@ -120,7 +120,7 @@ list-style: none;
 #Home{
    background-color: var(--cor-vermelhoclaro);
     align-items: flex-start;
-    margin-bottom: -45px;
+    margin-bottom: -35px;
     padding-top: 7px;
     
     
@@ -258,9 +258,9 @@ h1  {
 }
 
 main p {
-    padding: 2px;
-    line-height: 1.4em;
-    font-size: .9em;
+   
+  
+    
     color: #000;
     text-align: justify;
     text-indent: 10px;
@@ -271,11 +271,11 @@ main p {
 
 div.conteudo  {
     display: flex;
-    flex-direction: column; /* Empilha os elementos verticalmente */
+    flex-direction: column; 
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
-    
+    font-size: .9em;
 }
 
 
