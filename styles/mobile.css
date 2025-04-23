@@ -857,6 +857,7 @@ main .contato {
     list-style: none;
     padding: 0;
     margin: 0;
+    ;
   }
   
   .footer__aba li {
@@ -906,6 +907,7 @@ main .contato {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .dev-logo p, .parceria p {
