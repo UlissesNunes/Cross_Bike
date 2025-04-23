@@ -244,6 +244,17 @@ h1  {
     background: linear-gradient(90deg, #be3537 40%, #dcbe2c);
     background-clip: text;
     color: transparent;
+    margin-bottom: 20px;
+    padding: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178) ;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.3em;
+    background: linear-gradient(90deg, #be3537 40%, #dcbe2c);
+    background-clip: text;
+    color: transparent;
     margin-bottom: 10px;
     padding: 5px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178) ;
@@ -286,4 +297,90 @@ h1  {
   }
 
 
+main p {
+    font-size: 1em;
+    text-align: center;
+    color: #000;
+    margin: 0;
+    padding: 5px 5px;
+    line-height: 1.4em;
+    text-align: left;
+    text-indent: 1em;
+    text-align: justify;   
+}
+  .formas-pag {
+    background-color: var(--cor-vermelhoescuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .img-formas-pag {
+    width: 40%;
+    padding: 1em;
+  }
+
+
+
+
+.container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    background: var(--cor-vermelhofooter);
+    color: #fff;
+    text-align: center;
+    gap: 1em;
+    
+  }
+
+  .dev-logo,
+  .parceria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dev-logo p, .parceria p {
+    
+    font-size: .9rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
+
+  }
+
+  .img-footer {
+    width: clamp(3rem, 25vw, 6rem);
+    height: auto;
+    
+  } 
+  
+    
+    
+.img-marca-footer {
+    width: 12em;
+    
+    
+  }
+
+  .marca-direitos-autorais {
+    background-color: var(--cor-amareloclaro);
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
+    padding: .4em 0;
+    color: var(--cor-vermelhoescuro);
+    font-weight: bold;
+    font-size: .9em;
+  }
 
