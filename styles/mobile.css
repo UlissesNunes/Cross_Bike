@@ -834,7 +834,7 @@ main .contato {
 .footer-mobile {
     
     background-color: var(--cor-vermelhoescuro);
-    padding: 2em 10.4em;
+    padding: 2em 10em;
     display: flex;
     flex-direction: column;
     gap: 3.5rem;
