@@ -120,8 +120,8 @@ list-style: none;
 #Home{
    background-color: var(--cor-vermelhoclaro);
     align-items: flex-start;
-    margin-bottom: -35px;
-    padding-top: 3px;
+    margin-bottom: -30px;
+    padding-top: 1px;
     
     
 }
