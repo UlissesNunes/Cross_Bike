@@ -262,11 +262,14 @@ h1  {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 8px 0 4px 0;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0x;
+    
 }
 
 .imgagem-one img {
-    width: 98%;
+    width: 100%;
     height: 100%;
     border-radius: 2%;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
@@ -279,7 +282,7 @@ img {
 }
 
 .imgagem-one img:hover {
-    transform: scale(1.02);
+    transform: scale(1.01);
     transition: all .3s linear;
     cursor: pointer;
 }
