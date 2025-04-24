@@ -384,3 +384,32 @@ main p {
     font-size: .9em;
   }
 
+
+   a {
+    text-decoration: none;
+    color: var(--cor-vermelhoclaro);
+    font-size: .8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    
+    
+    gap: .5em;
+    transition: color 0.3s ease;
+  }
+  
+   a:hover,
+   a:focus {
+    color: #ffe253;
+    transition: color 0.3s ease ;
+  }
+  
+  .material-symbols-outlined {
+    font-size: 1em;
+    vertical-align: middle;
+    color: var(--cor-vermelhoclaro);
+  text-align: center; 
+  flex-shrink: 0
+  }
+
