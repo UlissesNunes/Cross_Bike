@@ -184,7 +184,7 @@ list-style: none;
     width: 100%;
     max-width: 1200px;
     margin: 0;
-    padding: 0.1em 0;
+    padding: 0.3em 0;
     background-color: var(--cor-vermelhoescuro);
     color: var(--cor-amarelalogo);
     font-size: .9em;
@@ -278,7 +278,7 @@ h1  {
 }
 
 img {
-    filter: contrast(120%);
+    filter: contrast(110%);
 }
 
 .imgagem-one img:hover {
