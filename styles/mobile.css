@@ -89,15 +89,7 @@ header nav ul li a.active {
       
 }
 
-header nav ul li a.active:hover {
-    background: linear-gradient(149deg, #fff5c7 , #cf200d 60%);
-    background-clip: text;
-    color: transparent;
-        border-radius: 5px;
-        transition: all .7s ease-in;
-        animation:  11s linear infinite;
-        
-}
+
 
 header img {
     display: flex;
