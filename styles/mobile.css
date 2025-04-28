@@ -1,5 +1,5 @@
 :root {
-    --cor-amarelalogo: #dcbe2c;
+    --cor-amarelalogo: #eccb25;
     --cor-amareloclaro: #ffcc00;
     --cor-vermelhoclaro: #be3537;
     --cor-vermelhoescuro: #620b0b;
@@ -33,7 +33,7 @@ header{
     position: sticky;
     top: 0 ;
     width: 100%;
-    background-color: #ffcc00;
+    background-color: #eccb25fb;
     padding: .4em 0;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.250);
     z-index: 2023;
@@ -55,11 +55,11 @@ header .container-header{
 
 header nav ul li a {
        
-        color: #ffefef;
+        color: /*#ffefef;*/ var(--cor-vermelhoclaro);
         font-size: .8em;
         font-weight: bold;
         text-shadow: 1 1px 2px rgba(0, 0, 0, 0.748);
-        transition: all .3s ease-in;
+        transition: all .5s ease-in;
        
 }
 a {
@@ -67,25 +67,36 @@ a {
     padding: 5px;
     display: flex;
    
-    
 }
 
 header nav ul li a:hover {
-        color: var(--cor-vermelhoclaro);
+    background: linear-gradient(149deg, #fff4c2 , #cb1501 60%);
+    background-clip: text;
+    color: transparent;
         border-radius: 5px;
-        transition: all .3s ease-in;
+        transition: all .5s ease-in;
         animation:  11s linear infinite;
-        
+         text-decoration: underline;
 
        
 }
 
 header nav ul li a.active {
-        color: #fffdf4;
+        color: #fff4c2;
        background-image: linear-gradient(to bottom, var(--cor-vermelhoclaro) 1%, transparent) ;
         border-radius: 5px;
-        transition: all .3s ease-in;
-       
+        transition: all .5s ease-in;
+      
+}
+
+header nav ul li a.active:hover {
+    background: linear-gradient(149deg, #fff5c7 , #cf200d 60%);
+    background-clip: text;
+    color: transparent;
+        border-radius: 5px;
+        transition: all .7s ease-in;
+        animation:  11s linear infinite;
+        
 }
 
 header img {
