@@ -42,7 +42,7 @@ const scrollSection = (event) => {
     const element = document.querySelector(href);
 
     if (element) {
-        const positionScroll = element.offsetTop -132.36;
+        const positionScroll = element.offsetTop -32.36;
 
         window.scrollTo({
             top: positionScroll,
