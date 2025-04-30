@@ -749,7 +749,8 @@ article .servicos-oferta > span {
     font-weight: bold;
     color: var(--cor-vermelhoclaro);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.093);
-    margin: 10px 0; 
+    margin: 10px 0;
+    
 }
 
 .container-links {
@@ -757,7 +758,9 @@ article .servicos-oferta > span {
     width: 100%;
     gap: 10px;
     align-content: center;
-    
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   
     
 }
@@ -766,14 +769,14 @@ article .servicos-oferta > span {
     
     flex: 1 0 calc(50% - 5px);
     box-sizing: border-box;
-    font-size: 0.9em;
-    padding: 15px ;
+    font-size: .9em;
+    padding: 16px ;
     background-color: var(--cor-amarelalogo);
     color: var(--cor-vermelhoclaro);
     font-weight: bold;
     text-decoration: none;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 0;
@@ -789,10 +792,19 @@ article .servicos-oferta > span {
     
 }
 
+span.preços {
+    padding: 0 10px;
+    margin: 0;
+    font-size: 1.2em;
+}
+
 del {
+    
     text-decoration: line-through;
     color: var(--cor-vermelhoclaro); 
     margin-right: 10px;
+    font-weight: bold;
+    font-size: smaller;
   }
 
 
@@ -806,7 +818,7 @@ del {
 
 .servicoss-pecas {
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    
     text-align: center;
     font-family: Arial, sans-serif;
   }
@@ -821,7 +833,7 @@ del {
     background-color: #fff;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
     display: inline-block;
   }
   
@@ -1050,59 +1062,140 @@ main .contato {
   }
 
   .img-formas-pag {
-    width: 40%;
-    padding: 1em;
+    width: 95%;
+    padding:1em;
+    cursor: pointer;
+  }
+  .img-formas-ssl {
+    width:27%;
+    padding: 2em;
+    cursor: pointer;
+    transition: all .3s linear;
+  }
+  .img-formas-ssl:hover {
+    transform: scale(1.05);
+    transition: all .3s linear;
   }
 
+  .ssl {
+    font-size: .8em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
+    margin: 0 auto;
+  }
+
+  .ssl a {
+    text-decoration: none;
+    color: white;
+    
+   
+    font-weight: 600;
+    
+    
+    transition: all 0.5s ease;
+  
+  }
+    .ssl a:hover {
+    text-decoration: underline;
+    transition: all .5s linear;
+    color: var(--cor-amareloclaro);
+    font-weight: bold;
+    }
+
+    .img-formas-segurança {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    transition: all .3s linear;
+    }
+
+    .img-formas-segurança:hover {
+    transform: scale(1.05);
+    transition: all .3s linear;
+    
+    }
+
+    .img-formas {
+    margin-left: 7px;
+    padding: 10px 0;
+    width: 12%;
+    max-width: 100px;
+    height: 100%;
+    cursor: pointer;
+    transition: all .3s linear;
+
+    }
+    .img-formas:hover {
+    transform: scale(1.28);
+    transition: all .5s linear;
+    }
 
 
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: var(--cor-amareloclaro);
+    border: none;
+    margin: 0 auto;
+}
 
-.container-footer {
+  .container-footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 6em;
+    width: 100%;
+    max-width: 1500px;
+    padding: 2em; 
     background: var(--cor-vermelhofooter);
     color: #fff;
     text-align: center;
-    gap: 1em;
-    
-  }
+    gap: 3em;
+}
 
-  .dev-logo,
-  .parceria {
+.dev-logo,
+.parceria {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .dev-logo p, .parceria p {
-    
-    font-size: .9rem;
+.dev-logo p {
+    font-size: .8em;
     font-weight: bold;
-    margin-top: 0.5rem;
+    
     text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173);
+}
 
-  }
+.parceria p {
+    font-size: .8em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.973);
 
-  .img-footer {
-    width: clamp(1rem, 25vw, 6rem);
-    height: auto;
-    
-  } 
-  
-    
-    
+}
+
+.img-footer {
+    max-width: 90px; 
+    height: auto; 
+    transition: all .3s linear;
+}
+
+.img-footer:hover {
+    transform: scale(1.05);
+    transition: all .3s linear;
+}
+
 .img-marca-footer {
-    
-    width: 100%;
-    
-    
-    
-  }
+    max-width: 195px; 
+    height: auto;
+}
 
   .marca-direitos-autorais {
     background-color: var(--cor-amareloclaro);
@@ -1113,7 +1206,7 @@ main .contato {
    
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
-    padding: .4em 0;
+    padding: .9em 0;
     color: var(--cor-vermelhoescuro);
     font-weight: bold;
     font-size: .9em;
