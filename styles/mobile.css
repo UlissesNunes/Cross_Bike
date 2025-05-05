@@ -290,9 +290,14 @@ h1  {
 }
 .imgagem-one-slide img {
     width: 100%;
-    border-radius: 3%;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
+    border-radius: 3% 3% 0% 0%;
+    
     filter: contrast(115%);
+}
+.imgagem-one-slide img:hover {
+    transform: scale(1.01);
+    transition: all .3s linear;
+    cursor: pointer;
 }
 
 .manual-navegation {
@@ -306,7 +311,7 @@ justify-content: center;
 .manual-nav {
     border: 3px solid var(--cor-amarelalogo);
     background-color: rgba(95, 46, 18, 0);
-    padding: 6px;
+    padding: 5.8px;
     border-radius: 50%;
     cursor: pointer;
     transition: .3s linear;
@@ -1163,15 +1168,14 @@ hr {
     align-items: center;
     width: 100%;
     max-width: 1600px;
-    padding: 2em; 
+    padding: 1em; 
     background: var(--cor-vermelhofooter);
     color: #fff;
     text-align: center;
-    gap: 3em;
+    
 }
 
-.dev-logo,
-.parceria {
+.dev-logo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1211,18 +1215,42 @@ hr {
     height: auto;
 }
 
+.marca-logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+.marca-logo-footer p {
+    font-size: .7em;
+    font-weight: bold;
+    margin-bottom: -3em;
+    margin-top: -1.5em;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
+    color: var(--cor-amareloclaro);
+    opacity: .7;
+    background-color: var(--cor-vermelhofooter);
+    
+}
+.marca-logo-footer img {
+    max-width: 130px; 
+    height: auto; 
+    transition: all .3s linear;
+}
+
   .marca-direitos-autorais {
     background-color: #1d0303;
     opacity: .9;
     display: flex;
     justify-content: center;
     align-items: center;
-   
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
-    padding: 2.9em 0;
+    padding: 2em 0;
     color: white;
-    font-weight: bold;
+    font-weight: 600;
     font-size: .9em;
   }
 
