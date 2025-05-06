@@ -399,7 +399,7 @@ justify-content: center;
 }
 
 img {
-    filter: contrast(105%);
+    filter: contrast(110%);
 }
 
 .imgagem-one img:hover {
@@ -431,7 +431,7 @@ div.conteudo  {
 
 
 .img-home {
-    
+    filter: contrast(120%);
     width: 90vw;
     max-width: 90vw;
     height: 350px;
