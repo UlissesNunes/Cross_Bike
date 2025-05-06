@@ -43,59 +43,58 @@
                     <h1>Oficina CrossBike</h1>
                     <hr>
 
-                    <h2> aproveite nossas Promoções</h2>
+                    <h2 class="destaque"> aproveite nossas Promoções</h2>
                         <h3>Destaques</h3>
-                        <div class="slider-principal-home">
-
-                          <div class="slides-inputs">
-                            <input type="radio" name="radio-button" id="radio1">
-                            <input type="radio" name="radio-button" id="radio2">
-                          
-                
-                            <div class="imgagem-one-slide first">
-                               <img src="../imagens/CROSSBIKE (5).png" alt="imagem ilustrativa crossbike">
+                        <div class="carousel-container">
+                          <div class="carousel-slide active"> <img src="../imagens/CROSSBIKE (5).png" alt="Imagem ilustrativa crossbike">
+                              
+                          </div>
+                          <div class="carousel-slide">
+                              <img src="../imagens/bike-amarela-redimensionada.jpeg" alt="Imagem ilustrativa crossbike">
                              </div>
-                
-                             <div class="imgagem-one-slide">
-                          <img src="../imagens/CROSSBIKE.png" alt="imagem ilustrativa crossbike" class="aspect">
-                             </div>
-                
-                             <div class="navegacao-auto-slide">
-                               <div class="auto-nav-1"></div>
-                               <div class="auto-nav-2"></div>
-                             </div>
-                             </div>
-                             <div class="manual-navegation">
-                               <label for="radio1" class="manual-nav"></label>
-                                <label for="radio2" class="manual-nav"></label>
-                             </div>
+                              <div class="carousel-buttons-container">
+                                <button class="carousel-button view-button" data-modal="modal-destaque-1">Veja</button>
+                                <a href="#" class="carousel-button">Compre Agora</a>
+                            </div>
+                          <div class="carousel-navigation">
+                              <label for="slide1"></label>
+                              <label for="slide2"></label>
+                              </div>
                       </div>
-
-                      <h3>aro29</h3>
-                      <div class="slider-principal-home">
-
-                        <div class="slides-inputs">
-                          <input type="radio" name="radio-button" id="radio1">
-                          <input type="radio" name="radio-button" id="radio2">
-                        
-              
-                          <div class="imgagem-one-slide first">
-                            <img src="../imagens/CROSSBIKE.png" alt="imagem ilustrativa crossbike" class="aspect"></div>
-              
-                           <div class="imgagem-one-slide">
-                            <img src="../imagens/CROSSBIKE.png" alt="imagem ilustrativa crossbike" class="aspect">
-                           </div>
-              
-                           <div class="navegacao-auto-slide">
-                             <div class="auto-nav-1"></div>
-                             <div class="auto-nav-2"></div>
-                           </div>
-                           </div>
-                           <div class="manual-navegation">
-                             <label for="radio1" class="manual-nav"></label>
-                              <label for="radio2" class="manual-nav"></label>
-                           </div>
-                    </div>
+          
+                      <h3>Aro 29</h3>
+                      <div class="carousel-container">
+                          <div class="carousel-slide active"> <img src="../imagens/CROSSBIKE (16).png" alt="Imagem ilustrativa crossbike">
+                            
+                          </div>
+                          <div class="carousel-slide">
+                              <img src="../imagens/bike-infantil-redimencionada.jpeg" alt="Imagem ilustrativa crossbike">
+                         </div>
+                          <div class="carousel-buttons-container">
+                                <button class="carousel-button view-button" data-modal="modal-destaque-1">Veja</button>
+                                <a href="#" class="carousel-button">Compre Agora</a>
+                            </div>
+                          <div class="carousel-navigation">
+                              <label for="slide-aro29-1"></label>
+                              <label for="slide-aro29-2"></label>
+                          </div>
+                      </div>
+          
+                      <div id="modal-destaque-1" class="modal">
+                          <div class="modal-content">
+                              <span class="close-button">&times;</span>
+                              <img src="../imagens/CROSSBIKE (5).png" alt="Imagem detalhada crossbike">
+                          </div>
+                      </div>
+          
+                      <div id="modal-destaque-2" class="modal">
+                          <div class="modal-content">
+                              <span class="close-button">&times;</span>
+                              <img src="../imagens/CROSSBIKE.png" alt="Imagem detalhada crossbike">
+                          </div>
+                      </div>
+          
+                      
                     <h3>Aro 26</h3>
                     <div class="slider-principal-home">
 
@@ -282,5 +281,90 @@
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
         <script src="./scripts/swiper.js"></script>
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              const carousels = document.querySelectorAll('.carousel-container');
+      
+              carousels.forEach(carousel => {
+                  const slides = carousel.querySelectorAll('.carousel-slide');
+                  const navigationLabels = carousel.querySelectorAll('.carousel-navigation label');
+                  const viewButtons = carousel.querySelectorAll('.view-button');
+                  const modalId = carousel.querySelectorAll('.view-button');
+                  let currentIndex = 0;
+                  let intervalId;
+      
+                  function showSlide(index) {
+                      slides.forEach(slide => slide.classList.remove('active'));
+                      slides[index].classList.add('active');
+      
+                      if (navigationLabels.length > 0) {
+                          navigationLabels.forEach(label => label.classList.remove('active'));
+                          navigationLabels[index].classList.add('active');
+                      }
+                  }
+      
+                  function nextSlide() {
+                      currentIndex = (currentIndex + 1) % slides.length;
+                      showSlide(currentIndex);
+                  }
+      
+                  function startCarousel() {
+                      intervalId = setInterval(nextSlide, 7000); // Troca de slide a cada 5 segundos
+                  }
+      
+                  function stopCarousel() {
+                      clearInterval(intervalId);
+                  }
+      
+                  // Inicializa o carrossel
+                  if (slides.length > 0) {
+                      showSlide(currentIndex);
+                      startCarousel();
+                  }
+      
+                  // Navegação manual (se houver)
+                  navigationLabels.forEach((label, index) => {
+                      label.addEventListener('click', () => {
+                          stopCarousel();
+                          currentIndex = index;
+                          showSlide(currentIndex);
+                          startCarousel();
+                      });
+                  });
+      
+                  // Funcionalidade dos modais
+                  viewButtons.forEach(button => {
+                      button.addEventListener('click', () => {
+                          const modalTargetId = button.getAttribute('data-modal');
+                          const modal = document.getElementById(modalTargetId);
+                          if (modal) {
+                              modal.style.display = 'block';
+                              stopCarousel(); // Parar o carrossel ao abrir o modal
+                          }
+                      });
+                  });
+      
+                  const closeButtons = document.querySelectorAll('.close-button');
+                  closeButtons.forEach(button => {
+                      button.addEventListener('click', () => {
+                          const modal = button.closest('.modal');
+                          if (modal) {
+                              modal.style.display = 'none';
+                              startCarousel(); // Reiniciar o carrossel ao fechar o modal
+                          }
+                      });
+                  });
+      
+                  // Fechar o modal ao clicar fora da área do conteúdo
+                  window.addEventListener('click', (event) => {
+                      if (event.target.classList.contains('modal')) {
+                          event.target.style.display = 'none';
+                          startCarousel(); // Reiniciar o carrossel ao fechar o modal
+                      }
+                  });
+              });
+          });
+      </script>
 </body>
 </html>

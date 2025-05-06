@@ -727,3 +727,180 @@ hr {
     font-weight: bold;
     color: var(--cor-vermelhofooter);
   }
+
+img {
+    
+    max-height: 300px;
+    
+}
+  .destaque {
+    color: var(--cor-amarelalogo);
+}
+
+/* Estilos do Carrossel */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 30px;
+    border-radius: 3%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    transition: transform 0.8s ease-in-out;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+.carousel-slide img {
+    width: 100%;
+    display: block;
+    filter: contrast(115%);
+    border-radius: inherit;
+}
+
+/* Container dos Botões */
+.carousel-buttons-container {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+    margin-top: 10px; /* Espaço entre a imagem e os botões */
+}
+
+/* Estilos dos Botões (compartilhados) */
+.carousel-button {
+    background-color: var(--cor-amarelalogo);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    text-decoration: none; /* Remove sublinhado do link */
+    display: inline-block; /* Permite que fiquem lado a lado */
+    font-size: inherit; /* Herda o tamanho da fonte */
+}
+
+.carousel-button:hover {
+    opacity: 1;
+}
+
+/* Navegação do Carrossel */
+.carousel-navigation {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px; /* Espaço entre os botões e a navegação */
+}
+
+.carousel-navigation label {
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-navigation label.active,
+.carousel-navigation label:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Estilos do Modal */
+.modal {
+  display: none;
+  position: fixed; /* Mantém o modal fixo na tela */
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Garante que o modal ocupe a altura total da viewport */
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60vw; /* Largura de 60% da viewport width */
+  border-radius: 5px;
+  animation: fadein 0.5s;
+  max-height: 90vh; /* Altura máxima para evitar que ultrapasse a tela */
+  overflow-y: auto; /* Adiciona barra de rolagem se o conteúdo for muito longo */
+}
+
+.modal-content img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+}
+
+/* Animação de entrada do modal */
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsividade para o Modal */
+@media (max-width: 768px) {
+  .modal-content {
+      width: 90vw; /* Aumenta a largura em telas menores */
+      max-height: 95vh; /* Aumenta a altura máxima em telas menores */
+      margin: 5% auto; /* Ajusta a margem */
+  }
+
+  .close-button {
+      font-size: 24px;
+  }
+}
+
+/* Para telas ainda menores (ex: celulares muito pequenos) */
+@media (max-width: 480px) {
+  .modal-content {
+      width: 95vw;
+      margin: 2% auto;
+      padding: 15px;
+  }
+}
+    .carousel-button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+        width: 100%; /* Ocupa a largura total em telas menores */
+        text-align: center; /* Centraliza o texto dos botões */
+    }
+
+    .carousel-navigation {
+        gap: 8px;
+        margin-top: 8px;
+    }
+
+    .carousel-navigation label {
+        width: 10px;
+        height: 10px;
+    }
