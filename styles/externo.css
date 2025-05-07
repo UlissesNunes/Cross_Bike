@@ -473,16 +473,16 @@ main .contato {
   padding-top: 15px;
   margin: 0 auto;
     width: 100%;
-    max-width: 35px;
+    max-width: 40px;
     height: 100%;
     cursor: pointer;
-   
+   margin-bottom: 2px;
     transition: all .3s linear;
 }
 
 
 .img-formas1:hover {
-    transform: scale(1.01);
+    transform: scale(1.03);
     transition: all .3s linear;
 }
 
@@ -823,6 +823,7 @@ section img {
 /* Estilos do Carrossel */
 .carousel-container {
     position: relative;
+    
     overflow: hidden;
     margin: 0 auto 30px;
     border-radius: 3%;
@@ -834,13 +835,16 @@ section img {
 
 
 .carousel-slide {
+  
     display: none;
     width: 100%;
-    transition: transform 0.8s ease-in-out;
+    transition: transform 10.8s ease-in-out;
 }
 
 .carousel-slide.active {
     display: block;
+    padding: 10px;
+    transition: 12s linear;
 }
 
 .carousel-slide img {
@@ -863,22 +867,25 @@ section img {
     background-color: var(--cor-amarelalogo);
     display: block;
     width: 100vw; /* Largura máxima dos botões */
-    color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.973);
+    color: var(--cor-vermelhoclaro);
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.143);
     font-weight: bold;
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
-    opacity: 0.8;
-    transition: opacity 0.3s ease;
     text-decoration: none; /* Remove sublinhado do link */
     display: inline-block; /* Permite que fiquem lado a lado */
     font-size: inherit; /* Herda o tamanho da fonte */
+    transition: all 0.4s ease;
 }
 
 .carousel-button:hover {
-    opacity: 1;
+    background-color: var(--cor-vermelhoclaro);
+    color: var(--cor-amarelalogo);
+    transform: scale(1.02); /* Aumenta o tamanho do botão ao passar o mouse */
+    transition: all 0.4s ease; /* Transição suave */
 }
 
 /* Navegação do Carrossel */
@@ -893,17 +900,18 @@ section img {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.115);
+    background-color: rgba(0, 0, 0, 0.3);
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.4s ease;
+    margin: 0 3px; /* Espaçamento entre os círculos */
 }
 
 .carousel-navigation label.active,
 .carousel-navigation label:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6); /* Cor do círculo ativo ou ao passar o mouse */
 }
 
-/* Estilos do Modal */
+/* Estilos do Modal */ 
 .modal {
   padding-top: 30%;
   ;
@@ -915,7 +923,7 @@ section img {
   transform: translate(-50%, -50%); /* Centraliza o modal */
   width: 100%;
   height: 100vh; /* Garante que o modal ocupe a altura total da viewport */
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, .9);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -925,11 +933,11 @@ section img {
   position: relative;
   background-color: transparent;
   padding: 15px;
-  border: 1px solid #cccccc;
+  border: 1px solid #f5f5f5;
   width: 40vw; /* Largura de 60% da viewport width */
   border-radius: 5px;
   animation: fadein 0.9s;
-  height: 70vh; /* Altura de 80% da viewport height */
+  height: 60vh; /* Altura de 80% da viewport height */
   max-height: 90vh; /* Altura máxima para evitar que ultrapasse a tela */
   
 }
@@ -943,15 +951,18 @@ section img {
 .close-button {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 29px;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
+  transition: all .3s linear;
 }
 
 .close-button:hover,
 .close-button:focus {
-  color: black;
+  color: rgb(255, 255, 255);
+  transform:  scale(1.2);
+  transition: all .3s linear;
 }
 
 .conteúdo-modal-h1 {
