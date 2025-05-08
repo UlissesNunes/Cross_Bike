@@ -123,7 +123,7 @@ list-style: none;
 #Home{
    background-color: var(--cor-vermelhoclaro);
     align-items: flex-start;
-    margin-bottom: -40px;
+    margin-bottom: -60px;
     padding-top: 1px;
     
     
@@ -303,7 +303,7 @@ h1  {
 .manual-navegation {
 position: absolute;
 width: 100%;
-margin-top: -17px;
+margin-top: -16px;
 display: flex;
 justify-content: center;
 }   
@@ -311,10 +311,11 @@ justify-content: center;
 .manual-nav {
     border: 3px solid var(--cor-amarelalogo);
     background-color: rgba(95, 46, 18, 0);
-    padding: 5.8px;
+    padding: 6px;
     border-radius: 50%;
     cursor: pointer;
     transition: .3s linear;
+    opacity: 0;
 
 }
 
@@ -338,12 +339,18 @@ justify-content: center;
 #radio2:checked ~ .first {
     margin-left: -25%;
 }
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
 
 
 .navegacao-auto-slide div{
-    border: 1px solid var(--cor-amarelalogo);
-    
-    padding: 7px;
+    border: 2px solid rgba(255, 255, 255, 0.266);
+    background-color: rgba(10, 5, 2, 0.181);
+    padding: 5px;
     border-radius: 50%;
     cursor: pointer;
     transition: .5s ease;
@@ -364,11 +371,21 @@ justify-content: center;
 }
 
 #radio1:checked ~ .navegacao-auto-slide > .auto-nav-1 {
-    background-color: white;
+    background-color: var(--cor-amarelalogo);
+    opacity: .8;
     
 }
 #radio2:checked ~ .navegacao-auto-slide .auto-nav-2 {
-    background-color: white;
+    background-color: var(--cor-amarelalogo);
+    opacity: .8;
+}
+#radio3:checked ~ .navegacao-auto-slide .auto-nav-3 {
+    opacity: .8;
+    background-color: var(--cor-amarelalogo);
+}
+#radio4:checked ~ .navegacao-auto-slide .auto-nav-4 {
+    opacity: .8;
+    background-color: var(--cor-amarelalogo);
 }
 
 .aspect{
@@ -982,12 +999,12 @@ p.destaque {
 
 h2.destaque {
     flex: auto;
-    font-size: 1.3em;
+    font-size: 1.2em;
     background: linear-gradient( #000000 20%, #be3537);
     background-clip: text;
     color: transparent;
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 3px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
     font-weight: bold;
