@@ -124,8 +124,7 @@ list-style: none;
  background-color: var(--cor-vermelhoclaro);
   align-items: flex-start;
   margin-bottom: -40px;
-  padding-top: 1px;
-  
+ 
   
 }
 #Serviços{
@@ -251,12 +250,13 @@ main{
 h1  {
     text-align: center;
     flex: auto;
+    margin-top: 15px;
     font-size: 2.3em;
     background: linear-gradient(90deg, #be3537 40%, #dcbe2c);
     background-clip: text;
     color: transparent;
     margin-bottom: 20px;
-    padding: 5px;
+    padding: 15px 0px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178) ;
 }
 
