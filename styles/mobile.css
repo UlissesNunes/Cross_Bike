@@ -447,7 +447,7 @@ img {
 }
 
 .div-imagem-satisfação img {
-    width: 100%;
+    width: 99%;
     max-width: 1000px;
     
     border-radius: 3%;
@@ -457,7 +457,7 @@ img {
     transition: all .3s linear;
 }   
 .div-imagem-satisfação img:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
     transition: all .3s linear;
     cursor: pointer;
 }
