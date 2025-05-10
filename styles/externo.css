@@ -139,7 +139,6 @@ list-style: none;
   background: var(--cor-vermelhoescuro);
   align-items: center;
   
- 
   
 }
 #Contato{
@@ -302,7 +301,7 @@ display: flex;
 .imgagem-one-slide img {
   width: 100%;
   border-radius: 3%;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
+;
   filter: contrast(115%);
 }
 
@@ -988,7 +987,34 @@ section img {
 @keyframes fadein {
   from { opacity: 0; }
   to { opacity: 1; }
-}
+}  
+
+
+.home-link-Periferico {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      margin: 15px 0px;
+      font-size: 1em;
+      padding: 10px;
+    }
+
+    .home-link-Periferico a {
+      display: inline-block;
+      
+      text-decoration: none;
+      color: var(--cor-vermelhoclaro);
+      
+      font-weight: bold;
+      padding: 10px 1px;
+      transition: all .3s linear;
+    }
+    .home-link-Periferico a:hover {
+      text-decoration: underline;
+     
+      transition: all .3s linear;
+    }
 
 /* Responsividade para o Modal */
 @media (max-width: 768px) {
@@ -1034,7 +1060,7 @@ section img {
 
 
 
-    home-link-Periferico {}
+  
 
     @media  screen and (min-width: 768px) {
       header {

@@ -123,8 +123,8 @@ list-style: none;
 #Home{
    background-color: var(--cor-vermelhoclaro);
     align-items: flex-start;
-    margin-bottom: -60px;
-    padding-top: 1px;
+    margin-bottom: -65px;
+    padding-top: 3px;
     
     
 }
@@ -348,9 +348,9 @@ justify-content: center;
 
 
 .navegacao-auto-slide div{
-    border: 2px solid rgba(255, 255, 255, 0.266);
-    background-color: rgba(10, 5, 2, 0.181);
-    padding: 5px;
+    border: 3px solid rgba(255, 255, 255, 0.126);
+    background-color: rgba(10, 5, 2, 0.211);
+    padding: 4.5px;
     border-radius: 50%;
     cursor: pointer;
     transition: .5s ease;
@@ -372,19 +372,19 @@ justify-content: center;
 
 #radio1:checked ~ .navegacao-auto-slide > .auto-nav-1 {
     background-color: var(--cor-amarelalogo);
-    opacity: .8;
+    opacity: .7;
     
 }
 #radio2:checked ~ .navegacao-auto-slide .auto-nav-2 {
     background-color: var(--cor-amarelalogo);
-    opacity: .8;
+    opacity: .7;
 }
 #radio3:checked ~ .navegacao-auto-slide .auto-nav-3 {
-    opacity: .8;
+    opacity: .7;
     background-color: var(--cor-amarelalogo);
 }
 #radio4:checked ~ .navegacao-auto-slide .auto-nav-4 {
-    opacity: .8;
+    opacity: .7;
     background-color: var(--cor-amarelalogo);
 }
 
@@ -392,7 +392,9 @@ justify-content: center;
     aspect-ratio: 16/9;
 }
 
-
+article p {
+    padding-top: 15px;
+}
 
 
 
@@ -934,7 +936,8 @@ article p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 15px 0;
+    margin: 25px 0px;
+    
 }
 
 .img-centro-sobre > iframe {
@@ -1004,7 +1007,7 @@ h2.destaque {
     background-clip: text;
     color: transparent;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     padding: 3px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
     font-weight: bold;
@@ -1169,6 +1172,16 @@ main .contato {
     transition: all .5s linear;
     }
 
+    .marca-p-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    }
+
+   
+
 
 hr {
     width: 100%;
@@ -1240,15 +1253,16 @@ hr {
   
 }
 .marca-logo-footer p {
-    font-size: .7em;
+    font-size: .9em;
     font-weight: bold;
-    margin-bottom: -3em;
-    margin-top: -1.5em;
+    
+    
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
     color: var(--cor-amareloclaro);
-    opacity: .7;
-    background-color: var(--cor-vermelhofooter);
+    opacity: .8;
+    margin: 0 auto;
+    
     
 }
 .marca-logo-footer img {
