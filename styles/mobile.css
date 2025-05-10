@@ -441,15 +441,15 @@ img {
     margin: 0 auto;
     padding: 0px;
     
-    color: #000;
+   
     text-align: center;
     border-radius: 3%;
 }
 
 .div-imagem-satisfação img {
-    width: 99%;
+    width: 95%;
     max-width: 1000px;
-    
+    margin: 0 auto;
     border-radius: 3%;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.250);
     aspect-ratio: 19/9;
@@ -1023,7 +1023,8 @@ article p {
 }
 
 .img-centro-sobre > iframe {
-    width: 100%;
+    margin: 0 auto;
+    width: 97%;
     height: 100%;
     border-radius: 2%;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
