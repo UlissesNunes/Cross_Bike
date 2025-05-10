@@ -123,7 +123,7 @@ list-style: none;
 #Home{
    background-color: var(--cor-vermelhoclaro);
     align-items: flex-start;
-    margin-bottom: -25px;
+    margin-bottom: -45px;
     padding-top: 3px;
     
     
@@ -251,12 +251,12 @@ main {
 h1  {
     text-align: center;
     flex: auto;
-    font-size: 2.1em;
+    font-size: 2.4em;
     background: linear-gradient(90deg, #c32a2c 50%, #dcbe2c);
     background-clip: text;
     color: transparent;
     margin-bottom: 12px;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-left: 5px;
      padding-right: 5px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178) ;
@@ -396,6 +396,13 @@ justify-content: center;
 
 article p {
     padding-top: 15px;
+     
+}
+
+ main.home p , main.sobre p {
+    flex: auto;
+    text-align: justify;
+    line-height: 1.8;
 }
 
 
@@ -433,14 +440,12 @@ img {
 .div-imagem-satisfação {
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center; 
     width: 100%;
     max-width: 1200px;
-    
     margin: 0 auto;
     padding: 0px;
-    
+    padding: 15px 0px;
    
     text-align: center;
     border-radius: 3%;
@@ -449,10 +454,11 @@ img {
 .div-imagem-satisfação img {
     width: 95%;
     max-width: 1000px;
+   
     margin: 0 auto;
     border-radius: 3%;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.250);
-    aspect-ratio: 19/9;
+    aspect-ratio: 18/9;
     filter: contrast(119%);
     transition: all .3s linear;
 }   
@@ -463,14 +469,12 @@ img {
 }
 
 main p {
-   
-  
-    
     color: #000;
     text-align: justify;
     text-indent: 10px;
     flex: auto;
-    
+     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.123) ;
+     
    
 }
 
@@ -484,15 +488,16 @@ div.conteudo  {
 }
 
 
-.img-home {
-    filter: contrast(120%);
-    width: 90vw;
-    max-width: 90vw;
-    height: 350px;
+.div-imagem-satisfação .img-home {
+    padding: 0 3px;
+    filter: contrast(125%);
+    width: 95%;
+    max-width: 800px;
+    height: 260px;
     margin: 10px auto 0;
     flex: auto;
-    border-radius: 1.5%;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
+    border-radius: 3%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.250);
    
 }
 
@@ -588,7 +593,7 @@ span {
     align-items: flex-start;
     flex-direction: column;
     width: 99%;
-    max-width: 1000px;
+    max-width: 1500px;
     height: 470px;
     border-radius: 2%;
     background-color: #ffffff;
@@ -600,7 +605,7 @@ span {
 .card-wrapper {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 20px 10px;
+    padding: 10px 10px;
     overflow: hidden;
    }
 
@@ -662,6 +667,22 @@ span {
     scale: (1.01);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.350);
 
+}
+
+.div-selo-D {
+     display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 70%;
+    height: 4%;
+    border-radius: 3%;
+    margin-top: -15px;
+}
+
+.div-selo-D > img {
+    height: 35px;
+    width: 35px;
 }
 
 
@@ -1024,7 +1045,7 @@ article p {
 
 .img-centro-sobre > iframe {
     margin: 0 auto;
-    width: 97%;
+    width: 98%;
     height: 100%;
     border-radius: 2%;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
@@ -1085,25 +1106,27 @@ p.destaque {
 
 h2.destaque {
     flex: auto;
-    font-size: 1.2em;
+    font-size: 1.3em;
     background: linear-gradient( #000000 20%, #be3537);
     background-clip: text;
     color: transparent;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    padding: 3px;
+    
+    padding: 10px 0;
+    
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
     font-weight: bold;
     text-align: center;
 }
 
 #slogan {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin-top: -10px;
+    padding-bottom: 20px;
     background: linear-gradient(90deg, #be3537 60%, #dcbe2c);
     background-clip: text;
     color: transparent;
     font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
 }
 
 main .contato {
