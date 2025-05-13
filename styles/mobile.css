@@ -493,7 +493,7 @@ div.conteudo  {
     filter: contrast(125%);
     width: 95%;
     max-width: 800px;
-    height: 260px;
+    height: 300px;
     margin: 10px auto 0;
     flex: auto;
     border-radius: 3%;
@@ -1316,6 +1316,7 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .dev-logo p {
@@ -1336,7 +1337,7 @@ hr {
 }
 
 .img-footer {
-    max-width: 90px; 
+    max-width: 220px; 
     height: auto; 
     transition: all .3s linear;
 }
@@ -1346,10 +1347,8 @@ hr {
     transition: all .3s linear;
 }
 
-.img-marca-footer {
-    max-width: 195px; 
-    height: auto;
-}
+
+
 
 .marca-logo-footer {
     display: flex;

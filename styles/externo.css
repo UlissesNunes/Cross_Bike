@@ -343,6 +343,9 @@ justify-content: center;
 #radio2:checked ~ .first {
   margin-left: -25%;
 }
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
 
 
 .navegacao-auto-slide div{
@@ -373,6 +376,11 @@ justify-content: center;
   
 }
 #radio2:checked ~ .navegacao-auto-slide .auto-nav-2 {
+  background-color: white;
+}
+
+
+#radio3:checked ~ .navegacao-auto-slide .auto-nav-3 {
   background-color: white;
 }
 
@@ -572,7 +580,7 @@ main .contato {
   }
   
   .footer__aba li {
-    margin-bottom: 0.9em;
+    margin-bottom: 0.8em;
     
   }
   
@@ -614,8 +622,8 @@ main .contato {
   }
 
   .img-formas-pag {
-    width: 95%;
-    padding:1em;
+    width: 98%;
+    padding:.9em;
     cursor: pointer;
   }
   .img-formas-ssl {
