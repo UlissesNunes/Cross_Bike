@@ -1011,6 +1011,310 @@ del {
     background-color: #3a2e14;
   }
 
+  /* AREA DE INSERÇÃO DOS PRODUTOS EM COLUNAS*/
+
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 30px;
+    border-radius: 3%;
+    width: 100%;
+    
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    padding: 2px; /* Reduzi o padding geral para mobile */
+    box-sizing: border-box;
+}
+
+.carousel-slide.active {
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 100%;
+    justify-content: space-around;
+    
+}
+
+.produto-linha {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 10px;
+    width: 100%;
+}
+
+.produto-item {
+    
+    background-color: #f9f9f9; 
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.527);
+    padding: 3px; /* Reduzi o padding interno para mobile */
+    text-align: left;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    flex-basis: calc(50% - 10px); /* Largura para duas colunas no mobile */
+}
+
+.produto-item img {
+    width: 100%;
+    height: 160px;
+    max-width: 400px;
+    display: block;
+    filter: contrast(115%);
+    border-radius: inherit;
+    margin-bottom: 8px;
+}
+
+.produto-detalhes {
+    
+    text-align: left; 
+    width: 100%;
+}
+
+.product-description {
+    font-size: 1.08em; 
+    font-weight: bold;
+    color: var(--cor-vermelhoclaro); 
+    margin-bottom: 5px;
+    padding: 3px; 
+}
+
+.breve-descricao {
+    margin-left: -15px;
+    width: 100%;
+    text-align: justify;
+    text-align: left;
+    font-size: .99em; 
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    
+    
+    color: var(--cor-amarelalogo); 
+    margin-bottom: 5px;
+}
+
+.product-price del {
+    color: #777;
+    text-decoration: line-through;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: -5px;
+    
+    font-size: 0.9em; 
+}
+
+.product-price span {
+    font-size: .9em;
+    color: var(--cor-vermelhoclaro);
+}
+
+.preco-parcelado {
+    text-indent: 0px;
+    font-weight: bold;
+    margin-left: -15px;
+    font-size: .9em; /* Parcela menor que o preço à vista no mobile */
+    color: #777; /* Mantendo a cor CrossBike */
+    display: block;
+     /* Reduzi a margem inferior para mobile */
+}
+
+.preco-avista {
+    text-indent: 0px;
+    margin-left: -15px;
+    margin-top: -7px;
+    font-size: 1.1em; /* Reduzi o tamanho da fonte para mobile */
+    color: var(--cor-vermelhoclaro); /* Mantendo a cor CrossBike */
+    display: block;
+    font-weight: bold;
+}
+
+
+.preco-desconto-visual {
+    margin-left: -20px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: .85em;
+  color: rgba(0, 171, 0, 0.827);
+ 
+  display: block;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.113);
+}
+
+.div-estrelas-D {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 5px; /* Reduzi a margem inferior para mobile */
+}
+
+.div-estrelas-D img {
+    width: auto;
+    height: auto;
+    max-width: 50px; /* Reduzi o tamanho máximo das estrelas para mobile */
+    max-height: 15px; /* Reduzi a altura máxima das estrelas para mobile */
+}
+
+.botoes-produto-container {
+    display: flex;
+    gap: 5px; /* Reduzi o espaçamento entre os botões para mobile */
+    width: 100%;
+}
+
+.compra-agora, .view-button {
+    flex-grow: 1;
+    background-color: var(--cor-amarelalogo);
+    color: var(--cor-vermelhoclaro);
+    text-decoration: none;
+    padding: 5px 8px; /* Reduzi o padding dos botões para mobile */
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    display: block;
+    font-size: 0.8em; /* Reduzi o tamanho da fonte dos botões para mobile */
+}
+
+.view-button {
+    background-color: transparent;
+    color: var(--cor-vermelhoclaro);
+    border: 1px solid var(--cor-vermelhoclaro);
+}
+
+.compra-agora:hover {
+    background-color: var(--cor-vermelhoclaro);
+    color: var(--cor-amarelalogo);
+}
+
+.view-button:hover {
+    background-color: var(--cor-vermelhoclaro);
+    color: var(--cor-amarelalogo);
+}
+
+/* Tablet (768px até 991px): Três colunas */
+@media (min-width: 768px) and (max-width: 991px) {
+    .carousel-slide.active {
+        gap: 15px; /* Ajusta o espaçamento para tablet */
+    }
+
+    .produto-item {
+        flex-basis: calc(33.333% - 10px); /* Largura para três colunas no tablet */
+        padding: 12px; /* Ajusta o padding interno para tablet */
+    }
+
+    .produto-item img {
+        max-width: 180px; /* Ajusta a largura máxima da imagem para tablet */
+        margin-bottom: 8px; /* Ajusta a margem inferior para tablet */
+    }
+
+    .product-description {
+        font-size: 1.05em; /* Ajusta o tamanho da fonte para tablet */
+        margin-bottom: 4px; /* Ajusta a margem inferior para tablet */
+    }
+
+    .breve-descricao {
+        font-size: 0.85em; /* Ajusta o tamanho da fonte para tablet */
+        margin-bottom: 8px; /* Ajusta a margem inferior para tablet */
+    }
+
+    .product-price {
+        font-size: 0.95em; /* Ajusta o tamanho da fonte para tablet */
+        margin-bottom: 8px; /* Ajusta a margem inferior para tablet */
+    }
+
+    .preco-parcelado {
+        font-size: 0.75em; /* Ajusta o tamanho da fonte para tablet */
+    }
+
+    .preco-avista {
+        font-size: 1em; /* Ajusta o tamanho da fonte para tablet */
+    }
+
+    .div-estrelas-D {
+        margin-bottom: 8px; /* Ajusta a margem inferior para tablet */
+    }
+
+    .div-estrelas-D img {
+        max-width: 60px; /* Ajusta o tamanho máximo das estrelas para tablet */
+        max-height: 18px; /* Ajusta a altura máxima das estrelas para tablet */
+    }
+
+    .botoes-produto-container {
+        gap: 8px; /* Ajusta o espaçamento entre os botões para tablet */
+    }
+
+    .compra-agora, .view-button {
+        padding: 6px 10px; /* Ajusta o padding dos botões para tablet */
+        font-size: 0.9em; /* Ajusta o tamanho da fonte dos botões para tablet */
+    }
+}
+
+/* Desktop e Telas Maiores (992px e acima): Quatro colunas */
+@media (min-width: 992px) {
+    .carousel-slide.active {
+        gap: 20px; /* Restaura o espaçamento para desktop */
+    }
+
+    .produto-item {
+        flex-basis: calc(25% - 15px); /* Largura para quatro colunas no desktop */
+        padding: 15px; /* Restaura o padding interno para desktop */
+    }
+
+    .produto-item img {
+        max-width: 250px; /* Restaura a largura máxima da imagem para desktop */
+        margin-bottom: 10px; /* Restaura a margem inferior para desktop */
+    }
+
+    .product-description {
+        font-size: 1.1em; /* Restaura o tamanho da fonte para desktop */
+        margin-bottom: 5px; /* Restaura a margem inferior para desktop */
+    }
+
+    .breve-descricao {
+        font-size: 0.9em; /* Restaura o tamanho da fonte para desktop */
+        margin-bottom: 10px; /* Restaura a margem inferior para desktop */
+    }
+
+    .product-price {
+        font-size: 1em; /* Restaura o tamanho da fonte para desktop */
+        margin-bottom: 10px; /* Restaura a margem inferior para desktop */
+    }
+
+    .preco-parcelado {
+        font-size: 0.8em; /* Restaura o tamanho da fonte para desktop */
+    }
+
+    .preco-avista {
+        font-size: 1em; /* Restaura o tamanho da fonte para desktop */
+    }
+
+    .div-estrelas-D {
+        margin-bottom: 10px; /* Restaura a margem inferior para desktop */
+    }
+
+    .div-estrelas-D img {
+        max-width: 70px; /* Restaura o tamanho máximo das estrelas para desktop */
+        max-height: 20px; /* Restaura a altura máxima das estrelas para desktop */
+    }
+
+    .botoes-produto-container {
+        gap: 10px; /* Restaura o espaçamento entre os botões para desktop */
+    }
+
+    .compra-agora, .view-button {
+        padding: 8px 15px; /* Restaura o padding dos botões para desktop */
+        font-size: 1em; /* Restaura o tamanho da fonte dos botões para desktop */
+    }
+}
+
 
 section #Sobre {
     
