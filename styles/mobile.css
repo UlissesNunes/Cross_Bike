@@ -1118,7 +1118,7 @@ del {
 .preco-parcelado {
     text-indent: 0px;
     font-weight: bold;
-    margin-left: -15px;
+    margin-left: -10px;
     font-size: .9em; /* Parcela menor que o preço à vista no mobile */
     color: #777; /* Mantendo a cor CrossBike */
     display: block;
@@ -1127,7 +1127,7 @@ del {
 
 .preco-avista {
     text-indent: 0px;
-    margin-left: -15px;
+    margin-left: -10px;
     margin-top: -7px;
     font-size: 1.1em; /* Reduzi o tamanho da fonte para mobile */
     color: var(--cor-vermelhoclaro); /* Mantendo a cor CrossBike */
@@ -1137,10 +1137,10 @@ del {
 
 
 .preco-desconto-visual {
-    margin-left: -20px;
+    margin-left: -15px;
     margin-top: -10px;
-    margin-bottom: 15px;
-    font-size: .85em;
+    margin-bottom: 25px;
+    font-size: .8em;
   color: rgba(0, 171, 0, 0.827);
  
   display: block;
