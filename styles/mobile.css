@@ -1047,6 +1047,25 @@ del {
     background-color: #3a2e14;
   }
 
+
+  .pai-A {
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 65px;
+    width: 75px;
+    
+  }   
+
+   .pai-A img.estrelaA {
+   flex: auto;
+    margin-top: 40px; 
+    margin-left: 8px;
+    height: 70px;
+    opacity: .4;
+  }
+
   /* AREA DE INSERÇÃO DOS PRODUTOS EM COLUNAS*/
 
   .carousel-container {
@@ -1120,13 +1139,14 @@ del {
 }
 
 .breve-descricao {
-    margin-left: -15px;
+    margin-bottom: -40px;
+    margin-left: -10px;
     width: 100%;
     text-align: justify;
     text-align: left;
     font-size: .99em; 
     color: #444;
-    margin-bottom: 5px;
+    
 }
 
 .product-price {
@@ -1142,7 +1162,7 @@ del {
     display: block;
     margin-top: 30px;
     margin-bottom: -5px;
-    
+    margin-left: 7px;
     font-size: 0.9em; 
 }
 
@@ -1154,7 +1174,7 @@ del {
 .preco-parcelado {
     text-indent: 0px;
     font-weight: bold;
-    margin-left: -10px;
+    margin-left: -8px;
     font-size: .9em; /* Parcela menor que o preço à vista no mobile */
     color: #777; /* Mantendo a cor CrossBike */
     display: block;
@@ -1163,7 +1183,7 @@ del {
 
 .preco-avista {
     text-indent: 0px;
-    margin-left: -10px;
+    margin-left: -8px;
     margin-top: -7px;
     font-size: 1.1em; /* Reduzi o tamanho da fonte para mobile */
     color: var(--cor-vermelhoclaro); /* Mantendo a cor CrossBike */
