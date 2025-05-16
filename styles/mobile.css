@@ -594,7 +594,7 @@ span {
     flex-direction: column;
     width: 99%;
     max-width: 1500px;
-    height: 470px;
+    height: 520px;
     border-radius: 2%;
     background-color: #ffffff;
     text-align: center;
@@ -619,14 +619,10 @@ span {
     flex-direction: column;
     width: calc(100% - 6px);
     margin: 0 auto;
-    
     flex-wrap: wrap;
     gap: 40px;
     border-radius: 3%;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
-   
     max-width: 1200px;
-    
     color: #ffffff; 
     scroll-snap-align: center;
 }
@@ -646,17 +642,17 @@ span {
 
 .cards-link-D {
     display: block;
-    height: 393px;
+    height: 370px;
     user-select: none;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0px;
+    padding: 5px;
     background-color: #fefcf3;
     color: #000000;
     text-decoration: none;
     transition: all .6s linear; 
     border-radius: 2%;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.150);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.250);
 }
 
 .cards-link-D:hover {
@@ -664,12 +660,56 @@ span {
     transition: all .3s linear;
     color: #000;
     cursor: grab;
-    scale: (1.01);
+   
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.350);
 
 }
 
-.div-selo-D {
+
+.perifericos-D {
+    
+    display: flex;
+    justify-content: flex-end;
+   align-items: flex-start;
+    width: 100%;
+    height: auto;
+   
+}
+
+.perifericos-D .selo-pai-de-estrela {
+    height: 40px;
+    
+    padding-right: 4px;
+   
+
+}
+
+.perifericos-D .selo-pai-de-estrela img.estrela-selo-D {
+    
+    height: 50px;
+    width: 60px;
+    margin-top: -60px;
+    margin-bottom: 15px;
+}
+.perifericos-D .selo-pai-de-estrela img.qualidade-selo-D {
+    height: 30px;
+    width: 30px;
+    margin-top: -60px;
+    margin-bottom: 25px;
+    margin-left: -55px;
+    margin-right: 55px;
+}
+.perifericos-D .selo-pai-de-estrela img.cadeado-selo-D {
+    height: 30px;
+    width: 30px;
+    margin-left: -55px;
+    margin-top: -60px;
+    margin-bottom: 25px;
+}
+
+
+
+/*.div-selo-D {
      display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -703,18 +743,13 @@ span {
 }
 
 
-
-
-
-/* estrelas - D  */
-
 .div-estrelas-D {
+    
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
     padding: 0px;
-  
     width: 100%;
     max-width: 100%;
     height: 20px;
@@ -722,11 +757,12 @@ span {
 }
 
 .estrelas-D {
-    padding: 6px;
-    width: 70px;
-    height: 60px; 
-     
-}
+    height: 50px;
+    width: 60%;
+    margin-top: -60px;
+    margin-bottom: 15px;
+} 
+*/
 /* p-D */
 .p-D {
     width: 50%;
@@ -761,8 +797,8 @@ span {
 /* img-D */
 .img-D {
     width: 100%;
-    max-width: 150px;
-    height: 150px;
+    max-width: 160px;
+    height: 160px;
     margin: 20px auto 0;
     flex: auto;
     object-fit: cover;
@@ -772,11 +808,11 @@ span {
 
 /* card-button-D */
 .card-button-D {
-    height: 28px;
-    width: 29px;
+    height: 25px;
+    width: 20px;
     border-radius: 1em;
     margin: 0 auto;
-    padding: 0px;
+    padding: 5px;
     background : none;
     border: 1px solid var(--cor-vermelhoclaro);
     color: var(--cor-vermelhoclaro);
@@ -1153,19 +1189,19 @@ del {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    margin-bottom: 5px; /* Reduzi a margem inferior para mobile */
+    margin-bottom: 5px; 
 }
 
 .div-estrelas-D img {
     width: auto;
     height: auto;
-    max-width: 50px; /* Reduzi o tamanho máximo das estrelas para mobile */
-    max-height: 15px; /* Reduzi a altura máxima das estrelas para mobile */
+    max-width: 50px; 
+    max-height: 15px; 
 }
 
 .botoes-produto-container {
     display: flex;
-    gap: 5px; /* Reduzi o espaçamento entre os botões para mobile */
+    gap: 5px;
     width: 100%;
 }
 
@@ -1174,13 +1210,13 @@ del {
     background-color: var(--cor-amarelalogo);
     color: var(--cor-vermelhoclaro);
     text-decoration: none;
-    padding: 5px 8px; /* Reduzi o padding dos botões para mobile */
+    padding: 5px 8px;
     border-radius: 8px;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
     text-align: center;
     display: block;
-    font-size: 0.8em; /* Reduzi o tamanho da fonte dos botões para mobile */
+    font-size: 0.8em;
 }
 
 .view-button {
