@@ -1071,7 +1071,7 @@ span {
 }
 
 .div-estrelas-D img {
-    text-align: right;
+    opacity: .5;
     max-width: 65px;
     max-height: 65px;
 }

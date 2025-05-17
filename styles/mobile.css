@@ -1066,12 +1066,216 @@ del {
     opacity: .4;
   }
 
+
+div.vip-containe {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto 30px;
+    border-radius: 3%;
+   
+    
+}
+
+.vip-slide {
+    display: none;
+   width: 99%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.vip-slide.active {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    gap: 10px; 
+    
+}
+
+.produto-linha-vip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+    width: 100%;
+}
+
+.produto-item-vip {
+    background-color: #fdfdfd; 
+    border-radius: 6%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.255);
+    padding: 15px;
+    text-align: left;
+    flex-basis: calc(50% - 10px); 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.produto-item-vip img {
+    margin: 0 auto;
+    width: 100%; 
+    max-width: 450px; 
+    display: block;
+    filter: contrast(115%);
+    border-radius: inherit;
+    margin-bottom: 10px;
+}
+
+.produto-detalhes-vip {
+    text-align: left; 
+    width: 100%;
+}
+
+.product-description-vip {
+    font-size: 1.1em;
+    color: var(--cor-vermelhoclaro);
+    margin-bottom: 5px;
+}
+
+.breve-descricao-vip {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.4;
+    margin-bottom: -20px;
+    margin-left: 10px;
+    
+}
+
+.product-price-vip {
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.product-price-vip del {
+   text-align: left;
+    color: #8e8e8ed4;
+    font-size: .9em;
+    text-decoration: line-through;
+    display: block;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: -10px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.113);
+}
+
+.product-price-vip span {
+  color: var(--cor-vermelhoclaro);
+  margin: 0 3px;
+  font-weight: bold;
+  font-size: 1em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.113);
+}
+
+.preco-parcelado-vip {
+    margin-left: -15px ;
+    font-weight: bold;
+    font-size: 1em;
+    color: #777; 
+    display: block;
+    margin-bottom: 5px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.103);
+}
+
+.preco-avista-vip {
+    font-size: 1.2em;
+    color: var(--cor-vermelhoclaro); 
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.113);
+    margin-left: -10px;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    display: block;
+    font-weight: bold;
+}
+
+.preço-desconto-visual-vip {
+  font-size: .75em;
+  color: rgba(0, 171, 0, 0.827);
+ margin-bottom: 15px;
+  margin-left: -10px;
+  display: block;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.113);
+  
+}
+
+.div-estrelas-D-vip {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+   margin-left: 10px;
+    margin-top: 30;
+    margin-bottom: 10%;
+    
+    height: 40px;
+}
+
+.div-estrelas-D-vip img {
+    margin-left: -1px;
+    opacity: .6;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    max-width: 65px;
+    max-height: 65px;
+}
+
+.botoes-produto-container-vip {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.compra-agora-vip, .view-button-vip {
+    flex-grow: 1;
+    background-color: var(--cor-amarelalogo);
+    color: var(--cor-vermelhoclaro);
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: center;
+    display: block;
+}
+
+.view-button-vip {
+    background-color: transparent;
+    color: var(--cor-vermelhoclaro);
+    border: 1px solid var(--cor-vermelhoclaro);
+}
+
+.compra-agora-vip:hover {
+    background-color: var(--cor-vermelhoclaro);
+    color: var(--cor-amarelalogo);
+}
+
+.view-button-vip:hover {
+    background-color: var(--cor-vermelhoclaro);
+    color: var(--cor-amarelalogo);
+}
+
+
+@media (max-width: 767px) {
+    .produto-item-vip {
+        flex-basis: 100%;
+    }
+
+    .botoes-produto-container-vip {
+        flex-direction: column; 
+    }
+
+}
+  
+
   /* AREA DE INSERÇÃO DOS PRODUTOS EM COLUNAS*/
 
   .carousel-container {
     position: relative;
     overflow: hidden;
-    margin: 0 auto 30px;
+    margin: 0 auto 15px;
     border-radius: 3%;
     width: 100%;
     
@@ -1080,8 +1284,9 @@ del {
 .carousel-slide {
     display: none;
     width: 100%;
-    padding: 2px; /* Reduzi o padding geral para mobile */
+    padding: 2px; 
     box-sizing: border-box;
+    
 }
 
 .carousel-slide.active {
@@ -1105,22 +1310,22 @@ del {
     background-color: #f9f9f9; 
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.527);
-    padding: 3px; /* Reduzi o padding interno para mobile */
+    padding: 3px; 
     text-align: left;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
-    flex-basis: calc(50% - 10px); /* Largura para duas colunas no mobile */
+    align-items: center; 
+    flex-basis: calc(50% - 1px); 
 }
 
 .produto-item img {
     width: 100%;
-    height: 160px;
-    max-width: 400px;
+    max-height: 155px;
+    max-width: 450px;
     display: block;
     filter: contrast(115%);
-    border-radius: inherit;
+    border-radius: 3%;
     margin-bottom: 8px;
 }
 
@@ -1134,12 +1339,12 @@ del {
     font-size: 1.08em; 
     font-weight: bold;
     color: var(--cor-vermelhoclaro); 
-    margin-bottom: 5px;
-    padding: 3px; 
+    margin-bottom: 1px;
+    padding: 4px; 
 }
 
 .breve-descricao {
-    margin-bottom: -40px;
+    margin-bottom: -55px;
     margin-left: -10px;
     width: 100%;
     text-align: justify;
@@ -1151,9 +1356,10 @@ del {
 
 .product-price {
     
+     display: flex;
+    flex-direction: column;
     
-    color: var(--cor-amarelalogo); 
-    margin-bottom: 5px;
+    
 }
 
 .product-price del {
@@ -1161,9 +1367,9 @@ del {
     text-decoration: line-through;
     display: block;
     margin-top: 30px;
-    margin-bottom: -5px;
+    margin-bottom: -10px;
     margin-left: 7px;
-    font-size: 0.9em; 
+    font-size: 0.8em; 
 }
 
 .product-price span {
@@ -1175,18 +1381,18 @@ del {
     text-indent: 0px;
     font-weight: bold;
     margin-left: -8px;
-    font-size: .9em; /* Parcela menor que o preço à vista no mobile */
-    color: #777; /* Mantendo a cor CrossBike */
+    font-size: .85em; 
+    color: #777; 
     display: block;
-     /* Reduzi a margem inferior para mobile */
+     
 }
 
 .preco-avista {
     text-indent: 0px;
     margin-left: -8px;
-    margin-top: -7px;
-    font-size: 1.1em; /* Reduzi o tamanho da fonte para mobile */
-    color: var(--cor-vermelhoclaro); /* Mantendo a cor CrossBike */
+    margin-top: -5px;
+    font-size: 1.1em; 
+    color: var(--cor-vermelhoclaro); 
     display: block;
     font-weight: bold;
 }
@@ -1230,8 +1436,9 @@ del {
     background-color: var(--cor-amarelalogo);
     color: var(--cor-vermelhoclaro);
     text-decoration: none;
-    padding: 5px 8px;
+    padding:  8px;
     border-radius: 8px;
+    
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
     text-align: center;
