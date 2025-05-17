@@ -1583,28 +1583,35 @@ div.vip-containe {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    width: 45%;
+    width: 90%;
     background-color: var(--cor-amarelalogo);
     border-radius: 8px;
-    height: 25px;
+    height: 45px;
     cursor: pointer;
 
 
 }
 
 .banner-cronometro .cronometro-texto {
-    padding: 10px;
+    padding: 5px;
     color: var(--cor-vermelhoclaro);
     font-weight: 700;
     
     
 }
 
+.banner-cronometro img {
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+}
+
 .banner-cronometro .cronometro {
+   
     font-size: 1em;
     color: var(--cor-vermelhoescuro);
     
-    
+    text-align: center;
     font-weight: bold;
 }
 
