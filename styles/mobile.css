@@ -1402,7 +1402,7 @@ div.vip-containe {
     margin-left: -10px;
     margin-top: -10px;
     margin-bottom: 25px;
-    font-size: .6em;
+    font-size: .65em;
   color: rgba(0, 171, 0, 0.827);
  
   display: block;
@@ -1576,6 +1576,36 @@ div.vip-containe {
         padding: 8px 15px; /* Restaura o padding dos botões para desktop */
         font-size: 1em; /* Restaura o tamanho da fonte dos botões para desktop */
     }
+}
+
+.banner-cronometro {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    background-color: var(--cor-amarelalogo);
+    border-radius: 8px;
+    height: 25px;
+    cursor: pointer;
+
+
+}
+
+.banner-cronometro .cronometro-texto {
+    padding: 10px;
+    color: var(--cor-vermelhoclaro);
+    font-weight: 700;
+    
+    
+}
+
+.banner-cronometro .cronometro {
+    font-size: 1em;
+    color: var(--cor-vermelhoescuro);
+    
+    
+    font-weight: bold;
 }
 
 
