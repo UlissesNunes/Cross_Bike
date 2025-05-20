@@ -883,6 +883,30 @@ section #Serviços {
     
 }
 
+#Serviços .link-ultra-periférico a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: var(--cor-vermelhoclaro);
+    font-size: .95em;
+    font-weight: bold;
+    margin-left: -30px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.123);
+    transition: all .8s linear;
+}
+
+#Serviços .link-ultra-periférico a:hover {
+    background: linear-gradient(149deg, #ffeb93 , #cb1501 70%);
+    background-clip: text;
+    color: transparent;
+    border-radius: 5px;
+    transition: all .5s ease-in;
+    animation:  7s linear infinite;
+    text-decoration: underline;
+}
+
 
 article .servicos-oferta {
     display: flex;
