@@ -50,11 +50,11 @@ header .container-header{
 
  header nav ul {
         display: flex;
-        gap: .5em; 
+        gap: .3em; 
 }
 
 header nav ul li a {
-       
+       margin-right: 2px;
         color: /*#ffefef;*/ var(--cor-vermelhoclaro);
         font-size: .8em;
         font-weight: bold;
@@ -70,7 +70,7 @@ a {
 }
 
 header nav ul li a:hover {
-    background: linear-gradient(149deg, #fff4c2 , #cb1501 60%);
+    background: linear-gradient(149deg, #ffeb93 , #cb1501 80%);
     background-clip: text;
     color: transparent;
         border-radius: 5px;
@@ -594,7 +594,7 @@ span {
     flex-direction: column;
     width: 99%;
     max-width: 1500px;
-    height: 520px;
+    height: 530px;
     border-radius: 2%;
     background-color: #ffffff;
     text-align: center;
@@ -642,7 +642,7 @@ span {
 
 .cards-link-D {
     display: block;
-    height: 370px;
+    height: 385px;
     user-select: none;
     max-width: 1000px;
     margin: 0 auto;
@@ -890,7 +890,7 @@ section #Serviços {
     color: var(--cor-vermelhoclaro);
     font-size: .95em;
     font-weight: bold;
-    margin-left: -30px;
+    margin-left: -10px;
     margin-bottom: 10px;
     padding: 10px 0;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.123);
