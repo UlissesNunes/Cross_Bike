@@ -1215,11 +1215,27 @@ div.vip-containe {
 
 .div-estrelas-D-vip img {
     margin-left: -1px;
-    opacity: .6;
+    opacity: .4;
     margin-top: 40px;
     margin-bottom: 20px;
     max-width: 65px;
     max-height: 65px;
+    
+}
+
+h2.destaque > img {
+    padding: 5px;
+    margin-bottom: -10px;
+    width: 35px;
+    height: 35px;
+}
+
+span#mais > img { 
+    border-radius: 3%;
+    padding: 5px;
+    margin: 10px 0;
+    width: 100%;
+    height: auto;
 }
 
 .botoes-produto-container-vip {
@@ -1827,7 +1843,8 @@ main .contato {
   }
 
   .ssl {
-    font-size: .8em;
+    padding: 20px 7px;
+    font-size: .7em;
     font-weight: bold;
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
@@ -1940,6 +1957,7 @@ hr {
 
 }
 
+
 .img-footer {
     max-width: 220px; 
     height: auto; 
@@ -1947,24 +1965,22 @@ hr {
 }
 
 .img-footer:hover {
-    transform: scale(1.05);
-    transition: all .3s linear;
+    background-color: #4a070766;
+    box-shadow: inset  0 0 3px var(--cor-vermelhoclaro);
+    border-radius: 50%;
+    transform: scale(1.08);
+    transform: rotate(1, 1, 0, 35deg);
+    transition: all .4s linear;
 }
 
 
 
 
-.marca-logo-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  
-}
+
+
 .marca-logo-footer p {
-    font-size: .9em;
+    font-size: .8em;
     font-weight: bold;
-    
     
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
@@ -1974,15 +1990,14 @@ hr {
     
     
 }
-.marca-logo-footer img {
-    max-width: 130px; 
-    height: auto; 
-    transition: all .3s linear;
-}
+ .marca-logo-footer img {
+    width: 150px;
+ }
+
 
   .marca-direitos-autorais {
     background-color: #1d0303;
-    opacity: .9;
+    opacity: .85;
     display: flex;
     justify-content: center;
     align-items: center;
