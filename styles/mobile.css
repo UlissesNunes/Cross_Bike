@@ -451,7 +451,7 @@ img {
     padding: 15px 0px;
    
     text-align: center;
-    border-radius: 3%;
+    
 }
 
 .div-imagem-satisfação img {
@@ -492,15 +492,15 @@ div.conteudo  {
 
 
  .img-home {
-    padding: 0 3px;
+    padding: 0 2px;
     filter: contrast(120%);
-    width: 95%;
+    width: 97%;
     max-width: 800px;
     height: 280px;
     margin: 10px auto 0;
     flex: auto;
-    border-radius: 3%;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.200);
+    border-radius: 20px 0px 0px 0px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.250);
    
 }
 
@@ -1363,6 +1363,7 @@ span#mais > img {
 }
 
 .produto-item img {
+    padding: 6px 2px;
     width: 100%;
     max-height: 155px;
     max-width: 450px;
@@ -1458,10 +1459,12 @@ span#mais > img {
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
+    
 }
 
 .div-estrelas-D img {
+   
     width: auto;
     height: auto;
     max-width: 50px; 
@@ -1504,6 +1507,10 @@ span#mais > img {
     background-color: var(--cor-vermelhoclaro);
     color: var(--cor-amarelalogo);
 }
+
+
+.img-p {height: 120px;}
+
 
 /* Tablet (768px até 991px): Três colunas */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1735,7 +1742,7 @@ article p {
 }
 
 .chamada-mapa-pai {
-    margin-top: -10px;
+    margin-top: -20px;
      margin-bottom: 5px;
     display: flex;
     justify-content: center;
@@ -1746,16 +1753,17 @@ article p {
     background-color: var(--cor-amareloclaro);
     padding: 1px 0;
     text-align: center;
-    border-radius: 3%;
+    border-radius: 0px 0px 20px 20px;
 }
 
 .chamada-mapa-pai a > img {
     width: 25px;
     height: 25px;
-    border-radius: 2%;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
+    padding: 2px;
     margin-bottom: -7px;
 }
+
+
 
 .chamada-mapa-pai a {
     text-shadow:1px 1px 1px rgba(0, 0, 0, 0.223);
