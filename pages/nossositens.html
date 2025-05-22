@@ -69,7 +69,7 @@
     <section class="section" id="Serviços">
          <main>
             <article>
-                    <h1>Oficina CrossBike:</br> Acessórios e peças</h1>
+                    <h1>Oficina CrossBike: Acessórios e peças</h1>
                     <hr>
 
                     <div class="home-link-Periferico"><p><a href="./index.html">Home</a> <strong>></strong> <a href="nossositens.html">acessórios, peças e itens</a></p></div>
@@ -171,7 +171,7 @@
                     <h3 class="product-description">Bicicleta EVOLO | aro 29 | Laranja</h3>
                     <p class="breve-descricao">Freio a disco
                       a crossbike é uma loja de bicicletas que oferece uma amp a crossbike se destaca como uma das principais lojas de bicicletas do Brasil.</p>
-                    </p>
+                    
                     <div class="div-estrelas-D"><img src="../imagens/estrelas.png" alt="Avaliação" class="estrelas-D"></div>
                     <div class="product-price">
                         <del>DE R$ 1879,99</del>
@@ -209,9 +209,9 @@
 
                       <span class="img-formas2"> <img src="../imagens/seguranca.png" alt="img de segurança" >       
                     
-            </article>
-        </main>
-    </section>
+           
+      
+    
 
     <section class="section" id="Contato">
    
@@ -286,89 +286,7 @@
 
         <script src="../scripts/swiper.js"></script>
 
-        <script>
-         document.addEventListener('DOMContentLoaded', function() {
-    const carousels = document.querySelectorAll('.carousel-container');
 
-    carousels.forEach(carousel => {
-        const slides = carousel.querySelectorAll('.carousel-slide');
-        const navigationLabels = carousel.querySelectorAll('.carousel-navigation label');
-        const viewButtons = carousel.querySelectorAll('.view-button');
-        let currentIndex = 0;
-        let intervalId;
-        const intervalTime = 18000; // Troca de slide a cada 18 segundos
-
-        function showSlide(index) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            slides[index].classList.add('active');
-
-            if (navigationLabels.length > 0) {
-                navigationLabels.forEach(label => label.classList.remove('active'));
-                navigationLabels[index].classList.add('active');
-            }
-        }
-
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % slides.length;
-            showSlide(currentIndex);
-        }
-
-        function startCarousel() {
-            intervalId = setInterval(nextSlide, intervalTime);
-        }
-
-        function stopCarousel() {
-            clearInterval(intervalId);
-        }
-
-        // Inicializa o carrossel
-        if (slides.length > 0) {
-            showSlide(currentIndex);
-            startCarousel();
-        }
-
-        // Navegação manual (se houver)
-        navigationLabels.forEach((label, index) => {
-            label.addEventListener('click', () => {
-                stopCarousel();
-                currentIndex = index;
-                showSlide(currentIndex);
-                startCarousel();
-            });
-        });
-
-        // Funcionalidade dos modais
-        viewButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const modalTargetId = button.getAttribute('data-modal');
-                const modal = document.getElementById(modalTargetId);
-                if (modal) {
-                    modal.style.display = 'flex'; // Alterado para 'flex' para usar o display flex do modal
-                    stopCarousel(); // Parar o carrossel ao abrir o modal
-                }
-            });
-        });
-
-        const closeButtons = document.querySelectorAll('.close-button');
-        closeButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const modal = button.closest('.modal');
-                if (modal) {
-                    modal.style.display = 'none';
-                    startCarousel(); // Reiniciar o carrossel ao fechar o modal
-                }
-            });
-        });
-
-        // Fechar o modal ao clicar fora da área do conteúdo
-        window.addEventListener('click', (event) => {
-            if (event.target.classList.contains('modal')) {
-                event.target.style.display = 'none';
-                startCarousel(); // Reiniciar o carrossel ao fechar o modal
-            }
-        });
-    });
-});
-      </script>
+      
 </body>
 </html>
