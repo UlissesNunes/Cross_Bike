@@ -19,7 +19,7 @@ body {
     padding: 0;
    background-color: var(--cor-vermelhoclaro);
     height: 100%;
-    color: #000;
+    
     font-size: 1em;
     
 }
@@ -94,7 +94,7 @@ header nav ul li a.active {
 header img {
     display: flex;
     justify-content: flex-start;
-    max-width: 120px;
+    max-width: 110px;
     height: auto;  
 }
 
@@ -112,7 +112,7 @@ list-style: none;
     justify-content: center;
     align-items: center;
     background-color: white;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.250);
+   
     
     
     
@@ -238,7 +238,7 @@ position: relative;
 
 /*  PROBLEMA DE CONTEÚDO É TODO DO MAIN POIS ELE ESTÁ COM O HEIGHT QUE DIFICULTA O SCRIPT, E SE ESTIVER PEQUENO O MAIN FICA EM ESTADO DE VAZAMENTO  */
 main {
-    
+    box-shadow: 5px 2px 1px rgba(0, 0, 0, 0.163);
     background-color: #ffffff;
     display: flex;
     justify-content: center;
@@ -490,6 +490,12 @@ div.conteudo  {
     font-size: .9em;
 }
 
+
+
+
+.telamaior {display: none;}
+
+.img-bike-secund { display: none;}
 
  .img-home {
     padding: 0 2px;
@@ -1369,8 +1375,9 @@ span#mais > img {
     max-width: 450px;
     display: block;
     filter: contrast(115%);
-    border-radius: 3%;
+    border-radius: 4%;
     margin-bottom: 8px;
+    padding: 5px;
 }
 
 .produto-detalhes {
@@ -1509,130 +1516,11 @@ span#mais > img {
 }
 
 
-.img-p {height: 110px;
-
-    border-radius: 50%;
-    margin: 0 auto;
-   
-    
-}
 
 
-/* Tablet (768px até 991px): Três colunas */
-@media (min-width: 768px) and (max-width: 991px) {
-    .carousel-slide.active {
-        gap: 15px; /* Ajusta o espaçamento para tablet */
-    }
 
-    .produto-item {
-        flex-basis: calc(33.333% - 10px); /* Largura para três colunas no tablet */
-        padding: 12px; /* Ajusta o padding interno para tablet */
-    }
 
-    .produto-item img {
-        max-width: 180px; /* Ajusta a largura máxima da imagem para tablet */
-        margin-bottom: 8px; /* Ajusta a margem inferior para tablet */
-    }
-
-    .product-description {
-        font-size: 1.05em; /* Ajusta o tamanho da fonte para tablet */
-        margin-bottom: 4px; /* Ajusta a margem inferior para tablet */
-    }
-
-    .breve-descricao {
-        font-size: 0.85em; /* Ajusta o tamanho da fonte para tablet */
-        margin-bottom: 8px; /* Ajusta a margem inferior para tablet */
-    }
-
-    .product-price {
-        font-size: 0.95em; /* Ajusta o tamanho da fonte para tablet */
-        margin-bottom: 8px; /* Ajusta a margem inferior para tablet */
-    }
-
-    .preco-parcelado {
-        font-size: 0.75em; /* Ajusta o tamanho da fonte para tablet */
-    }
-
-    .preco-avista {
-        font-size: 1em; /* Ajusta o tamanho da fonte para tablet */
-    }
-
-    .div-estrelas-D {
-        margin-bottom: 8px; /* Ajusta a margem inferior para tablet */
-    }
-
-    .div-estrelas-D img {
-        max-width: 60px; /* Ajusta o tamanho máximo das estrelas para tablet */
-        max-height: 18px; /* Ajusta a altura máxima das estrelas para tablet */
-    }
-
-    .botoes-produto-container {
-        gap: 8px; /* Ajusta o espaçamento entre os botões para tablet */
-    }
-
-    .compra-agora, .view-button {
-        padding: 6px 10px; /* Ajusta o padding dos botões para tablet */
-        font-size: 0.9em; /* Ajusta o tamanho da fonte dos botões para tablet */
-    }
-}
-
-/* Desktop e Telas Maiores (992px e acima): Quatro colunas */
-@media (min-width: 992px) {
-    .carousel-slide.active {
-        gap: 20px; /* Restaura o espaçamento para desktop */
-    }
-
-    .produto-item {
-        flex-basis: calc(25% - 15px); /* Largura para quatro colunas no desktop */
-        padding: 15px; /* Restaura o padding interno para desktop */
-    }
-
-    .produto-item img {
-        max-width: 250px; /* Restaura a largura máxima da imagem para desktop */
-        margin-bottom: 10px; /* Restaura a margem inferior para desktop */
-    }
-
-    .product-description {
-        font-size: 1.1em; /* Restaura o tamanho da fonte para desktop */
-        margin-bottom: 5px; /* Restaura a margem inferior para desktop */
-    }
-
-    .breve-descricao {
-        font-size: 0.9em; /* Restaura o tamanho da fonte para desktop */
-        margin-bottom: 10px; /* Restaura a margem inferior para desktop */
-    }
-
-    .product-price {
-        font-size: 1em; /* Restaura o tamanho da fonte para desktop */
-        margin-bottom: 10px; /* Restaura a margem inferior para desktop */
-    }
-
-    .preco-parcelado {
-        font-size: 0.8em; /* Restaura o tamanho da fonte para desktop */
-    }
-
-    .preco-avista {
-        font-size: 1em; /* Restaura o tamanho da fonte para desktop */
-    }
-
-    .div-estrelas-D {
-        margin-bottom: 10px; /* Restaura a margem inferior para desktop */
-    }
-
-    .div-estrelas-D img {
-        max-width: 70px; /* Restaura o tamanho máximo das estrelas para desktop */
-        max-height: 20px; /* Restaura a altura máxima das estrelas para desktop */
-    }
-
-    .botoes-produto-container {
-        gap: 10px; /* Restaura o espaçamento entre os botões para desktop */
-    }
-
-    .compra-agora, .view-button {
-        padding: 8px 15px; /* Restaura o padding dos botões para desktop */
-        font-size: 1em; /* Restaura o tamanho da fonte dos botões para desktop */
-    }
-}
+  
 
 .banner-cronometro {
     display: flex;
