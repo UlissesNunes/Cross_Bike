@@ -10,48 +10,44 @@
 
 }
 
-@media screen and (min-width: 768px) {
-    .container {
+
+@media  screen and (min-width: 767px) {
+
+   header nav ul li a{
+    font-size: 1em;
+    gap: 30px;
+    margin-right: 10px;
+  }
+
+  header img {
+   height: 150px;
+    width: 240px;
+  }
+
+  .banner {
+    height: 20px;
+  }
+
+  .banner p {
+    font-size: 1.2em;
+    
+  }
+
+ 
+ .container {
         width: 100%;
         padding: 0 10px;
     }
 
     .depoimentos-D {
         max-width: calc(100% - 17px);
-}
-
-}
-
-@media  screen and (min-width: 768px)  {
-:root {
-    --cor-amarelalogo: #eccb25;
-    --cor-amareloclaro: #ffcc00;
-    --cor-vermelhoclaro: #be3537;
-    --cor-vermelhoescuro: #620b0b;
-    --cor-vermelhofooter: #460808;   
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'arial', sans-serif;
-   
-}
-
-
-.imgagem-one-slide {
-    max-height: 445px;
-    overflow: hidden;
-}
-
+    }
   main {
-    max-width: 750px;
-    padding: 0 10px;
-  }
-
-  main h1 {
-    font-size: 3em;
+    max-width: 780px;
+    padding: 0 10px 
+   }
+.main h1 {
+    font-size: 3.1em;
     
   }
 
@@ -64,17 +60,20 @@
     
     
   }
-.div-imagem-satisfação {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px 0;
-    flex-flow: row nowrap;
+
+
+  .div-imagem-satisfação .img-home {
+    margin: 7px 0;
   }
+
+   .div-imagem-satisfação .img-bike-secund {
+    display: block;
+    width: 350px;
+    height: 250px;
 
   }
  .div-imagem-satisfação .img-home {
-    width:250px;
+    width:220px;
     height: 250px;
   }
 
@@ -86,41 +85,32 @@
 
 
   .telamaior {
+    
     display: inline-block;
     margin-left: -7px;
     color: var(--cor-vermelhoescuro);
   }
 
-  header nav ul li a{
-    font-size: 1em;
-    gap: 30px;
-    margin-right: 10px;
+  #Home {
+    margin-bottom: -70px;
   }
 
-  header img {
-    max-width: 140px;
-  }
-
-  .banner {
-    height: 20px;
-  }
-
-  .banner p {
-    font-size: 1.2em;
-    
-  }
-
-  
-
+ 
   .conteiner-D {
-    max-width: 749px;
-    margin-top: -53px;
+    width: 779px;
+    height: 570px;
+    margin-top: -43px;
     
+  }
+
+  .depoimentos-D h2 {
+    font-size: 1.6em;
+    padding: 10px;
   }
 
  .cards-D .cards-link-D {
     margin-left: -10px;
-    width: 360px;
+    width: 375px;
   }
 
   .swiper-slide-buttton:hover {
@@ -133,7 +123,7 @@
    margin: 0 auto;
   }
 
-/* Desktop e Telas Maiores (992px e acima): Quatro colunas */
+
 
     .produto-linha-vip {
         display: flex;
@@ -210,15 +200,95 @@
         font-size: 2.5em;
     }
 
-    .slider-principal-home {
-        max-width: 93%;
-        margin: 0 auto;
-        height: 405px;  
+     .slider-principal-home {
+      margin: 0 auto;
+        max-width: 97%;
+        height: 45%;
         overflow: hidden;
+    }
 
+    .slider-principal-home img {
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
     }
 
 
+    #Serviços  .imgagem-one {
+      margin: 15px 0;
+        width: 95%;
+        
+        
+    }
+     .imgagem-one img {
+      height: 360px;
+      width: 100%;
+      margin: 0 auto;
+     }
+
+     #Sobre h1 br  {
+       display: block;
+     }
+
+     #Sobre .img-centro-sobre {
+        width: 100%;
+        height: 100%;
+        margin: 40px 0; 
+        
+
+
+     }
+
+     .img-sobre {
+        width: 49%;
+        height: 330px;
+        margin: 0 auto;
+     }  
+    .off {
+      display: block;
+     }
+
+    span.off {
+        display: none;
+     }
+     p.off {
+        display: none;
+     }
+     p.on{
+        display: block;
+        padding: 20px;
+        margin-bottom: 10px;
+        margin-top: -30px;
+        margin-left: -10px;
+     }
+
+      .img-centro-sobre iframe {
+      width: 90%;
+      height: 80%;    
+      }
+
+
+      main.contato{
+        background-color: var(--cor-vermelhoescuro);
+        box-shadow: none;
+        margin-top: -20px;
+        padding-top: -0px;
+        
+      }
+
+      article.contato-mapa {
+       padding-top: -30px;
+        width: 88ch;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+        margin: 0 auto;
+        margin-left: -17px;
+        
+      }
+    }
+  
+     
 
 @media screen and (min-width: 1024px) {
     main {
@@ -229,6 +299,17 @@
         width: 100%;
         padding: 0 10px;
     }
+
+    article.contato-mapa {
+       padding-top: -30px;
+        width: 97ch;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+        margin: 0 auto;
+        margin-left: -20px;
+        
+      }
 
   
 
@@ -300,13 +381,13 @@
     
   }
 
-    .slider-principal-home {
-        max-width: 85%;
-        height: 465px;
-        overflow: hidden;
-    }
+   
     
+  .depoimentos-D h2 {
+    font-size: 1.6em;
+    padding: 10px;
+  }
 
   
-  
+
   
