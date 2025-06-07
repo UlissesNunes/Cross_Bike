@@ -1138,7 +1138,7 @@ div.vip-containe {
 }
 
 .produto-item-vip {
-    background-color: #fdfdfd; 
+    background-color: #fdfdfdfb; 
     border-radius: 6%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.255);
     padding: 15px;
@@ -1167,9 +1167,10 @@ div.vip-containe {
 }
 
 .product-description-vip {
+    margin-left: 10px;
     font-size: 1.1em;
     color: var(--cor-vermelhoclaro);
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .breve-descricao-vip {
@@ -1194,9 +1195,9 @@ div.vip-containe {
     font-size: .9em;
     text-decoration: line-through;
     display: block;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 10px;
-    margin-bottom: -10px;
+    margin-bottom: 10px;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.113);
 }
 
@@ -1209,12 +1210,13 @@ div.vip-containe {
 }
 
 .preco-parcelado-vip {
-    margin-left: -15px ;
+    margin-left: -20px ;
     font-weight: bold;
     font-size: 1em;
     color: #777; 
     display: block;
-    margin-bottom: 5px;
+    margin-top: -5px;
+    margin-bottom: 15px;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.103);
 }
 
@@ -1222,19 +1224,21 @@ div.vip-containe {
     font-size: 1.2em;
     color: var(--cor-vermelhoclaro); 
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.113);
-    margin-left: -10px;
-    margin-bottom: -10px;
-    margin-top: -10px;
+    margin-left: -18px;
+    margin-bottom: 10px;
+    margin-top: -12px;
     display: block;
     font-weight: bold;
 }
 
 .preço-desconto-visual-vip {
-  font-size: .75em;
+  font-size: .65em;
   color: rgba(0, 171, 0, 0.827);
  margin-bottom: 15px;
-  margin-left: -10px;
+ margin-top: -5px; 
+ margin-left: -15px;
   display: block;
+
   font-weight: bold;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.113);
   
@@ -1396,17 +1400,19 @@ span#mais > img {
     font-size: 1.08em; 
     font-weight: bold;
     color: var(--cor-vermelhoclaro); 
-    margin-bottom: 1px;
-    padding: 4px; 
+    margin-bottom: 2px;
+    padding: 4px;
+    margin-left: 5px; 
 }
 
 .breve-descricao {
+    text-indent: 0px;
     margin-bottom: -55px;
     margin-left: -10px;
     width: 100%;
     text-align: justify;
     text-align: left;
-    font-size: .99em; 
+    font-size: .96em; 
     color: #444;
     
 }
@@ -1424,8 +1430,8 @@ span#mais > img {
     text-decoration: line-through;
     display: block;
     margin-top: 30px;
-    margin-bottom: -10px;
-    margin-left: 7px;
+    margin-bottom: 7px;
+    margin-left: 14px;
     font-size: 0.8em; 
 }
 
@@ -1437,7 +1443,8 @@ span#mais > img {
 .preco-parcelado {
     text-indent: 0px;
     font-weight: bold;
-    margin-left: -8px;
+    margin-left: -7px;
+    margin-bottom: 10px;
     font-size: .85em; 
     color: #777; 
     display: block;
@@ -1446,20 +1453,21 @@ span#mais > img {
 
 .preco-avista {
     text-indent: 0px;
-    margin-left: -8px;
+    margin-left: -7px;
     margin-top: -5px;
     font-size: 1.1em; 
     color: var(--cor-vermelhoclaro); 
     display: block;
     font-weight: bold;
+    margin-bottom:15px;
 }
 
 
 .preco-desconto-visual {
-    margin-left: -10px;
+    margin-left: -15px;
     margin-top: -10px;
     margin-bottom: 25px;
-    font-size: .65em;
+    font-size: .6em;
   color: rgba(0, 171, 0, 0.827);
  
   display: block;
