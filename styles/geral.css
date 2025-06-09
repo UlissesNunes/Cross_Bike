@@ -202,15 +202,15 @@
 
      .slider-principal-home {
       margin: 0 auto;
-        max-width: 97%;
-        height: 45%;
+        max-width: 75%;
+        
         overflow: hidden;
     }
 
     .slider-principal-home img {
       margin: 0 auto;
       width: 100%;
-      height: 100%;
+      
     }
 
 
