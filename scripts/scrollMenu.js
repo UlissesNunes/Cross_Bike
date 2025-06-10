@@ -54,3 +54,14 @@ const scrollSection = (event) => {
 linkNav.forEach(link => {
     link.addEventListener('click', scrollSection);
 });
+
+
+
+function voltarAoTopo() {
+  document.querySelector('.botao-voltar-ao-topo');
+    window.scrollTo({
+        top: 0, 
+        behavior: 'smooth' 
+    });
+}
+
