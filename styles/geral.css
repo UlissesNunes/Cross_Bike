@@ -7,6 +7,9 @@
     .depoimentos-D {
         max-width: calc(100% - 10px);
 }
+.produto-item {
+  height: 470px;
+}
 
 }
 

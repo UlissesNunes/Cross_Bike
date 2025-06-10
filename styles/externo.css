@@ -94,7 +94,7 @@ header nav ul li a.active {
 header img {
   display: flex;
   justify-content: flex-start;
-  max-width: 120px;
+  width: 120px;
   height: auto;  
 }
 
@@ -582,19 +582,6 @@ main .contato {
   transition: all .3s linear;
 }
 
-.product-price {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 10px;
-  margin-bottom: 1px;
-  font-weight: bold;
-  
-  
-
-  
-}
 
 
 span.preços {
@@ -948,7 +935,7 @@ section img {
     width: 100%;
     padding: 2px; 
     box-sizing: border-box;
-    
+   
 }
 
 .carousel-slide.active {
@@ -961,68 +948,84 @@ section img {
 
 .produto-linha {
     display: flex;
+    justify-items: flex-start;
+    align-items: flex-start;
     flex-wrap: nowrap;
     justify-content: space-around;
     gap: 10px;
     width: 100%;
+    
 }
 
 .produto-item {
-    
-    background-color: #f9f9f9; 
+    height: 480px;
+    background-color: #fffffe; 
     border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.527);
-    padding: 3px; 
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.450);
+    padding: 2px; 
     text-align: left;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center; 
     flex-basis: calc(50% - 1px); 
+    
 }
 
 .produto-item img {
-    padding: 5px 2px;
+  
+    height: 120px;
     width: 100%;
-    max-height: 155px;
-    max-width: 450px;
     display: block;
-    filter: contrast(115%);
+    filter: contrast(120%);
     border-radius: 4%;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
     padding: 5px;
 }
 
+.produto-item img.guidom-p {
+  height: 75px;
+  width: 100%;
+  display: block;
+  
+
+
+}
+
 .produto-detalhes {
+    background-color: #ffffff;
     
     text-align: left; 
     width: 100%;
 }
 
 .product-description {
-    font-size: 1.08em; 
+    font-size: 1em; 
     font-weight: bold;
     color: var(--cor-vermelhoclaro); 
     margin-bottom: 2px;
     padding: 4px;
     margin-left: -5px; 
+    height: 50px;
 }
 
 .breve-descricao {
     text-indent: 0px;
     margin-bottom: -55px;
-    margin-left: 1px;
+    padding: 7px 1px;
     width: 100%;
     text-align: justify;
     text-align: left;
-    font-size: .96em; 
+    font-size: .75em; 
     color: #444;
     
 }
 
 .product-price {
-    
+  
      display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     
    
@@ -1034,8 +1037,8 @@ section img {
     display: block;
     margin-top: 30px;
     margin-bottom: 7px;
-    margin-left: -30px;
-    margin-right: 40px;
+    margin-left: 2px;
+    
     font-size: 0.8em; 
 }
 
@@ -1057,7 +1060,7 @@ section img {
 
 .preco-avista {
     text-indent: 0px;
-    margin-left: -1px;
+    
     margin-top: -1px;
     font-size: 1.05em; 
     color: var(--cor-vermelhoclaro); 
@@ -1068,7 +1071,7 @@ section img {
 
 
 .preco-desconto-visual {
-    margin-left: -25px;
+    
     margin-top: -8px;
     margin-bottom: 25px;
     font-size: .6em;
@@ -1091,17 +1094,23 @@ section img {
 
    .pai-A img.estrelaA {
    flex: auto;
-    margin-top: 35px; 
-    margin-left: -5px;
+    margin-top: 30px; 
+    margin-left: -7px;
    
-    height: 70px;
+    height: 75px;
     opacity: .4;
   }
 
 .botoes-produto-container {
     display: flex;
-    gap: 5px;
+    
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
     width: 100%;
+    
+    
 }
 
 .compra-agora, .view-button {
@@ -1111,18 +1120,23 @@ section img {
     text-decoration: none;
     padding:  8px;
     border-radius: 8px;
-    
+    width: 100%;
+    height: 35px;
     font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease;
     text-align: center;
     display: block;
     font-size: 0.8em;
+    text-align: center;
 }
 
 .view-button {
     background-color: transparent;
     color: var(--cor-vermelhoclaro);
     border: 1px solid var(--cor-vermelhoclaro);
+    width: 100%;
+    height: 30px;
+    
 }
 
 .compra-agora:hover {
