@@ -500,7 +500,7 @@ div.conteudo  {
     filter: contrast(120%);
     width: 97%;
     max-width: 800px;
-    height: 280px;
+    height: 300px;
     margin: 10px auto 0;
     flex: auto;
     border-radius: 20px 0px 0px 0px;
@@ -2062,7 +2062,7 @@ hr {
 
 
   .marca-direitos-autorais {
-    background-color: #4b0a0a;
+    background-color: #2d0606;
     opacity: .9;
     display: flex;
     justify-content: center;

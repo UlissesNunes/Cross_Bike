@@ -116,14 +116,14 @@ main h1 {
   }
 
   #Home {
-    margin-bottom: -70px;
+    margin-bottom: 10px;
   }
 
  
   .conteiner-D {
-    width: 879px;
+    width: 99%;
     height: 570px;
-    margin-top: -83px;
+    
     
   }
 
@@ -134,7 +134,7 @@ main h1 {
 
  .cards-D .cards-link-D {
     margin-left: -10px;
-    width: 410px;
+    width: 400px;
   }
 
   .swiper-slide-buttton:hover {
@@ -164,32 +164,32 @@ main h1 {
         max-width: 350px;
         max-height: 250px; 
         padding: 30px;
-        margin-bottom: 10px; /* Restaura a margem inferior para desktop */
+        margin-bottom: 10px; 
     }
 
     .product-description {
-        font-size: 1.4em; /* Restaura o tamanho da fonte para desktop */
-        margin-bottom: 5px; /* Restaura a margem inferior para desktop */
+        font-size: 1.4em;
+        margin-bottom: 5px;
     }
 
     .breve-descricao {
-        font-size: 1.2em; /* Restaura o tamanho da fonte para desktop */
-        margin-bottom: 10px; /* Restaura a margem inferior para desktop */
+        font-size: 1.2em; 
+        margin-bottom: 10px;
     }
 
     .product-price {
         font-size: 1.1em;
-         /* Restaura o tamanho da fonte para desktop */
-        margin-bottom: 10px; /* Restaura a margem inferior para desktop */
+         
+        margin-bottom: 10px; 
     }
    
 
     .preco-parcelado {
-        font-size: 1em; /* Restaura o tamanho da fonte para desktop */
+        font-size: 1em; 
     }
 
     .preco-avista {
-        font-size: 1.1em; /* Restaura o tamanho da fonte para desktop */
+        font-size: 1.1em; 
     }
 
     .pai-A {
@@ -211,12 +211,12 @@ main h1 {
     opacity: .3;
   }
     .botoes-produto-container {
-        gap: 10px; /* Restaura o espaçamento entre os botões para desktop */
+        gap: 10px; 
     }
 
     .compra-agora, .view-button {
-        padding: 8px 15px; /* Restaura o padding dos botões para desktop */
-        font-size: 1em; /* Restaura o tamanho da fonte dos botões para desktop */
+        padding: 8px 15px; 
+        font-size: 1em; 
     }
 
 
@@ -224,18 +224,21 @@ main h1 {
         font-size: 2.5em;
     }
 
-     .slider-principal-home {
-      margin: 0 auto;
-        max-width: 75%;
-        
-        overflow: hidden;
-    }
+     
+   .slider-principal-home {
+    margin: 0 auto;
+    max-width: 99%;
+    height: 425px;
+    overflow: hidden;
+   }
 
-    .slider-principal-home img {
-      margin: 0 auto;
-      width: 100%;
-      
-    }
+  
+  .imgagem-one-slide img {
+    width: 99%;
+   
+    margin: 0 auto;
+  }
+
 
 
     #Serviços  .imgagem-one {
@@ -244,6 +247,8 @@ main h1 {
         
         
     }
+
+    
      .imgagem-one img {
       height: 360px;
       width: 100%;
@@ -295,19 +300,19 @@ main h1 {
       main.contato{
         background-color: var(--cor-vermelhoescuro);
         box-shadow: none;
-        margin-top: -20px;
+        margin-top: -5px;
         padding-top: -0px;
         
       }
 
       article.contato-mapa {
        padding-top: -30px;
-        width: 88ch;
+        width: 90%;
         height: 100%;
         margin: 0 auto;
         padding: 0;
         margin: 0 auto;
-        margin-left: -17px;
+      
         
       }
 
@@ -530,17 +535,17 @@ hr {
 
     article.contato-mapa {
        padding-top: -30px;
-        width: 97ch;
+        width: 96%;
         height: 100%;
         margin: 0 auto;
         padding: 0;
         margin: 0 auto;
-        margin-left: -20px;
+        
         
       }
 
       #Home {
-        margin-bottom: -10px;
+        margin-bottom: 40px;
       }
 
   
