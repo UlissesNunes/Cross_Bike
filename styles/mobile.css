@@ -2062,7 +2062,7 @@ hr {
 
 
   .marca-direitos-autorais {
-    background-color: #1d0303;
+    background-color: #4b0a0a;
     opacity: .9;
     display: flex;
     justify-content: center;
@@ -2091,6 +2091,10 @@ hr {
   strong {
     font-weight: bold;
     color: var(--cor-vermelhofooter);
+  }
+
+  .displayONFF {
+    display: none;
   }
 
 
