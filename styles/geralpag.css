@@ -1,0 +1,75 @@
+@media screen and (min-width: 1024px) {
+
+  body {
+    background: white;
+  }
+
+   .slider-principal-home {
+    margin: 0 auto;
+    max-width: 90%;
+    height: 485px;
+    
+  
+    overflow: hidden;
+   }
+
+  
+  .imgagem-one-slide img {
+    width: 99%;
+   
+    margin: 0 auto;
+  }
+
+
+ 
+    main {
+      background-color: rgb(255, 255, 255);
+    max-width: 850px;
+    padding: 0 10px;
+  }
+   
+      }
+
+  
+ 
+
+    #slogan {
+    font-size: 2em;
+  }
+
+    main h1 {
+    font-size: 3.5em;
+    font-size: 2.8em;
+    
+  }
+
+
+
+
+
+  
+
+
+  @media screen and (min-width: 1224px) {
+     .slider-principal-home {
+    margin: 0 auto;
+    max-width: 95%;
+    height: 585px;
+    
+  
+    overflow: hidden;
+   }
+
+
+
+    main {
+      background-color: rgb(255, 255, 255);
+    max-width: 950px;
+    padding: 0 10px;
+  }
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+  }
