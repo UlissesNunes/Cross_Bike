@@ -1153,7 +1153,8 @@ div.vip-containe {
 
 .produto-item-vip img {
     margin: 0 auto;
-    width: 100%; 
+    width: 80%; 
+    height: 300px;
     max-width: 450px; 
     display: block;
     filter: contrast(115%);
