@@ -211,9 +211,7 @@ animation: 20s AnimaçãoBanner  infinite linear ;
 position: relative;
 }
 
-.container-banner:hover .banner {
-    animation: 40s AnimaçãoBanner  infinite linear
-}
+
 
 .banner img {
     flex: 0 0 auto;
@@ -298,7 +296,7 @@ h1  {
     filter: contrast(115%);
 }
 .imgagem-one-slide img:hover {
-    transform: scale(1.01);
+    
     transition: all .3s linear;
     cursor: pointer;
 }
@@ -1150,8 +1148,11 @@ div.vip-containe {
     align-items: flex-start; 
   
 }
+ img.border {
+     border: 1px solid rgba(0, 0, 0, 0.500);
+}
 
-.produto-item-vip img {
+.produto-item-vip img{
     margin: 0 auto;
     width: 80%; 
     height: 250px;
@@ -1160,6 +1161,7 @@ div.vip-containe {
     filter: contrast(115%);
     border-radius: inherit;
     margin-bottom: 10px;
+   
 }
 
 .produto-detalhes-vip {

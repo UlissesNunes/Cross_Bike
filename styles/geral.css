@@ -11,6 +11,20 @@
   height: 470px;
 }
 
+.formas-pag {
+    background-color: var(--cor-vermelhoescuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .img-formas-pag {
+    width: 55%;
+    padding:1em;
+    cursor: pointer;
+  }
+
 }
 
 
@@ -18,8 +32,8 @@
 
 
   #Sobre, #Serviços {
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 1px;
+    margin-bottom: 1px;
    
   }
 
@@ -68,7 +82,8 @@
     }
   main {
     max-width: 850px;
-    padding: 0 10px 
+    padding: 0 10px; 
+    margin: 0 auto;
    }
 
 main h1 {
@@ -98,8 +113,8 @@ main h1 {
 
   }
  .div-imagem-satisfação .img-home {
-    width:220px;
-    height: 250px;
+    width:90%;
+    height: 90%;
   }
 
    .div-imagem-satisfação .img-bike-secund {
@@ -116,27 +131,20 @@ main h1 {
     color: var(--cor-vermelhoescuro);
   }
 
-  #Home {
-    margin-bottom: 10px;
-  }
-
+ 
  
   .conteiner-D {
-    width: 99%;
-    height: 570px;
+    
+    height: 550px;
     
     
   }
 
   .depoimentos-D h2 {
     font-size: 1.6em;
-    padding: 10px;
+   
   }
 
- .cards-D .cards-link-D {
-    margin-left: -10px;
-    width: 400px;
-  }
 
   .swiper-slide-buttton:hover {
     background-color: rgba(70, 8, 8, 0.103);
@@ -341,12 +349,134 @@ main h1 {
       }
 
 
+.footer__aba h3 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
+  }
 
+  
+  .footer__aba li {
+    margin-bottom: .9em;
+    
+  }
+  
+  .footer__aba a {
+    text-decoration: none;
+    color: var(--cor-amareloclaro);
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    gap: .4em;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__aba a:hover,
+  .footer__aba a:focus {
+    color: #a29034;
+    
+    transition: color 0.3s ease ;
+  }
+  
+  .material-symbols-outlined {
+    font-size: 2em;
+    
+  }
+
+  .formas-pag {
+    background-color: var(--cor-vermelhoescuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .img-formas-pag {
+    width: 55%;
+    padding:1em;
+    cursor: pointer;
+  }
+  .img-formas-ssl {
+    width:100px;
+    padding: 1.1em 1.5em;
+    cursor: pointer;
+    transition: all .3s linear;
+  }
+  
+
+  .displayONFF {
+    display: inline-block;
+    width: 95px;
+  }
+  
+  .ssl {
+    padding:8px 9px;
+    font-size: .65em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
+    margin: 0 auto;
+  }
+  
+
+    .img-formas-segurança {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    transition: all .3s linear;
+    }
+
+
+    .img-formas {
+    margin-left: 6px;
+    padding: 10px 0;
+    width: 12%;
+    max-width: 100px;
+    height: 100%;
+    cursor: pointer;
+    transition: all .3s linear;
+
+    }
+    .img-formas:hover {
+    transform: scale(1.28);
+    transition: all .5s linear;
+    }
+
+    
+
+    .marca-p-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
     }
-  
-     
+
+   
+
+
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: var(--cor-amareloclaro);
+    border: none;
+    margin: 0 auto;
+}
+
+
+    }
+
+   
 
 @media screen and (min-width: 1024px) {
   #Home , #Sobre, #Serviços {
@@ -530,6 +660,7 @@ hr {
 
 
   body {
+    transition: all .3s linear;
     background-image: linear-gradient(to bottom, #be3537, #4b0a0a 95%) ;
   }
   .slider-principal-home {
@@ -638,8 +769,8 @@ hr {
   
 
   .conteiner-D {
-    max-width: 849px;
-    margin-top: 15px;
+    max-width: 949px;
+    margin-top: 1px;
     
   }
 
@@ -652,17 +783,23 @@ hr {
 
 
   @media screen and (min-width: 1200px) {
+
+    #Home , #Sobre, #Serviços {
+    margin-top: 10px;
+    border-radius: 0px;
+    }
     
       .slider-principal-home {
     margin: 0 auto;
-    max-width: 99%;
-    height: 705px;
+    max-width: 89%;
+    height: 505px;
     overflow: hidden;
+   
    }
 
   
   .imgagem-one-slide img {
-    width: 99%;
+    width: 90%;
    
     margin: 0 auto;
   }
@@ -692,6 +829,10 @@ hr {
 
     main {
       max-width: 900px;
+    }
+
+    .div-imagem-satisfação > .img-home , .div-imagem-satisfação > .img-bike-secund {
+      display: none;
     }
     
     .produto-item {
@@ -729,7 +870,104 @@ hr {
     .preco-avista {
         font-size: 1.4em;
     }
+   
+
+    .conteiner-D {
+     
+        max-width: 1200px;
+        margin-top: 15px;
+    }
+
+    main p {
+        margin: 2px 0;
+       
+    }
+   .div-imagem-satisfação .satisfa {
+      width: 70%;
+      height: 70%;
+    }
     
+  }
+
+
+  @media screen and (min-width: 1400px) {
+
+     .slider-principal-home {
+    margin: 0 auto;
+    max-width: 93%;
+    height: 575px;
+    overflow: hidden;
+   
+   }
+
+  
+  .imgagem-one-slide img {
+    width: 77%;
+   
+    margin: 0 auto;
+  }  
+
+
+
+    .container-banner {
+        max-width: 2200px;
+        
+    }
+    .banner {
+        
+        width: 100%;
+        
+    }
+
+    #Home {
+      padding: 30px 0;
+    }
+
+    main {
+      max-width: 1000px;
+    }
+    
+    .produto-item {
+        height: 630px;
+        width: 100%;
+    }
+
+    .produto-item img {
+        max-width: 350px;
+        max-height: 250px;
+        padding: 30px;
+        margin-bottom: 10px;
+    }
+
+    .product-description {
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .breve-descricao {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .product-price {
+        font-size: 1.1em;
+
+        margin-bottom: 10px;
+    }
+
+    .preco-parcelado {
+        font-size: 1em;
+    }
+
+    .preco-avista {
+        font-size: 1.4em;
+    }
+
+    .conteiner-D {
+        max-width: 1450px;
+        margin-top: 5px;
+    }
+   
   }
   
 
