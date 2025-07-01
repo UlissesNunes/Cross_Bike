@@ -1149,8 +1149,10 @@ div.vip-containe {
   
 }
  img.border {
-     border: 1px solid rgba(0, 0, 0, 0.500);
+     border: 1px solid rgba(0, 0, 0, 0.050);
+     
 }
+
 
 .produto-item-vip img{
     margin: 0 auto;
@@ -1894,7 +1896,7 @@ main .contato {
   }
 
   .img-formas-pag {
-    width: 95%;
+    width: 75%;
     padding:1em;
     cursor: pointer;
   }
@@ -2010,11 +2012,23 @@ hr {
 }
 
 .dev-logo p {
-    font-size: .8em;
+    font-size: .75em;
     font-weight: bold;
     
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173);
+}
+
+.dev-logo p a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .3s linear;
+}
+.dev-logo p a:hover {
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.173);
+    text-decoration: underline;
+    transition: all .3s linear;
 }
 
 .parceria p {
@@ -2072,7 +2086,7 @@ hr {
     align-items: center;
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
-    padding: 1.2em 4px;
+    padding: 1.8em 4px;
     color: white;
     font-weight: 600;
     font-size: .7em;
@@ -2098,6 +2112,11 @@ hr {
 
   .displayONFF {
     display: none;
+  }
+
+  .chamada-mapa-pai:hover {
+    scale: 1.03;
+    transition: all .5s linear;
   }
 
 

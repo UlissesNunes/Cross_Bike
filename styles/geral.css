@@ -400,7 +400,7 @@ main h1 {
   }
 
   .img-formas-pag {
-    width: 55%;
+    width: 45%;
     padding:1em;
     cursor: pointer;
   }
@@ -555,7 +555,7 @@ hr {
   }
 
   .img-formas-pag {
-    width: 55%;
+    width: 45%;
     padding:1em;
     cursor: pointer;
   }
@@ -886,6 +886,20 @@ hr {
       width: 70%;
       height: 70%;
     }
+
+    .formas-pag {
+    background-color: var(--cor-vermelhoescuro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .img-formas-pag {
+    width: 35%;
+    padding:1em;
+    cursor: pointer;
+  }
     
   }
 
@@ -895,7 +909,7 @@ hr {
      .slider-principal-home {
     margin: 0 auto;
     max-width: 93%;
-    height: 575px;
+    height: 490px;
     overflow: hidden;
    
    }
@@ -925,6 +939,10 @@ hr {
 
     main {
       max-width: 1000px;
+    }
+
+    main p {
+      padding: 0 7%;
     }
     
     .produto-item {
