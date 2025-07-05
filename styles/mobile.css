@@ -2114,9 +2114,15 @@ hr {
     display: none;
   }
 
+  .chamada-mapa-pai{
+    transition: all .3s linear;
+  }
+
   .chamada-mapa-pai:hover {
-    scale: 1.03;
-    transition: all .5s linear;
+    scale: 1.01;
+    background-color: #e1b402;
+    
+    transition: all .6s linear;
   }
 
 
