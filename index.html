@@ -380,7 +380,16 @@
       </div>     -->
       
   
-      
+      <div id="modal-dinamico" class="modal">
+  <div class="modal-conteudo">
+    <span class="fechar-modal">&times;</span>
+    <img id="modal-imagem-produto" src="" alt="" class="modal-imagem">
+    <div class="modal-descricao">
+      <h2 id="modal-titulo-produto"></h2>
+      <p id="modal-texto-produto"></p>
+    </div>
+  </div>
+</div>
   
     <h2 class="destaque">Mais vendidos nas últimas 24h</h2>
   <div class="carousel-container">
@@ -403,7 +412,7 @@
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Caloi Ceci - Aro 26 - cor rosa')">Comprar Agora</a>
-                        <button class="carousel-button view-button" data-modal="modal-destaque-1">Ver Detalhes</button>
+                        <button class="carousel-button view-button" data-modal="modal-destaque-1" data-product-id="bicicleta-caloi-ceci-ROSA">Ver Detalhes</button>
                     </div>
                 </div>
             </div>
@@ -2210,6 +2219,8 @@
       <p class="marca-direitos-autorais"> Copyright &copy; 2025 Oficina CrossBike todos os direitos reservados <br> <br> CEP: 42840-000 | CNPJ: 11.185.346/0001-28 <br><br></p>
       
     </footer>
+    ~
+        <script src="./scripts/detalhesProduto.js"></script>
 
         <script src="./scripts/scrollMenu.js"></script>
 
