@@ -974,7 +974,7 @@ section img {
 
 .produto-item img {
   
-    height: 120px;
+    height: 150px;
     width: 100%;
     display: block;
     filter: contrast(120%);
@@ -1150,19 +1150,16 @@ section img {
 }
 
 
-
-/* Responsividade para telas menores (um produto por linha) */
 @media (max-width: 767px) {
     .produto-item {
         flex-basis: 100%;
     }
 
     .botoes-produto-container {
-        flex-direction: column; /* Coloca os botões em coluna no mobile */
+        flex-direction: column;
     }
 }
 
-/* Mantenha seus estilos existentes para navegação, modal, etc. */
 
 
 

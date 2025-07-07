@@ -21,6 +21,16 @@
     max-width: 100%;
     padding: 0 10px;
   }
+
+  .produto-item {
+    height: 480px;
+    width: 100%;
+  }
+
+  .produto-item img {
+    width: 200px;
+    height: 200px;
+  }
   
  }
 
@@ -109,4 +119,14 @@
     margin: 0 auto;
     
   }
+
+  .produto-item {
+    height: 100%;
+    width: 100%;
+  }
+
+  .produto-item img {
+    width: 250px;
+    height: 250px;
+  } 
 }
