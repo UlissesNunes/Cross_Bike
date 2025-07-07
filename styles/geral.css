@@ -946,8 +946,12 @@ hr {
     }
     
     .produto-item {
-        height: 630px;
+        height: 650px;
         width: 100%;
+    }
+
+    .tamanho-menor {
+      height: 505px;
     }
 
     .produto-item img {

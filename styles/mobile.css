@@ -2120,7 +2120,7 @@ hr {
 
   .chamada-mapa-pai:hover {
     scale: 1.01;
-    background-color: #e1b402;
+    background-color: #f3c304;
     
     transition: all .6s linear;
   }
