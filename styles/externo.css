@@ -958,7 +958,7 @@ section img {
 }
 
 .produto-item {
-    height: 480px;
+    height: 100%;
     background-color: #fffffe; 
     border-radius: 5px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.450);
@@ -1002,16 +1002,16 @@ section img {
 .product-description {
     font-size: 1em; 
     font-weight: bold;
-    color: var(--cor-vermelhoclaro); 
-    margin-bottom: 2px;
+    color: var(--cor-vermelhoclaro);
+    
     padding: 4px;
     margin-left: -5px; 
-    height: 50px;
+    height: 20px;
 }
 
 .breve-descricao {
     text-indent: 0px;
-    margin-bottom: -55px;
+    
     padding: 7px 1px;
     width: 100%;
     text-align: justify;
@@ -1087,15 +1087,15 @@ section img {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 65px;
+    height: 35px;
     width: 75px;
      margin-bottom: -10px;
   }   
 
    .pai-A img.estrelaA {
    flex: auto;
-    margin-top: 30px; 
-    margin-left: -7px;
+   
+    margin-left: -3px;
    
     height: 75px;
     opacity: .4;
