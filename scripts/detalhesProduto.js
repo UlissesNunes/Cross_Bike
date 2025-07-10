@@ -1,15 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-  // O CATÁLOGO DE PRODUTOS: Isso pode vir de um arquivo separado ou de uma API depois.
   const produtosData = {
 
-    "bicicleta-caloi-ceci-ROSA": { // Este é o 'data-product-id' que conecta com o HTML 
+    "bicicleta-caloi-ceci-ROSA": { //  conecta com o HTML 
         imagem: "produtos-bikes/image (3).png",
         titulo: "Bicicleta Caloi Ceci - Aro 26 - cor rosa",
-        descricao: "A bicicleta Caloi Ceci é perfeita para quem busca conforto e estilo. Com aro 26, é ideal para passeios urbanos e trilhas leves. Seu design moderno e cores vibrantes garantem destaque por onde passar. Feita com materiais de alta qualidade, oferece durabilidade e segurança."
+        descricao: "É perfeita para quem busca conforto e estilo. Feita com materiais de alta qualidade, oferece durabilidade e segurança."
     }
     ,
-    "guidom-prata": { // Este é o 'data-product-id' que conecta com o HTML
+    "guidom-prata": { // conecta com o HTML
       imagem: "produtos-acessorios/guidon-prata.webp",
       titulo: "Guidão esportivo | Cor prata | Alumínio",
       descricao: "Produto com um belo acabamento e confiabilidade. Ideal para quem busca performance e um toque de estilo na bicicleta. Feito com alumínio de alta qualidade, garante leveza e durabilidade. Marca nacional."
@@ -19,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       titulo: "Capacete de Ciclismo | Vermelho | Tamanho M",
       descricao: "Capacete aerodinâmico com ventilação otimizada, perfeito para longos passeios. Material resistente a impactos, com ajuste confortável. Design moderno e segurança garantida."
     },
-    // ... Aqui você adicionaria os dados dos seus MIL produtos ...
+    // os dados dos seus MIL produtos ...
   };
 
   // Pegando os elementos do modal (a "mesa de leitura")
