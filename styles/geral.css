@@ -1,11 +1,36 @@
 
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 300px)and (max-width: 360px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
     .container {
         width: 100%;
         padding: 0 10px;
     }
 
+    #Home, #Sobre, #Serviços {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color: white;
+        
+    }
+    section { 
+      width: 100%;
+    }
+    .banner {
+      width: 100%;
+      max-width: 100%;
+    }
+    
+main {
+    max-width: 100%;
+    padding: 0 10px; 
+    margin: 0 auto;
+}
     .depoimentos-D {
         max-width: calc(100% - 10px);
 }

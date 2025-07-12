@@ -517,7 +517,7 @@ span {
 
 .links-cta , .cta-Vip {
     
-    margin: 1px ;
+    margin: 10px 0 ;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1421,7 +1421,7 @@ span#mais > img {
     width: 100%;
     text-align: justify;
     text-align: left;
-    font-size: .65em; 
+    font-size: .7em; 
     color: #444;
     
 }
