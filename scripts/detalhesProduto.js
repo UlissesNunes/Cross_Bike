@@ -1,26 +1,53 @@
 document.addEventListener('DOMContentLoaded', () => {
   const produtosData = {
 
-    "bicicleta-caloi-ceci-ROSA": { //  conecta com o HTML 
-        imagem: "produtos-bikes/image (3).png",
-        titulo: "Bicicleta Caloi Ceci - Aro 26 - cor rosa",
-        descricao: "É perfeita para quem busca conforto e estilo. Feita com materiais de alta qualidade, oferece durabilidade e segurança."
-    }
-    ,
-    "guidom-prata": { // conecta com o HTML
-      imagem: "produtos-acessorios/guidon-prata.webp",
-      titulo: "Guidão esportivo | Cor prata | Alumínio",
-      descricao: "Produto com um belo acabamento e confiabilidade. Ideal para quem busca performance e um toque de estilo na bicicleta. Feito com alumínio de alta qualidade, garante leveza e durabilidade. Marca nacional."
-    },
-    "capacete-vermelho": {
-      imagem: "produtos-acessorios/capacete-vermelho.webp",
-      titulo: "Capacete de Ciclismo | Vermelho | Tamanho M",
-      descricao: "Capacete aerodinâmico com ventilação otimizada, perfeito para longos passeios. Material resistente a impactos, com ajuste confortável. Design moderno e segurança garantida."
-    },
-    // os dados dos seus MIL produtos ...
-  };
+   
 
-  // Pegando os elementos do modal (a "mesa de leitura")
+    "Bicicleta Absolute | aro 29": {
+      imagem: "produtos-bikes/image (6).webp",
+      titulo: "Bicicleta Aro 29 Absolute Azul/Rosa"
+      
+    },
+    
+    "Bicicleta EVOLO | aro 29 | Cor Amarela": {  
+        imagem: "produtos-bikes/bike-amarela-29.webp",
+        titulo: "Bicicleta EVOLO | aro 29 | Cor Amarela",
+        
+    },
+
+    "Bicicleta Caloi Ceci | aro 26 | Cor Verde": {  
+        imagem: "produtos-bikes/bike-verde-1200.png",
+        titulo: "Bicicleta Caloi Ceci | aro 26 | Cor Verde",
+        
+    },
+    "Bicicleta Caloi Ceci | aro 26 | Cor Azul": {  
+        imagem: "produtos-bikes/bike-azul1200.png",
+        titulo: "Bicicleta Caloi Ceci | aro 26 | Cor Azul",
+        
+    },
+    "Bicicleta Caloi Ceci | aro 26 | Cor Preto": {  
+        imagem: "produtos-bikes/image (3).png",
+        titulo: "Bicicleta Caloi Ceci | aro 26 | Cor Preto",
+        
+    },
+    "Bicicleta EVOLO | aro 29 | Cor Amarela": {  
+        imagem: "produtos-bikes/image (3).png",
+        titulo: "Bicicleta EVOLO | aro 29 | Cor Amarela",
+        
+    },
+    "Bicicleta EVOLO | aro 29 | Cor Amarela": {  
+        imagem: "produtos-bikes/image (3).png",
+        titulo: "Bicicleta EVOLO | aro 29 | Cor Amarela",
+        
+    },
+
+  
+
+
+    
+  }
+
+  
   const modalDinamico = document.getElementById('modal-dinamico');
   const modalImagem = document.getElementById('modal-imagem-produto');
   const modalTitulo = document.getElementById('modal-titulo-produto');
@@ -30,17 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Encontrando TODOS os botões "Ver Detalhes"
   document.querySelectorAll('.view-button').forEach(button => {
     button.addEventListener('click', () => {
-      const productId = button.dataset.productId; // Pega o ID do produto clicado (ex: "guidom-prata")
+      const productId = button.dataset.productId; // Pega o ID do produto clicado
       const produto = produtosData[productId]; // Busca os detalhes desse produto no "catálogo"
 
       if (produto) {
-        // Preenche a "mesa de leitura" com os detalhes do produto
+      
         modalImagem.src = produto.imagem;
         modalImagem.alt = produto.titulo;
         modalTitulo.textContent = produto.titulo;
         modalTexto.textContent = produto.descricao;
-
-        // Mostra a "mesa de leitura"
         modalDinamico.style.display = 'flex';
       }
     });

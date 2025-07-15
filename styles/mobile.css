@@ -1441,7 +1441,7 @@ span#mais > img {
     margin-top: 25px;
     margin-bottom: 3px;
     margin-left: 10px;
-    font-size: .8em; 
+    font-size: .75em; 
 }
 
 .product-price span {
@@ -1454,7 +1454,7 @@ span#mais > img {
     font-weight: bold;
     margin-left: -10px;
     margin-bottom: 10px;
-    font-size: .75em; 
+    font-size: .7em; 
     color: #777; 
     display: block;
      
@@ -1473,9 +1473,9 @@ span#mais > img {
 
 
 .preco-desconto-visual {
-    margin-left: -10px;
+    margin-left: -20px;
     margin-top: -10px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     font-size: .5em;
   color: rgba(0, 171, 0, 0.827);
  
@@ -2138,22 +2138,23 @@ hr {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, .9);
   justify-content: center;
   align-items: center;
 }
 
 .modal-conteudo {
   background-color: #fefefe;
-  padding: 20px;
-  border-radius: 8px;
+  padding: 0 10px;
+  border-radius: 10px;
   width: 90%;
+ 
   max-width: 900px;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border: 5px solid #dcbe2c;
+  border: 3px solid #dcbe2c;
 }
 
 .modal-imagem {
@@ -2166,14 +2167,17 @@ hr {
 }
 
 .modal-descricao {
-  
+  padding: 10px 0;
   text-align: left;
  
 }
 
 .modal-descricao h2 {
   margin-top: 0;
-  color: var(--cor-amarelalogo);
+  color: #444;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173);
 }
 
 .modal-descricao p {
@@ -2182,7 +2186,7 @@ hr {
 }
 
 .fechar-modal {
-  color: #aaa;
+  color: #aaaaaa00;
   font-size: 28px;
   font-weight: bold;
   position: absolute;

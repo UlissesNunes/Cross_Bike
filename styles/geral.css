@@ -1,20 +1,26 @@
 
 
-@media screen and (min-width: 300px)and (max-width: 360px) {
+@media screen and (max-width: 360px) {
 
   body {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+  section {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
     .container {
-        width: 100%;
+       
         padding: 0 10px;
     }
 
     #Home, #Sobre, #Serviços {
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin: 0px;
+        
         background-color: white;
         
     }
@@ -30,6 +36,10 @@ main {
     max-width: 100%;
     padding: 0 10px; 
     margin: 0 auto;
+    width: 100%;
+}
+.qualidade-selo-D {
+  display: none;
 }
     .depoimentos-D {
         max-width: calc(100% - 10px);
