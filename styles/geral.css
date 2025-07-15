@@ -193,7 +193,7 @@ main h1 {
     
 
     .produto-item {
-  height: 630px;
+  height: 100%;
   width: 100%;
 }
 
@@ -973,7 +973,7 @@ hr {
     }
     
     .produto-item {
-        height: 650px;
+        height: 100%;
         width: 100%;
     }
 
@@ -994,7 +994,7 @@ hr {
     }
 
     .breve-descricao {
-        font-size: 1.2em;
+        font-size: 1em;
         margin-bottom: 10px;
     }
 
