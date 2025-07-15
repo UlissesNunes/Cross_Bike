@@ -26,20 +26,144 @@ document.addEventListener('DOMContentLoaded', () => {
         
     },
     "Bicicleta Caloi Ceci | aro 26 | Cor Preto": {  
-        imagem: "produtos-bikes/image (3).png",
+        imagem: "produtos-bikes/bike-preta-branca-1200.png",
         titulo: "Bicicleta Caloi Ceci | aro 26 | Cor Preto",
         
     },
-    "Bicicleta EVOLO | aro 29 | Cor Amarela": {  
-        imagem: "produtos-bikes/image (3).png",
-        titulo: "Bicicleta EVOLO | aro 29 | Cor Amarela",
+    "Bicicleta EVOLO | aro 29 | Cor Preto/Roxo": {  
+        imagem: "produtos-bikes/bike-preto-roxo-29.webp",
+        titulo: "Bicicleta EVOLO | aro 29 | Cor Preto/Roxo",
         
     },
-    "Bicicleta EVOLO | aro 29 | Cor Amarela": {  
-        imagem: "produtos-bikes/image (3).png",
-        titulo: "Bicicleta EVOLO | aro 29 | Cor Amarela",
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
         
     },
+//DAQUI PRA BAIXO TEM QUE ACERTAR!!!!!!!!!
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+
+
+
 
   
 
