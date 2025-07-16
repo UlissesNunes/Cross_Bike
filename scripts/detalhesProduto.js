@@ -40,135 +40,156 @@ document.addEventListener('DOMContentLoaded', () => {
         titulo: "Bicicleta aro 26 | Cor Laranja",
         
     },
-//DAQUI PRA BAIXO TEM QUE ACERTAR!!!!!!!!!
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-    "Bicicleta aro 26 | Cor Laranja": {  
-        imagem: "produtos-bikes/bike-laranja-26.png",
-        titulo: "Bicicleta aro 26 | Cor Laranja",
-        
-    },
-
-
-
-
-
-  
-
-
     
+    "Bicicleta Infantil | cor vermelha": {  
+        imagem: "imagens/bike-infantil-redimencionada.webp",
+        titulo: "Bicicleta Infantil | aro 16 | Cor Vermelha",
+        
+    },
+
+    "Quadro para bikes multicores": {  
+        imagem: "imagens/bikes-quadro-redimencionada.webp",
+        titulo: "Quadros para Bikes",
+        
+    },
+"Bicicleta aro 26 | Cor Branca": {  
+        imagem: "produtos-bikes/bike-branca-26.png",
+        titulo: "Bicicleta aro 26 | Cor Branca",
+        
+    },
+   
+
+    "Bicicleta aro 26 | Cor Verde": {  
+        imagem: "produtos-bikes/bike-verde-26.png",
+        titulo: "Bicicleta aro 26 | Cor Verde",
+        
+    },
+
+    "Garrafas de plástico squeeze PTK": {  
+        imagem: "produtos-acessorios/garrafa-trio.webp",
+        titulo: "Garrafas de plástico squeeze PTK",
+        
+    },
+
+    "Pedal de alumínio | Cor Prata": {  
+        imagem: "produtos-acessorios/pedal-prata.webp",
+        titulo: "Pedal de alumínio | Cor Prata",
+        
+    },
+
+    "Câmara de ar Pirelli | aro 20/22/24/26/29": {  
+        imagem: "produtos-acessorios/camara-de-ar-pirelli.webp",
+        titulo: "Câmara de ar Pirelli | aro 20/22/24/26/29",
+        
+    },
+
+    "Câmara de ar Kenda | aro 20/22/24/26/29": {  
+        imagem: "produtos-acessorios/camara-de-ar-kenda.webp",
+        titulo: "Câmara de ar Kenda | aro 20/22/24/26/29",
+        
+    },
+
+    "Bicicleta aro 26 | Cor Laranja": {  
+        imagem: "produtos-bikes/bike-laranja-26.png",
+        titulo: "Bicicleta aro 26 | Cor Laranja",
+        
+    },
+
+    "Guidom esportivo | Cor prata | Alumínio": {  
+        imagem: "produtos-acessorios/guidon-prata.webp",
+        titulo: "Guidom esportivo | Cor prata | Alumínio",
+        
+    },
+
+    " Guidom esportivo Alumínio Reto | Cor preto": {  
+        imagem: "produtos-acessorios/guidon-preto (2).webp",
+        titulo: " Guidom esportivo Alumínio Reto | Cor preto",
+        
+    },
+
+    "Cadeado De Segredo Evolo | C/ senha": {  
+        imagem: "produtos-acessorios/cadeado-evelo-amplo.webp",
+        titulo: "Cadeado De Segredo Evolo | C/ senha",
+        
+    },
+
+    "Câmara de ar Lerovrin | aro 20/26": {  
+        imagem: "produtos-acessorios/camara-de-ar-levorin.webp",
+        titulo: "Câmara de ar Lerovrin | aro 20/26",
+        
+    },
+
+    "Mesa Monaco para Bikes": {  
+        imagem: "produtos-acessorios/mesa-sport.webp",
+        titulo: "Mesa Monaco para Bikes",
+        
+    },
+
+    "Movimento Central e rosca": {  
+        imagem: "produtos-acessorios/movimento-central-e-rosca-removebg-preview.webp",
+        titulo: "Movimento Central e rosca",
+        
+    },
+
+    " Corrente para Bikes sem marcha": {  
+        imagem: "produtos-acessorios/corrente-evolo-bike-removebg-preview.webp",
+        titulo: " Corrente para Bikes sem marcha",
+        
+    },
+
+    "Corrente YBN de marcha para Bikes": {  
+        imagem: "produtos-acessorios/corrente-de-marcha-removebg-preview.webp",
+        titulo: "Corrente YBN de marcha para Bikes",
+        
+    },
+
+    "Tubo de rolamento": {  
+        imagem: "produtos-acessorios/tubo-de-enrolamento-removebg-preview.webp",
+        titulo: "Tubo de rolamento",
+        
+    },
+
+    "Corrente de 9 Velocidades": {  
+        imagem: "produtos-acessorios/corrente-9velocidades-removebg-preview.webp",
+        titulo: "Corrente de 9 Velocidades",
+        
+    },
+
+    "Cadeado Evolo C/ chave | P": {  
+        imagem: "produtos-acessorios/cadeado-evelo-amplo.webp",
+        titulo: "Cadeado Evolo C/ chave | P",
+        
+    },
+
+    "Cadeado Evolo Amplo C/chaves | G": {  
+        imagem: "produtos-acessorios/cadeado-evolo-chaves.webp",
+        titulo: "Cadeado Evolo Amplo C/chaves | G",
+        
+    },
+
+    " Catraca 24 Dentes | Inviktus": {  
+        imagem: "produtos-acessorios/catraca-24dentes-inviktus.webp",
+        titulo: " Catraca 24 Dentes | Inviktus",
+        
+    },
+
+    " Garrafa Termica PTK | Cor branco": {  
+        imagem: "produtos-acessorios/garrafa-branca.webp",
+        titulo: " Garrafa Termica PTK | Cor branco",
+        
+    },
+
+    "Catraca 20 Dentes | EVOLO": {  
+        imagem: "produtos-acessorios/catraca-20dentes-evolo-removebg-preview.webp",
+        titulo: "Catraca 20 Dentes | EVOLO",
+        
+    },
+
+    "Catraca 22 Dentes Shiftech": {  
+        imagem: "produtos-acessorios/catraca-22dentes-shiftech-removebg-preview.webp",
+        titulo: "Catraca 22 Dentes Shiftech",
+        
+    },  
   }
 
   
