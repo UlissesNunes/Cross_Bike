@@ -625,6 +625,132 @@ del {
 
 
 
+ #Contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    
+  }
+
+.contato-mapa {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    
+    margin: 0 auto;
+    padding: 0 0 0 0;
+    text-align: center;
+    border-radius: 2%;
+    
+}
+
+.chamada-mapa-pai {
+    margin-top: -20px;
+     margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 99%;
+    max-width: 1200px;
+    background-color: var(--cor-amareloclaro);
+    padding: 1px 0;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.chamada-mapa-pai a > img {
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    margin-bottom: -7px;
+}
+
+
+
+.chamada-mapa-pai a {
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.223);
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-vermelhoescuro);
+    font-size: 1em;
+    margin: 3px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.123);
+    transition: all .8s linear;
+}
+
+.chamada-mapa-pai a:hover {
+    
+    border-radius: 5px;
+    transition: all .5s ease-in;
+    animation:  7s linear infinite;
+   
+}
+
+div.mapa {
+   
+    margin: 20px 0px;
+    width: 100%;
+    border-radius: 2%;
+}
+
+div.mapa iframe {
+    width: 100%;
+    height: 280px;
+    border-radius: 2%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
+
+}
+
+div.Destaque {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+
+p.destaque {
+    
+    text-align: center;
+    margin:30px;
+}
+
+
+
+h2.destaque {
+    flex: auto;
+    font-size: 1.3em;
+    background: linear-gradient( #000000 20%, #be3537);
+    background-clip: text;
+    color: transparent;
+    
+    padding: 10px 0;
+    
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
+    font-weight: bold;
+    text-align: center;
+}
+
+#slogan {
+    font-size: 1.4em;
+    margin-top: -10px;
+    padding-bottom: 20px;
+    background: linear-gradient(90deg, #be3537 60%, #dcbe2c);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
+}
+
 main .contato {
     background-color: var(--cor-vermelhoescuro);
    
@@ -661,7 +787,7 @@ main .contato {
   }
   
   .footer__aba li {
-    margin-bottom: 0.8em;
+    margin-bottom: 0.9em;
     
   }
   
@@ -703,13 +829,13 @@ main .contato {
   }
 
   .img-formas-pag {
-    width: 98%;
-    padding:.9em;
+    width: 75%;
+    padding:1em;
     cursor: pointer;
   }
   .img-formas-ssl {
-    width:27%;
-    padding: 2em;
+    width:100px;
+    padding: 2em 1.45em;
     cursor: pointer;
     transition: all .3s linear;
   }
@@ -717,16 +843,16 @@ main .contato {
     transform: scale(1.05);
     transition: all .3s linear;
   }
-
+  
   .ssl {
-    padding: 7.5px;
-    font-size: .8em;
+    padding:8px 9px;
+    font-size: .65em;
     font-weight: bold;
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
     margin: 0 auto;
   }
-
+    
   .ssl a {
     text-decoration: none;
     color: white;
@@ -745,6 +871,21 @@ main .contato {
     font-weight: bold;
     }
 
+    .img-formas-segurança {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    transition: all .3s linear;
+    }
+
+    .img-formas-segurança:hover {
+    transform: scale(1.05);
+    transition: all .3s linear;
+    
+    }
+
     .img-formas {
     margin-left: 6px;
     padding: 10px 0;
@@ -760,6 +901,18 @@ main .contato {
     transition: all .5s linear;
     }
 
+    
+
+    .marca-p-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    }
+
+   
+
 
 hr {
     width: 100%;
@@ -769,21 +922,46 @@ hr {
     margin: 0 auto;
 }
 
-
+  .container-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+    padding: 1em; 
+    background: var(--cor-vermelhofooter);
+    color: #fff;
+    text-align: center;
+    
+}
 
 .dev-logo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
 }
 
 .dev-logo p {
-    font-size: .8em;
+    font-size: .75em;
     font-weight: bold;
     
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173);
+}
+
+.dev-logo p a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all .3s linear;
+}
+.dev-logo p a:hover {
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.173);
+    text-decoration: underline;
+    transition: all .3s linear;
 }
 
 .parceria p {
@@ -795,104 +973,181 @@ hr {
 
 }
 
+
 .img-footer {
-    max-width: 90px; 
+    max-width: 220px; 
     height: auto; 
     transition: all .3s linear;
 }
 
 .img-footer:hover {
-    transform: scale(1.05);
-    transition: all .3s linear;
+    background-color: #4a070766;
+    box-shadow: inset  0 0 3px var(--cor-vermelhoclaro);
+    border-radius: 50%;
+    transform: scale(1.08);
+    transform: rotate(1, 1, 0, 35deg);
+    transition: all .4s linear;
 }
 
-.img-marca-footer {
-    max-width: 195px; 
-    height: auto;
-}
 
-.marca-logo-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  
-}
+
+
+
+
 .marca-logo-footer p {
-    font-size: .7em;
+    font-size: .8em;
     font-weight: bold;
-    margin-bottom: -3em;
-    margin-top: -1.5em;
+    
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
     color: var(--cor-amareloclaro);
-    opacity: .7;
-    background-color: var(--cor-vermelhofooter);
+    opacity: .8;
+    margin: 0 auto;
+    
     
 }
-.marca-logo-footer img {
-    max-width: 130px; 
-    height: auto; 
-    transition: all .3s linear;
-}
+ .marca-logo-footer img {
+    width: 150px;
+ }
+
 
   .marca-direitos-autorais {
-    background-color: #1d0303;
+    background-color: #2d0606;
     opacity: .9;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
-    padding: 2em 0;
+    padding: 1.8em 4px;
     color: white;
     font-weight: 600;
-    font-size: .9em;
+    font-size: .7em;
   }
+
+ 
 
   .button-sobre-div {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 10px;
     margin-top: 2px;
     margin-bottom: 20px;
   }
 
-  .sobre-botao {
-    background-color: var(--cor-amareloclaro);
-    color: var(--cor-vermelhoclaro);
+ 
+
+  strong {
     font-weight: bold;
-    border-radius: 5%;
-    padding: 10px;
-    font-size: .9em;
-    text-decoration: none;
-    text-align: center;
-    border: none;
-    cursor: pointer;
+    color: var(--cor-vermelhofooter);
+  }
+
+  .displayONFF {
+    display: none;
+  }
+
+  .chamada-mapa-pai{
     transition: all .3s linear;
   }
-    .sobre-botao:hover {
-        background-color: var(--cor-vermelhoclaro);
-        color: var(--cor-amareloclaro);
-        transition: all .3s linear;
-        transform: scale(1.03);
-    }
 
-
-  span#mais {
+  .chamada-mapa-pai:hover {
+    scale: 1.01;
+    background-color: #f3c304;
     
-    display: none;
-    color: black;
-    font-weight: normal;
+    transition: all .6s linear;
   }
 
+  .modal {
+  display:none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, .9);
+  justify-content: center;
+  align-items: center;
+}
 
-  span.saltar {
-    margin-left: 10px;
-    color: black;
-    font-weight: normal;
-    
+.modal-conteudo {
+  background-color: #fefefe;
+  padding: 0 10px;
+  border-radius: 10px;
+  width: 90%;
+ 
+  max-width: 900px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 3px solid #dcbe2c;
+}
+
+.modal-imagem {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 4px;
+  
+}
+
+.modal-descricao {
+  padding: 10px 0;
+  text-align: left;
+ 
+}
+
+.modal-descricao h2 {
+  margin-top: 0;
+  color: #444;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173);
+}
+
+.modal-descricao p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.fechar-modal {
+  color: #aaaaaa00;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.fechar-modal:hover,
+.fechar-modal:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .modal-conteudo {
+    flex-direction: row;
   }
+
+  .modal-imagem {
+    width: 50%;
+  }
+
+  .modal-descricao {
+    width: 50%;
+  }
+}
+
+
+
+
 
   strong {
     font-weight: bold;
