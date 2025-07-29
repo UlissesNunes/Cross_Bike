@@ -484,13 +484,10 @@
           <img src="../imagens/crossbike-redimensionada.png" alt="" />
           <p>Desde 2004</p>
         </div>
-
-        <aside>
-                    <div class="container-links"> 
+     <aside>   <div class="container-links"> 
                       <a href="https://wa.me/5571987261711" target = "_blank" rel="external">Não achou seu produto? Estamos no Whatsapp</a>
                     </div>     
                   </aside>
-
         <div class="footer__aba">
           <ul>
             <li>
@@ -510,8 +507,7 @@
               <a
                 href="https://www.instagram.com/oficina_cross_bike/"
                 target="_blank"
-                rel="external"
-              >
+                rel="external" >
                 <span class="material-symbols-outlined">photo_camera</span>
                 Instagram
               </a>
@@ -521,7 +517,6 @@
       </article>
     </section>
     <hr />
-
     <section class="formas-pag">
       <img
         src="../imagens/lyra_media_pack_1.png"
@@ -530,7 +525,6 @@
       />
     </section>
     <hr />
-
     <section class="formas-pag">
       <p class="ssl">Site protegido por :</p>
       <img src="../imagens/ssl.png" alt="" class="img-formas-ssl" />
@@ -538,7 +532,6 @@
 
       <p class="ssl">ssl | https | +4</p>
     </section>
-
     <footer>
       <div class="container-footer">
         <div class="dev-logo">
@@ -562,100 +555,8 @@
         CEP: 42840-000 | Cnpj: 11.185.346/0001-28 <br /><br />
       </p>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
     <script src="../scripts/compreWhats.js"></script>
-
     <script src="../scripts/swiper.js"></script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const carousels = document.querySelectorAll(".carousel-container");
-
-        carousels.forEach((carousel) => {
-          const slides = carousel.querySelectorAll(".carousel-slide");
-          const navigationLabels = carousel.querySelectorAll(
-            ".carousel-navigation label"
-          );
-          const viewButtons = carousel.querySelectorAll(".view-button");
-          let currentIndex = 0;
-          let intervalId;
-          const intervalTime = 18000; // Troca de slide a cada 18 segundos
-
-          function showSlide(index) {
-            slides.forEach((slide) => slide.classList.remove("active"));
-            slides[index].classList.add("active");
-
-            if (navigationLabels.length > 0) {
-              navigationLabels.forEach((label) =>
-                label.classList.remove("active")
-              );
-              navigationLabels[index].classList.add("active");
-            }
-          }
-
-          function nextSlide() {
-            currentIndex = (currentIndex + 1) % slides.length;
-            showSlide(currentIndex);
-          }
-
-          function startCarousel() {
-            intervalId = setInterval(nextSlide, intervalTime);
-          }
-
-          function stopCarousel() {
-            clearInterval(intervalId);
-          }
-
-          // Inicializa o carrossel
-          if (slides.length > 0) {
-            showSlide(currentIndex);
-            startCarousel();
-          }
-
-          // Navegação manual (se houver)
-          navigationLabels.forEach((label, index) => {
-            label.addEventListener("click", () => {
-              stopCarousel();
-              currentIndex = index;
-              showSlide(currentIndex);
-              startCarousel();
-            });
-          });
-
-          // Funcionalidade dos modais
-          viewButtons.forEach((button) => {
-            button.addEventListener("click", () => {
-              const modalTargetId = button.getAttribute("data-modal");
-              const modal = document.getElementById(modalTargetId);
-              if (modal) {
-                modal.style.display = "flex"; // Alterado para 'flex' para usar o display flex do modal
-                stopCarousel(); // Parar o carrossel ao abrir o modal
-              }
-            });
-          });
-
-          const closeButtons = document.querySelectorAll(".close-button");
-          closeButtons.forEach((button) => {
-            button.addEventListener("click", () => {
-              const modal = button.closest(".modal");
-              if (modal) {
-                modal.style.display = "none";
-                startCarousel(); // Reiniciar o carrossel ao fechar o modal
-              }
-            });
-          });
-
-          // Fechar o modal ao clicar fora da área do conteúdo
-          window.addEventListener("click", (event) => {
-            if (event.target.classList.contains("modal")) {
-              event.target.style.display = "none";
-              startCarousel(); // Reiniciar o carrossel ao fechar o modal
-            }
-          });
-        });
-      });
-    </script>
   </body>
 </html>
