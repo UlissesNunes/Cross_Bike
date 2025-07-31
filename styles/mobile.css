@@ -233,8 +233,6 @@ position: relative;
     flex-shrink: 0;
     margin-right: 100px; 
 }
-
-/*  PROBLEMA DE CONTEÚDO É TODO DO MAIN POIS ELE ESTÁ COM O HEIGHT QUE DIFICULTA O SCRIPT, E SE ESTIVER PEQUENO O MAIN FICA EM ESTADO DE VAZAMENTO  */
 main {
     box-shadow: 5px 2px 1px rgba(0, 0, 0, 0.163);
     background-color: #ffffff;
@@ -242,13 +240,10 @@ main {
     justify-content: center;
     align-items: center;
     height: 100%;
-    width: 99%;
-    
+    width: 99%;   
     border-radius: 1%;
     margin-top: 0px;
-
 }
-
 h1  {
     text-align: center;
     flex: auto;
@@ -266,12 +261,12 @@ h1  {
 
 .slider-principal-home {
    
-    width: 100%;
+    width: 99%;
     height: 90%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-   
+    background-color: #333;
 }
 
 .slides-inputs{
@@ -294,7 +289,7 @@ h1  {
 .imgagem-one-slide img {
     width: 100%;
     border-radius: 3% 3% 0% 0%;
-    
+   
     filter: contrast(115%);
 }
 .imgagem-one-slide img:hover {
@@ -1986,7 +1981,7 @@ main .contato {
 
 
 hr {
-    width: 100%;
+    width: 97%;
     height: 1px;
     background-color: var(--cor-amareloclaro);
     border: none;
@@ -2200,6 +2195,39 @@ hr {
 .fechar-modal:focus {
   color: #000;
   text-decoration: none;
+}
+
+@media screen and (max-width: 331px) {
+  .modal-conteudo {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .modal-imagem {
+    max-height: 300px;
+  }
+
+  .modal-descricao {
+    padding: 5px;
+  }
+
+  .imgagem-one {
+    width: 100%; /* A imagem deve ocupar a largura total do seu contêiner */
+    max-width: 100%; /* Garante que ela não ultrapasse o contêiner */
+    height: auto; /* Essencial para manter a proporção */
+    padding: 5px; /* Adiciona um pequeno padding interno */
+    box-sizing: border-box;
+    margin: 10px 0; /* Espaçamento vertical */
+}
+.imgagem-one img { /* Aplica diretamente na tag img dentro de .imgagem-one */
+    width: 100%;
+    height: auto;
+    display: block; /* Remove espaços extras se for inline */
+    border-radius: 2%; /* Se quiser manter um pouco de borda */
+    filter: contrast(110%); /* Mantém o filtro */
+    object-fit: contain; /* Ou 'cover', dependendo de como quer o preenchimento */
+}
+    
 }
 
 @media (min-width: 768px) {
