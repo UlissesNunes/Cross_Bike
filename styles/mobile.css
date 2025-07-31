@@ -2227,6 +2227,27 @@ hr {
     filter: contrast(110%); /* Mantém o filtro */
     object-fit: contain; /* Ou 'cover', dependendo de como quer o preenchimento */
 }
+h1 {
+    font-size: 2.1em;
+    margin-bottom: 10px;
+    
+    text-align: center;
+}
+
+#slogan {
+    font-size: 1.2em;
+    margin-top: -8px;
+    padding-bottom: 11px;
+   
+}
+
+.links-cta {
+    width: 90%;
+}
+hr{width: 90%;}
+p{
+    font-size: .9em;
+}
     
 }
 
