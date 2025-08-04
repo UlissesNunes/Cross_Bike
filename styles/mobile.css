@@ -5,32 +5,23 @@
     --cor-vermelhoescuro: #620b0b;
     --cor-vermelhofooter: #460808;   
 }
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'arial', sans-serif;
-   
+    font-family: 'arial', sans-serif;  
 }
-
-
-
 body {
-   margin: 0;
+    margin: 0;
     padding: 0;
-   background-image: linear-gradient(to bottom, #be3537 30%, #280303);
-    height: 100%;
-    
-    font-size: 1em;
-    
+    background-image: linear-gradient(to bottom, #be3537 30%, #280303);
+    height: 100%;    
+    font-size: 1em;  
 }
-
 html { 
     font-size: 99%;
     scroll-behavior: smooth;
 }
-
 header{
     position: sticky;
     top: 0 ;
@@ -40,7 +31,6 @@ header{
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.250);
     z-index: 2023;
 }
-
 header .container-header{
     display: flex;
     justify-content: space-between;
@@ -49,111 +39,73 @@ header .container-header{
     max-width: 1200px;
     margin: 0 auto;    
 }
-
  header nav ul {
         display: flex;
         gap: .3em; 
 }
-
 header nav ul li a {
        margin-right: 2px;
         color: /*#ffefef;*/ var(--cor-vermelhoclaro);
         font-size: .8em;
         font-weight: bold;
         text-shadow: 1 1px 2px rgba(0, 0, 0, 0.748);
-        transition: all .5s ease-in;
-       
+        transition: all .5s ease-in;      
 }
 a {
     text-decoration: none;
     padding: 5px;
     display: flex;
-   
 }
-
-header nav ul li a:hover {
-    
+header nav ul li a:hover {   
         border-radius: 5px;
         transition: all .5s ease-in;
         animation:  11s linear infinite;
-         
-
-       
 }
-
 header nav ul li a.active {
         color: #fff4c2;
        background-image: linear-gradient(to bottom, var(--cor-vermelhoclaro) 1%, transparent) ;
         border-radius: 5px;
-        transition: all .5s ease-in;
-      
+        transition: all .5s ease-in;     
 }
-
-
-
 header img {
     display: flex;
     justify-content: flex-start;
     max-width: 110px;
     height: auto;  
 }
-
-
-
-
 ul {
 list-style: none;
 }
-
 .section {
     width: 100%;
     min-height: calc(100vh - .9em); 
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: white;
-   
-    
-    
-    
-   
-    
+    background-color: white;   
 }
-
 #Home{
    background-color: var(--cor-vermelhoclaro);
     align-items: flex-start;
     margin-bottom: -12px;
-    padding-top: 3px;
-    
-    
+    padding-top: 3px;       
 }
 #Serviços{
    margin-top: 10px;
    margin-bottom: 10px;
     background-image: linear-gradient(to bottom, #be3537 80%, #620b0b);
     align-items: center;
-    
 }
 #Sobre{
     margin-top: 10px;
-   
     background: var(--cor-vermelhoescuro);
-    align-items: center;
-    
-   
-    
+    align-items: center;   
 }
 #Contato{
     padding-top: 20px;
-   
     background-color: var(--cor-vermelhoescuro);
      align-items: flex-start;
-     
-
 }
-
-
 .container-footer {
     display: flex;
     justify-content: center;
@@ -168,18 +120,10 @@ list-style: none;
     color: #fff;
     font-size: 1em;
 }
-
 @keyframes AnimaçãoBanner {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-80%);
-    }
-    
+    0% {transform: translateX(0);}
+    100%{transform: translateX(-80%);}
 }
-
-
 .container-banner {
     display: flex;
     justify-content: flex-start;
@@ -2196,9 +2140,7 @@ hr {
   color: #000;
   text-decoration: none;
 }
-
 a.destaque {    
- 
     margin-bottom: -30px;
     color: var(--cor-vermelhoescuro);
     font-weight: bold;
@@ -2213,7 +2155,6 @@ a.destaque:hover {
     color: var(--cor-vermelhoclaro);
     transition: background-color 0.9s ease, color 0.3s ease;
 }
-
 #Sobre a , .a{
     text-decoration: underline;
    color: rgb(57, 57, 57);
