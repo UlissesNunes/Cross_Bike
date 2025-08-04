@@ -2154,7 +2154,7 @@ hr {
 
 .modal-imagem {
   width: 100%;
-  height: auto;
+  height: 250px;
   max-height: 500px;
   object-fit: contain;
   border-radius: 4px;
@@ -2197,35 +2197,65 @@ hr {
   text-decoration: none;
 }
 
+a.destaque {    
+ 
+    margin-bottom: -30px;
+    color: var(--cor-vermelhoescuro);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, color 0.3s ease;
+    margin-top: 10px;
+}
+a.destaque:hover {
+    border-radius: 5%;
+    background-color: var(--cor-amareloclaro) ;
+    color: var(--cor-vermelhoclaro);
+    transition: background-color 0.9s ease, color 0.3s ease;
+}
+
+#Sobre a , .a{
+    text-decoration: underline;
+   color: rgb(57, 57, 57);
+    font-weight: bold;
+    transition: color 0.3s ease;
+    margin: 0px;
+    display: inline-block;
+    padding: 0px
+}
+
+#Sobre a:hover , .a:hover {
+    color: var(--cor-vermelhoclaro);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
 @media screen and (max-width: 331px) {
   .modal-conteudo {
     width: 95%;
     padding: 10px;
   }
-
   .modal-imagem {
     max-height: 300px;
   }
-
   .modal-descricao {
     padding: 5px;
   }
-
   .imgagem-one {
-    width: 100%; /* A imagem deve ocupar a largura total do seu contêiner */
-    max-width: 100%; /* Garante que ela não ultrapasse o contêiner */
-    height: auto; /* Essencial para manter a proporção */
-    padding: 5px; /* Adiciona um pequeno padding interno */
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+    padding: 5px; 
     box-sizing: border-box;
-    margin: 10px 0; /* Espaçamento vertical */
+    margin: 10px 0; /
 }
-.imgagem-one img { /* Aplica diretamente na tag img dentro de .imgagem-one */
+.imgagem-one img { 
     width: 100%;
     height: auto;
-    display: block; /* Remove espaços extras se for inline */
-    border-radius: 2%; /* Se quiser manter um pouco de borda */
-    filter: contrast(110%); /* Mantém o filtro */
-    object-fit: contain; /* Ou 'cover', dependendo de como quer o preenchimento */
+    display: block; 
+    border-radius: 2%; 
+    filter: contrast(110%); 
+    object-fit: contain; 
 }
 h1 {
     font-size: 2.1em;
