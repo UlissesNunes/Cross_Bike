@@ -1,197 +1,126 @@
-
-@media screen and (max-width:330px) {
-  .not {
-    display: none;
-  }
-}
-
-
-
+@media screen and (max-width:330px) {.not {display: none;}}
 @media  screen and (min-width: 740px) {
-
 
   #Sobre, #Serviços {
     margin-top: 1px;
     margin-bottom: 1px;
-   
   }
-
- 
-  
    #Serviços{
     border-radius: 1%;
    margin-top: 20px;
-   margin-bottom: 0px;
-    
-    
-  }
- 
-  
-    
-  
+   margin-bottom: 0px;    
+  } 
    header nav ul li a{
     font-size: 1em;
     gap: 30px;
     margin-right: 10px;
-  }
-
+   }
   header img {
    height: 150px;
     width: 240px;
   }
-
   .banner {
     height: 20px;
   }
-
   .banner p {
-    font-size: 1.2em;
-    
+    font-size: 1.2em; 
   }
-
- 
  .container {
         width: 100%;
         padding: 0 10px;
-    }
-    
+    } 
     .depoimentos-D {
       border-radius: 1%;
-        max-width: calc(100% - 17px);
+      max-width: calc(100% - 17px);
     }
   main {
     max-width: 850px;
     padding: 0 10px; 
     margin: 0 auto;
    }
-
 main h1 {
     font-size: 3em;
-    
   }
-
     #slogan {
     font-size: 1.6em;
   }
-
   main p {
-    font-size: 1.1em;
-    
-    
+    font-size: 1.1em; 
   }
-
-
   .div-imagem-satisfação .img-home {
     margin: 7px 0;
   }
-
    .div-imagem-satisfação .img-bike-secund {
     display: block;
     width: 350px;
     height: 250px;
-
   }
  .div-imagem-satisfação .img-home {
     width:90%;
     height: 90%;
   }
-
    .div-imagem-satisfação .img-bike-secund {
     display: block;
     width: 350px;
     height: 250px;
   }
-
-
-  .telamaior {
-    
+  .telamaior { 
     display: inline-block;
     margin-left: -7px;
     color: var(--cor-vermelhoescuro);
-  }
-
- 
- 
-  .conteiner-D {
-    
+  } 
+  .conteiner-D { 
     height: 550px;
-    
-    
   }
-
   .depoimentos-D h2 {
     font-size: 1.6em;
-   
   }
-
-
   .swiper-slide-buttton:hover {
     background-color: rgba(70, 8, 8, 0.103);
   }
-
   .imgagem-one img {
    width: 99%;
-   
    margin: 0 auto;
   }
-
-
-
     .produto-linha-vip {
         display: flex;
         width: 100%;
     }
-
-    
-
     .produto-item {
   height: 100%;
-  width: 100%;
-}
-
+  width: 100%;}
     .produto-item img {
         max-width: 350px;
         max-height: 250px; 
         padding: 30px;
         margin-bottom: 10px; 
     }
-
     .product-description {
         font-size: 1.5em;
         margin-bottom: 5px;
     }
-
     .breve-descricao {
         font-size: 1.2em; 
         margin-bottom: 10px;
     }
-
     .product-price {
-        font-size: 1.1em;
-         
+        font-size: 1.1em;    
         margin-bottom: 10px; 
     }
-   
-
     .preco-parcelado {
         font-size: 1em; 
     }
-
     .preco-avista {
         font-size: 1.4em; 
     }
-
     .pai-A {
-    
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     height: 5px;
     width: 130px;
     margin-bottom: 20px;
-    
   }   
-
    .pai-A img.estrelaA {
    flex: auto;
     margin-top: -50px; 
@@ -202,132 +131,79 @@ main h1 {
     .botoes-produto-container {
         gap: 10px; 
     }
-
     .compra-agora, .view-button {
         padding: 8px 15px; 
         font-size: 1em; 
     }
-
-
-    h1.sobre {
-        font-size: 2.5em;
-    }
-
-     
+    h1.sobre {font-size: 2.5em;}
    .slider-principal-home {
     margin: 0 auto;
     max-width: 99%;
     height: 435px;
     overflow: hidden;
    }
-
-  
   .imgagem-one-slide img {
     width: 99%;
-   
     margin: 0 auto;
   }
-
-
-
     #Serviços  .imgagem-one {
-      margin: 15px 0;
-        width: 95%;
-        
-        
+        margin: 15px 0;
+        width: 95%;     
     }
-
-    
      .imgagem-one img {
       height: 360px;
       width: 100%;
       margin: 0 auto;
      }
-
      #Sobre h1 br  {
        display: block;
      }
-
      #Sobre .img-centro-sobre {
         width: 100%;
         height: 100%;
-        margin: 40px 0; 
-        
-
-
+        margin: 40px 0;   
      }
-
      .img-sobre {
         width: 49%;
         height: 330px;
         margin: 0 auto;
      }  
-    .off {
-      display: block;
-     }
-
-    span.off {
-        display: none;
-     }
-     p.off {
-        display: none;
-     }
-     p.on{
+    .off {display: block;}
+    span.off {display: none;}
+    p.off {display: none;}
+    p.on{
         display: block;
         padding: 20px;
         margin-bottom: 10px;
         margin-top: -30px;
         margin-left: -10px;
      }
-
       .img-centro-sobre iframe {
       width: 90%;
       height: 80%;    
       }
-
-
       main.contato{
         background-color: var(--cor-vermelhoescuro);
         box-shadow: none;
         margin-top: -5px;
-        padding-top: -0px;
-        
+        padding-top: -0px; 
       }
-
       article.contato-mapa {
        padding-top: -30px;
         width: 90%;
         height: 100%;
         margin: 0 auto;
         padding: 0;
-        margin: 0 auto;
-      
-        
+        margin: 0 auto; 
       }
-
-      .marca-direitos-autorais {
-        font-size: .9em;
-      }
-
-    
-    
-      .produto-item-vip > img {
-      
-        width: 100%;
-      }
-
-       .produto-item-vip .product-description-vip {
-        font-size: 1.4em;
-        margin-bottom: 5px;
-      }
-
-        .produto-item-vip .breve-descricao {
+      .marca-direitos-autorais {font-size: .9em;} 
+      .produto-item-vip > img {width: 100%;}
+      .produto-item-vip .product-description-vip {font-size: 1.4em; margin-bottom: 5px;}
+      .produto-item-vip .breve-descricao {
         font-size: 1.1em;
         margin-top: 10px;
         margin-bottom: -30px;
       }
-
-
 .footer__aba h3 {
     font-size: 1.5em;
     text-transform: uppercase;
@@ -339,13 +215,7 @@ main h1 {
     gap: .5rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
   }
-
-  
-  .footer__aba li {
-    margin-bottom: .9em;
-    
-  }
-  
+  .footer__aba li {margin-bottom: .9em; }
   .footer__aba a {
     text-decoration: none;
     color: var(--cor-amareloclaro);
@@ -357,19 +227,14 @@ main h1 {
     gap: .4em;
     transition: color 0.3s ease;
   }
-  
   .footer__aba a:hover,
   .footer__aba a:focus {
-    color: #a29034;
-    
+    color: #a29034; 
     transition: color 0.3s ease ;
   }
-  
   .material-symbols-outlined {
-    font-size: 2em;
-    
+    font-size: 2em; 
   }
-
   .formas-pag {
     background-color: var(--cor-vermelhoescuro);
     display: flex;
@@ -377,7 +242,6 @@ main h1 {
     align-items: center;
     width: 100%;
   }
-
   .img-formas-pag {
     width: 45%;
     padding:1em;
@@ -389,13 +253,10 @@ main h1 {
     cursor: pointer;
     transition: all .3s linear;
   }
-  
-
   .displayONFF {
     display: inline-block;
     width: 95px;
   }
-  
   .ssl {
     padding:8px 9px;
     font-size: .65em;
@@ -404,8 +265,6 @@ main h1 {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
     margin: 0 auto;
   }
-  
-
     .img-formas-segurança {
     width: 100%;
     max-width: 300px;
@@ -414,8 +273,6 @@ main h1 {
     background-color: rgb(255, 255, 255);
     transition: all .3s linear;
     }
-
-
     .img-formas {
     margin-left: 6px;
     padding: 10px 0;
@@ -424,40 +281,25 @@ main h1 {
     height: 100%;
     cursor: pointer;
     transition: all .3s linear;
-
     }
     .img-formas:hover {
     transform: scale(1.28);
     transition: all .5s linear;
     }
-
-    
-
     .marca-p-footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
     }
-
-   
-
-
 hr {
     width: 100%;
     height: 1px;
     background-color: var(--cor-amareloclaro);
     border: none;
     margin: 0 auto;
-}
-
-
-    }
-
-   
-
+}} 
 @media screen and (min-width: 1024px) {
+
   #Home , #Sobre, #Serviços {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -469,20 +311,16 @@ hr {
     background: white;
     align-items: center;
   }
-  .contato-mapa {
-    
+  .contato-mapa { 
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    border-radius: 1%;
-  }
-
+    border-radius: 1%;}
   .container-links {
     font-weight: bold;
     font-size: 1.2em;
   }
-
    .footer__aba h3 {
     font-size: 1.5em;
     text-transform: uppercase;
@@ -494,13 +332,7 @@ hr {
     gap: .5rem;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
   }
-
-  
-  .footer__aba li {
-    margin-bottom: .9em;
-    
-  }
-  
+  .footer__aba li {margin-bottom: .9em;}
   .footer__aba a {
     text-decoration: none;
     color: var(--cor-amareloclaro);
@@ -512,19 +344,14 @@ hr {
     gap: .4em;
     transition: color 0.3s ease;
   }
-  
   .footer__aba a:hover,
   .footer__aba a:focus {
-    color: #a29034;
-    
+    color: #a29034; 
     transition: color 0.3s ease ;
   }
-  
   .material-symbols-outlined {
-    font-size: 2em;
-    
+    font-size: 2em; 
   }
-
   .formas-pag {
     background-color: var(--cor-vermelhoescuro);
     display: flex;
@@ -532,7 +359,6 @@ hr {
     align-items: center;
     width: 100%;
   }
-
   .img-formas-pag {
     width: 45%;
     padding:1em;
@@ -544,13 +370,10 @@ hr {
     cursor: pointer;
     transition: all .3s linear;
   }
-  
-
   .displayONFF {
     display: inline-block;
     width: 95px;
   }
-  
   .ssl {
     padding:8px 9px;
     font-size: .65em;
@@ -559,8 +382,6 @@ hr {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
     margin: 0 auto;
   }
-  
-
     .img-formas-segurança {
     width: 100%;
     max-width: 300px;
@@ -569,9 +390,7 @@ hr {
     background-color: rgb(255, 255, 255);
     transition: all .3s linear;
     }
-
-
-    .img-formas {
+   .img-formas {
     margin-left: 6px;
     padding: 10px 0;
     width: 12%;
@@ -579,26 +398,16 @@ hr {
     height: 100%;
     cursor: pointer;
     transition: all .3s linear;
-
     }
     .img-formas:hover {
     transform: scale(1.28);
     transition: all .5s linear;
     }
-
-    
-
     .marca-p-footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
     }
-
-   
-
-
 hr {
     width: 100%;
     height: 1px;
@@ -606,7 +415,6 @@ hr {
     border: none;
     margin: 0 auto;
 }
-
   .container-footer {
     display: flex;
     flex-direction: row;
@@ -617,27 +425,20 @@ hr {
     padding: 1em; 
     background: var(--cor-vermelhofooter);
     color: #fff;
-    text-align: center;
-    
+    text-align: center;   
 }
-
 .dev-logo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;   
 }
-
 .dev-logo p {
     font-size: .8em;
-    font-weight: bold;
-    
+    font-weight: bold;   
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173);
 }
-
-
   body {
     transition: all .3s linear;
     background-image: linear-gradient(to bottom, #be3537, #4b0a0a 95%) ;
@@ -645,19 +446,10 @@ hr {
   .slider-principal-home {
     margin: 0 auto;
     max-width: 95%;
-    height: 510px;
-    
-  
+    height: 510px;  
     overflow: hidden;
    }
-
-    .imgagem-one-slide img {
-    width: 95%;
-   
-    margin: 0 auto;
-  }
-
-  
+    .imgagem-one-slide img {width: 95%; margin: 0 auto;}
     main {
     max-width: 800px;
     padding: 0 10px;
@@ -665,9 +457,7 @@ hr {
   }
     .container {
         width: 100%;
-        padding: 0 10px;
-    }
-
+        padding: 0 10px;}
     article.contato-mapa {
        padding-top: -30px;
         width: 96%;
@@ -675,30 +465,11 @@ hr {
         margin: 0 auto;
         padding: 0;
         margin: 0 auto;
-        
-        
       }
-
-      #Home {
-        margin-bottom: 40px;
-      }
-
-  
-
-    main h1 {
-    font-size: 3.5em;
-    
-  }
-
-    #slogan {
-    font-size: 2em;
-  }
-
-  main p {
-    font-size: 1.3em;
-    
-    
-  }
+    #Home {margin-bottom: 40px;}
+    main h1 {font-size: 3.5em;}
+    #slogan {font-size: 2em;}
+    main p {font-size: 1.3em;}
 .div-imagem-satisfação {
     display: flex;
     justify-content: center;
@@ -706,166 +477,110 @@ hr {
     margin: 5px 0;
     flex-flow: row nowrap;
   }
-
   }
  .div-imagem-satisfação .img-home {
     width:250px;
     height: 250px;
-  }
-
+ }
    .div-imagem-satisfação .img-bike-secund {
     display: block;
     width: 350px;
     height: 250px;
   }
-
-
   .telamaior {
     display: inline-block;
     margin-left: -7px;
     color: var(--cor-vermelhoescuro);
   }
-
   header nav ul li a{
     font-size: 1em;
     gap: 30px;
     margin-right: 10px;
   }
-
   header img {
     max-width: 140px;
   }
-
   .banner {
     height: 20px;
   }
-
   .banner p {
-    font-size: 1.2em;
-    
+    font-size: 1.2em; 
   }
-
-  
-
   .conteiner-D {
     max-width: 949px;
-    margin-top: 1px;
-    
-  }
-
-   
-    
+    margin-top: 1px; 
+  } 
   .depoimentos-D h2 {
     font-size: 1.6em;
     padding: 10px;
   }
-
-
   @media screen and (min-width: 1200px) {
 
     #Home , #Sobre, #Serviços {
     margin-top: 10px;
     border-radius: 0px;
     }
-    
-      .slider-principal-home {
+    .slider-principal-home {
     margin: 0 auto;
     max-width: 89%;
     height: 505px;
     overflow: hidden;
-   
    }
-
-  
   .imgagem-one-slide img {
     width: 90%;
-   
     margin: 0 auto;
   }
-
-
-
     .container-header img { 
       height: 200px;  
       width: 380px;
-        height: auto;
-
+      height: auto;
     }  
-
     .container-banner {
-        max-width: 2200px;
-        
+      max-width: 2200px; 
     }
-    .banner {
-        
-        width: 100%;
-        
-    }
-
-    #Home {
-      padding: 30px 0;
-    }
-
-    main {
-      max-width: 900px;
-    }
-
-    .div-imagem-satisfação > .img-home , .div-imagem-satisfação > .img-bike-secund {
-      display: none;
-    }
-    
+    .banner {width: 100%;}
+    #Home {padding: 30px 0;}
+    main {max-width: 900px;}
+    .div-imagem-satisfação > .img-home , .div-imagem-satisfação > .img-bike-secund {display: none;}
     .produto-item {
         height: 630px;
         width: 100%;
     }
-
     .produto-item img {
         max-width: 350px;
         max-height: 250px;
         padding: 30px;
         margin-bottom: 10px;
     }
-
     .product-description {
         font-size: 1.5em;
         margin-bottom: 5px;
     }
-
     .breve-descricao {
         font-size: 1.2em;
         margin-bottom: 10px;
     }
-
     .product-price {
         font-size: 1.1em;
-
         margin-bottom: 10px;
     }
-
     .preco-parcelado {
         font-size: 1em;
     }
-
     .preco-avista {
         font-size: 1.4em;
     }
-   
-
     .conteiner-D {
-     
         max-width: 1200px;
         margin-top: 15px;
     }
-
     main p {
-        margin: 2px 0;
-       
+        margin: 2px 0;  
     }
    .div-imagem-satisfação .satisfa {
       width: 70%;
       height: 70%;
     }
-
     .formas-pag {
     background-color: var(--cor-vermelhoescuro);
     display: flex;
@@ -873,16 +588,11 @@ hr {
     align-items: center;
     width: 100%;
   }
-
   .img-formas-pag {
     width: 35%;
     padding:1em;
     cursor: pointer;
-  }
-    
-  }
-
-
+  }}
   @media screen and (min-width: 1400px) {
 
      .slider-principal-home {
@@ -890,86 +600,41 @@ hr {
     max-width: 93%;
     height: 490px;
     overflow: hidden;
-   
    }
-
-  
   .imgagem-one-slide img {
     width: 77%;
-   
     margin: 0 auto;
   }  
-
-
-
-    .container-banner {
-        max-width: 2200px;
-        
-    }
-    .banner {
-        
-        width: 100%;
-        
-    }
-
-    #Home {
-      padding: 30px 0;
-    }
-
-    main {
-      max-width: 1000px;
-    }
-
-    main p {
-      padding: 0 7%;
-    }
-    
+    .container-banner {max-width: 2200px;}
+    .banner {width: 100%;}
+    #Home {padding: 30px 0;}
+    main {max-width: 1000px;}
+    main p {padding: 0 7%;}
     .produto-item {
         height: 100%;
-        width: 100%;
-    }
-
+        width: 100%;}
     .tamanho-menor {
-      height: 505px;
-    }
-
+      height: 505px;}
     .produto-item img {
         max-width: 350px;
         max-height: 250px;
         padding: 30px;
-        margin-bottom: 10px;
-    }
-
+        margin-bottom: 10px;}
     .product-description {
         font-size: 1.5em;
         margin-bottom: 5px;
     }
-
     .breve-descricao {
         font-size: 1em;
         margin-bottom: 10px;
     }
-
     .product-price {
         font-size: 1.1em;
-
         margin-bottom: 10px;
     }
-
-    .preco-parcelado {
-        font-size: 1em;
-    }
-
-    .preco-avista {
-        font-size: 1.4em;
-    }
-
+    .preco-parcelado {font-size: 1em;}
+    .preco-avista {font-size: 1.4em;}
     .conteiner-D {
         max-width: 1450px;
         margin-top: -5px;
-    }
-   
-  }
-  
-
-  
+    }}
