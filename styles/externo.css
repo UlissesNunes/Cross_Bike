@@ -530,13 +530,13 @@ main .contato {
     width: 100%;
   }
   .img-formas-pag {
-    width: 98%;
+    width: 78%;
     padding:.9em;
     cursor: pointer;
   }
   .img-formas-ssl {
-    width:27%;
-    padding: 2em;
+    width:90px;
+    padding: 1em;
     cursor: pointer;
     transition: all .3s linear;
   }
@@ -552,18 +552,7 @@ main .contato {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
     margin: 0 auto;
   }
-  .ssl a {
-    text-decoration: none;
-    color: white; 
-    font-weight: 600;
-    transition: all 0.5s ease;
-  }
-    .ssl a:hover {
-    text-decoration: underline;
-    transition: all .5s linear;
-    color: var(--cor-amareloclaro);
-    font-weight: bold;
-    }
+  
     .img-formas {
     margin-left: 6px;
     padding: 10px 0;
@@ -596,12 +585,11 @@ hr {
     text-align: center;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173);
 }
-.parceria p {
-    font-size: .8em;
+.dev-logo a{
+    text-decoration: none;
+    color: var(--cor-amareloclaro);
     font-weight: bold;
-    margin-bottom: 1em;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.973);
+    transition: all .3s linear;
 }
 .img-footer {
     max-width: 90px; 
@@ -622,17 +610,7 @@ hr {
     align-items: center;
     flex-direction: column; 
 }
-.marca-logo-footer p {
-    font-size: .7em;
-    font-weight: bold;
-    margin-bottom: -3em;
-    margin-top: -1.5em;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173) ;
-    color: var(--cor-amareloclaro);
-    opacity: .7;
-    background-color: var(--cor-vermelhofooter);
-}
+
 .marca-logo-footer img {
     max-width: 130px; 
     height: auto; 
@@ -650,6 +628,7 @@ hr {
     color: white;
     font-weight: 600;
     font-size: .9em;
+    width: 100%;
   }
   .button-sobre-div {
     display: flex;
@@ -895,11 +874,11 @@ section img {
         margin: 0 auto;
       }
       .container-banner {
-        max-width: 2000px;
+        max-width: 100%;
         margin: 0 auto;
       }
       section {
-        max-width: 1000px;
+        max-width: 800px;
         margin: 0 auto;
       }}
 
