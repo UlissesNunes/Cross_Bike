@@ -598,18 +598,23 @@ hr {
      .slider-principal-home {
     margin: 0 auto;
     max-width: 93%;
-    height: 490px;
+    height: 450px;
     overflow: hidden;
    }
   .imgagem-one-slide img {
     width: 77%;
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0 auto;
   }  
     .container-banner {max-width: 2200px;}
     .banner {width: 100%;}
     #Home {padding: 30px 0;}
-    main {max-width: 1000px;}
-    main p {padding: 0 7%;}
+    main {max-width: 1000px; }
+    main h1 {font-size: 3.1em;}
+    #slogan {font-size: 1.7em;}
+    main p {padding: 0 7%;
+    font-size: 1.25em;}
     .produto-item {
         height: 100%;
         width: 100%;}
@@ -621,19 +626,45 @@ hr {
         padding: 30px;
         margin-bottom: 10px;}
     .product-description {
-        font-size: 1.5em;
+        font-size: 1.45em;
         margin-bottom: 5px;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173);
+       
     }
     .breve-descricao {
-        font-size: 1em;
-        margin-bottom: 10px;
+        font-size: .85em;
+        margin-bottom: 1px;
+         margin-left: -20px;
     }
     .product-price {
         font-size: 1.1em;
         margin-bottom: 10px;
     }
-    .preco-parcelado {font-size: 1em;}
-    .preco-avista {font-size: 1.4em;}
+    .preco-parcelado {font-size: .95em;
+    margin-left: -20px;}
+    .preco-avista {font-size: 1.35em;
+    margin-left: -20px}
+    .preco-desconto-visual {
+    margin-left: -20px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: .6em;
+  color: rgba(0, 171, 0, 0.827); 
+  display: block;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.113);}
+.div-estrelas-D {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 5px;}
+.div-estrelas-D img {
+    width: auto;
+    height: auto;
+    max-width: 40px; 
+    max-height: 10px; }
+
     .conteiner-D {
         max-width: 1450px;
         margin-top: -5px;

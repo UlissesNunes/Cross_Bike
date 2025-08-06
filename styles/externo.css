@@ -171,23 +171,23 @@ main{
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 1%;
-    margin-top: 0px;
+    margin-top: -10px;
 }
-h1  {
+main h1  {
     text-align: center;
     flex: auto;
-    margin-top: 15px;
-    font-size: 2.3em;
+    margin-top: 5px;
+    font-size: 2em;
     background: linear-gradient(90deg, #be3537 40%, #dcbe2c);
     background-clip: text;
     color: transparent;
-    margin-bottom: 20px;
-    padding: 15px 0px;
+    margin-bottom: 1px;
+    padding: 10px 0px;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178) ;
 }
 h3 {
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1em;
     background: linear-gradient(90deg, #be3537 40%, #dcbe2c);
     background-clip: text;
     color: transparent;
@@ -231,65 +231,47 @@ transition: .2s ease-in-out;
 .manual-navegation {
 position: absolute;
 width: 100%;
-margin-top: -17px;
+margin-top: -16px;
 display: flex;
 justify-content: center;
 }   
 .manual-nav {
-  border: 3px solid var(--cor-amarelalogo);
-  background-color: rgba(95, 46, 18, 0);
-  padding: 6px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: .3s linear;
-}
-.manual-nav:hover {
-  background-color: white;
-  transition: all .5s ease; 
-}
-.manual-nav:checked {
-  background-color: white;
-  transition: all .5s ease;
-} 
-.manual-nav:not(:last-child) {
-  margin-right: 10px;
-}
-#radio1:checked ~ .first {
-  margin-left: 0%;
-}
-#radio2:checked ~ .first {
-  margin-left: -25%;
-}
-#radio3:checked ~ .first {
-  margin-left: -50%;
-}
+    border: 3px solid var(--cor-amarelalogo);
+    background-color: rgba(95, 46, 18, 0);
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s linear;
+    opacity: 0;}
+.manual-nav:hover{
+    background-color: white;
+    transition: all .5s ease;}
+.manual-nav:checked{
+    background-color: white;
+    transition: all .5s ease;} 
+.manual-nav:not(:last-child) {margin-right: 10px;}
+#radio1:checked ~ .first {margin-left: 0%;}
+#radio2:checked ~ .first {margin-left: -25%;}
+#radio3:checked ~ .first {margin-left: -50%;}
+#radio4:checked ~ .first {margin-left: -75%;}
 .navegacao-auto-slide div{
-  border: 1px solid var(--cor-amarelalogo);
-  transition: .3s ease-in-out; 
-  padding: 7px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: .5s ease;
-}
+    border: 3px solid rgba(255, 255, 255, 0);
+    background-color: rgba(10, 5, 2, 0.211);
+    padding: 3px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s ease;}
 .navegacao-auto-slide {
-  position: absolute;
-  width: 100%;
-  bottom: .1%;
-  display: flex;
-  justify-content: center;
-}
-.navegacao-auto-slide div:not(:last-child) {
-  margin-right: 10px;
-}
-#radio1:checked ~ .navegacao-auto-slide > .auto-nav-1 {
-  background-color: white; 
-}
-#radio2:checked ~ .navegacao-auto-slide .auto-nav-2 {
-  background-color: white;
-}
-#radio3:checked ~ .navegacao-auto-slide .auto-nav-3 {
-  background-color: white;
-}
+    position: absolute;
+    width: 100%;
+    bottom: .1%;
+    display: flex;
+    justify-content: center;}
+.navegacao-auto-slide div:not(:last-child) {margin-right: 10px;}
+#radio1:checked ~ .navegacao-auto-slide > .auto-nav-1 {background-color: var(--cor-amarelalogo); opacity: .7;}
+#radio2:checked ~ .navegacao-auto-slide .auto-nav-2 {background-color: var(--cor-amarelalogo);opacity: .7;}
+#radio3:checked ~ .navegacao-auto-slide .auto-nav-3 {opacity: .7;background-color: var(--cor-amarelalogo);}
+#radio4:checked ~ .navegacao-auto-slide .auto-nav-4 {opacity: .7;background-color: var(--cor-amarelalogo);}
 .aspect{
   aspect-ratio: 16/9;
 }

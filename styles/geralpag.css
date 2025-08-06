@@ -66,8 +66,8 @@
   @media screen and (min-width: 1440px) {
     .slider-principal-home {
     margin: 0 auto;
-    max-width: 85%;
-    height: 555px;
+    max-width: 80%;
+    height: 445px;
     overflow: hidden;
    }
    .imgagem-one-slide img {
