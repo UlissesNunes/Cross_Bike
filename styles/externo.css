@@ -5,24 +5,7 @@
   --cor-vermelhoescuro: #620b0b;
   --cor-vermelhofooter: #460808;   
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'arial', sans-serif;
-}
-body {
- margin: 0;
-  padding: 0;
-background: var(--cor-vermelhoclaro) ;
-  height: 100%;
-  color: #000;
-  font-size: 1em; 
-}
-html { 
-  font-size: 99%;
-  scroll-behavior: smooth;
-}
+
 header{
   position: sticky;
   top: 0 ;
