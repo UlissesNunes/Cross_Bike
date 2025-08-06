@@ -386,6 +386,15 @@ span {
     transform: scale(1.3);
     transition: all .4s linear;}
 
+.slogan-home {
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.123);
+}
+
     /* AREA DE DEPOIMENTOS*/
 .conteiner-D{
     display: flex;
