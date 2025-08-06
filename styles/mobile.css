@@ -120,7 +120,7 @@ ul {list-style: none;
 }
 @keyframes AnimaçãoBanner{
     0% {transform: translateX(0);}
-    100%{transform: translateX(-80%);}}
+    100%{transform: translateX(-57%);}}
 .container-banner{
     display: flex;
     justify-content: flex-start;
@@ -255,7 +255,11 @@ article p {padding-top: 15px;}
  main.home p , main.sobre p {
     flex: auto;
     text-align: justify;
-    line-height: 1.8;}
+    line-height: 1.75;
+    font-size: .95em; 
+    padding:0 10px;
+    
+}
 .imgagem-one {
     display: flex;
     justify-content: center;
