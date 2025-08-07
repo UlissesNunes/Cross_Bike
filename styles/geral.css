@@ -1,4 +1,4 @@
-@media screen and (max-width:330px) {.not {display: none;}}
+
 @media  screen and (min-width: 740px) {
 
   #Sobre, #Serviços {
@@ -515,6 +515,35 @@ hr {
     padding: 10px;
   }
   @media screen and (min-width: 1200px) {
+.banner p{
+    font-weight: bold;
+    font-family: 'arial';
+    text-align: center;
+    flex: 0 0 auto;
+    flex-shrink: 0;
+    margin-right: 60px;
+  width: 50%;}
+
+  .banner img{ width: 35px; 
+  height: 100%;
+  }
+
+  .banner{ 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.150);
+    margin-bottom: 0;
+    animation-timing-function: linear;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+animation: 15s AnimaçãoBanner  infinite linear ;
+position: relative;
+}
+
+
+    @keyframes AnimaçãoBanner{
+    0% {transform: translateX(5%);}
+    100%{transform: translateX(-57%);}}
 
     #Home , #Sobre, #Serviços {
     margin-top: 10px;
@@ -540,8 +569,24 @@ hr {
     }
     .banner {width: 100%;}
     #Home {padding: 30px 0;}
+    #Sobre p {
+      padding: 0 25px;
+    }
     main {max-width: 900px;}
     .div-imagem-satisfação > .img-home , .div-imagem-satisfação > .img-bike-secund {display: none;}
+
+ main.home p , main.sobre p, .on {
+    flex: auto;
+    text-align: justify;
+    line-height: 1.75;
+    font-size: 1.2em;
+    
+}
+
+p.on {
+  margin: 15px 0;
+}
+
     .produto-item {
         height: 630px;
         width: 100%;

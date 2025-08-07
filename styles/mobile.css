@@ -120,7 +120,7 @@ ul {list-style: none;
 }
 @keyframes AnimaçãoBanner{
     0% {transform: translateX(0);}
-    100%{transform: translateX(-57%);}}
+    100%{transform: translateX(-56%);}}
 .container-banner{
     display: flex;
     justify-content: flex-start;
@@ -150,7 +150,7 @@ animation: 20s AnimaçãoBanner  infinite linear ;
 position: relative;}
 .banner img{
     flex: 0 0 auto;
-    margin: 0 30px;
+    margin: 0 20px;
     width: 20px;
     height: 100%;
     object-fit: cover;
