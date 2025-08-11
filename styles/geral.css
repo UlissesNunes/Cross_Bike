@@ -521,11 +521,12 @@ hr {
     text-align: center;
     flex: 0 0 auto;
     flex-shrink: 0;
-    margin-right: 60px;
+    margin-right: 10px;
   width: 50%;}
 
-  .banner img{ width: 35px; 
+  .banner img{ width: 20px; 
   height: 100%;
+  margin: 0px;
   }
 
   .banner{ 
@@ -536,14 +537,14 @@ hr {
     align-items: center;
     text-align: center;
     display: flex;
-animation: 15s AnimaçãoBanner  infinite linear ;
+animation: 10s AnimaçãoBanner  infinite linear ;
 position: relative;
 }
 
 
     @keyframes AnimaçãoBanner{
     0% {transform: translateX(5%);}
-    100%{transform: translateX(-57%);}}
+    100%{transform: translateX(-12%);}}
 
     #Home , #Sobre, #Serviços {
     margin-top: 10px;
