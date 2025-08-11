@@ -255,9 +255,10 @@ article p {padding-top: 15px;}
  main.home p , main.sobre p {
     flex: auto;
     text-align: justify;
-    line-height: 1.75;
+    line-height: 1.80;
     font-size: .95em; 
-    padding:0 10px;
+    padding:0 15px;
+    
     
 }
 .imgagem-one {
@@ -304,9 +305,13 @@ img {filter: contrast(110%);}
 main p {
     color: #000;
     text-align: justify;
+    
     text-indent: 10px;
     flex: auto;
-     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.123) ;}
+     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.123) ;
+    
+    }
+    
 div.conteudo  {
     display: flex;
     flex-direction: column; 
