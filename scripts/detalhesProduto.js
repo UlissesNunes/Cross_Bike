@@ -1,7 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
   const produtosData = {
+
+    "Bicicleta Monaco Aro 29": {
+      imagem: "produtos-bikes/29monaco1.webp",
+        titulo: "Bicicleta Monaco Aro 29",
+    },
+    "Bicicleta aro 29 Cor Laranja": {
+      imagem: "produtos-bikes/bike29laranja.webp",
+        titulo: "Bicicleta EVOLO Aro 29 Laranja",
+    },
     "Bicicleta Absolute | aro 29": {
-      imagem: "produtos-bikes/image (6).webp",
+      imagem: "produtos-bikes/29absolute.webp",
       titulo: "Bicicleta Aro 29 Absolute Azul/Rosa"
     },
     "Bicicleta EVOLO | aro 29 | Cor Amarela": {  
@@ -96,9 +105,9 @@ document.addEventListener('DOMContentLoaded', () => {
         imagem: "produtos-acessorios/corrente-de-marcha-removebg-preview.webp",
         titulo: "Corrente YBN de marcha para Bikes",
     },
-    "Tubo de rolamento": {  
+    "Cubo de rolamento Multicores": {  
         imagem: "produtos-acessorios/tubo-de-enrolamento-removebg-preview.webp",
-        titulo: "Tubo de rolamento",
+        titulo: "Cubo de rolamento",
     },
     "Corrente de 9 Velocidades": {  
         imagem: "produtos-acessorios/corrente-9velocidades-removebg-preview.webp",

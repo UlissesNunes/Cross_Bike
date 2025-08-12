@@ -300,6 +300,10 @@ hr {
 }} 
 @media screen and (min-width: 1024px) {
 
+  .imgagem-one {
+    display: none;
+  }
+
   #Home , #Sobre, #Serviços {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -676,6 +680,10 @@ p.on {
         margin-bottom: 5px;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.173);
        
+    }
+
+    .vip-containe .breve-descricao {
+      font-size: .79em;
     }
     .breve-descricao {
         font-size: .85em;
