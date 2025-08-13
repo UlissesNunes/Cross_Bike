@@ -647,12 +647,13 @@ p.on {
 
      .slider-principal-home {
     margin: 0 auto;
-    max-width: 93%;
-    height: 450px;
+    max-width: 100%;
+    height: 350px;
     overflow: hidden;
    }
   .imgagem-one-slide img {
-    width: 77%;
+    width: 62%;
+    
     background-size: cover;
     background-attachment: fixed;
     margin: 0 auto;
