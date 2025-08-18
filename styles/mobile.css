@@ -285,7 +285,7 @@ img {filter: contrast(110%);}
     display: flex;
     justify-content: center;
     align-items: center; 
-    width: 100%;
+    width: 99%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0px;
@@ -323,13 +323,12 @@ div.conteudo  {
     font-size: .9em;}
 .telamaior {display: none;}
 .img-bike-secund { display: none;}
- .img-home {
+ .div-imagem-satisfação .img-home {
     padding: 0 2px;
     filter: contrast(120%);
-    width: 70%;
-    max-width: 70%;
-    
-    height: 250px;
+    width: 85%;
+    max-width:85%;
+    height: 220px;
     margin: 10px auto 0;
     flex: auto;
     border-radius: 20px 0px 0px 0px;
@@ -1136,24 +1135,24 @@ article p {
     border-radius: 2%;
 }
 .chamada-mapa-pai {
-    margin-top: -20px;
+    margin-top: -12px;
      margin-bottom: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 99%;
+    width: 90%;
     max-width: 1200px;
     background-color: var(--cor-amareloclaro);
-    padding: 1px 0;
+    padding: 1px;
     text-align: center;
     border-radius: 0px 0px 20px 20px;
 }
 .chamada-mapa-pai a > img {
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
     padding: 2px;
-    margin-bottom: -7px;
+    margin-bottom: -5px;
 }
 .chamada-mapa-pai a {
     text-shadow:1px 1px 1px rgba(0, 0, 0, 0.223);
@@ -1163,8 +1162,7 @@ article p {
     text-decoration: none;
     color: var(--cor-vermelhoescuro);
     font-size: 1em;
-    margin: 3px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.123);
+    padding: 5px;
     transition: all .8s linear;
 }
 .chamada-mapa-pai a:hover {   
