@@ -26,9 +26,10 @@ header{
     top: 0 ;
     width: 100%;
     background-color: rgba(236, 203, 37, 0.977);
-    padding: .4em 0;
+    height: 90px;
+    padding: .2em 0;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.250);
-    z-index: 2023;
+    z-index: 300;
 }
 header .container-header{
     display: flex;
@@ -69,7 +70,7 @@ header nav ul li a.active{
 header img{
     display: flex;
     justify-content: flex-start;
-    max-width: 110px;
+    max-width: 90px;
     height: auto;
 }
 ul {list-style: none;
@@ -325,9 +326,10 @@ div.conteudo  {
  .img-home {
     padding: 0 2px;
     filter: contrast(120%);
-    width: 97%;
-    max-width: 800px;
-    height: 300px;
+    width: 70%;
+    max-width: 70%;
+    
+    height: 250px;
     margin: 10px auto 0;
     flex: auto;
     border-radius: 20px 0px 0px 0px;
