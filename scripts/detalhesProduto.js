@@ -1,6 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
   const produtosData = {
 
+    "Bicicleta Aro 26 Sans - cor Violeta" : {
+        imagem: "produtos-bikes/bike-violeta-26.webp",
+        titulo: "Bicicleta Aro 26 Sans - cor Violeta" },
+
+        "Bicicleta Aro 24 | Cor Preta" : {
+        imagem: "produtos-bikes/bikearo24-preta.webp",
+        titulo: "Bicicleta Aro 24 | Cor Preta" },
+        "Bicicleta Caloi Ceci | aro 26 | Cor Rosa": {  
+        imagem: "produtos-bikes/image (3).webp",
+        titulo: "Bicicleta Caloi Ceci | aro 26 | Cor Rosa", 
+    },
+
     "Bicicleta Monaco Aro 29": {
       imagem: "produtos-bikes/29monaco1.webp",
         titulo: "Bicicleta Monaco Aro 29",

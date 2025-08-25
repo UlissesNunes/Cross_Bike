@@ -25,8 +25,8 @@ header{
     position: sticky;
     top: 0 ;
     width: 100%;
-    background-color: rgba(236, 203, 37, 0.977);
-    height: 90px;
+    background-color: rgba(236, 203, 37, 0.957);
+    height: 95px;
     padding: .2em 0;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.250);
     z-index: 300;
@@ -46,7 +46,7 @@ header .container-header{
 header nav ul li a{
        margin-right: 2px;
         color: /*#ffefef;*/ var(--cor-vermelhoclaro);
-        font-size: .8em;
+        font-size: .75em;
         font-weight: bold;
         text-shadow: 1 1px 2px rgba(0, 0, 0, 0.748);
         transition: all .5s ease-in;
@@ -70,7 +70,7 @@ header nav ul li a.active{
 header img{
     display: flex;
     justify-content: flex-start;
-    max-width: 90px;
+    max-width: 100px;
     height: auto;
 }
 ul {list-style: none;
