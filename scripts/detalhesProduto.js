@@ -3,14 +3,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     "Bicicleta Aro 26 Sans - cor Violeta" : {
         imagem: "produtos-bikes/bike-violeta-26.webp",
-        titulo: "Bicicleta Aro 26 Sans - cor Violeta" },
+        titulo: "Bicicleta Aro 26 Sans - cor Violeta"
+     },
 
         "Bicicleta Aro 24 | Cor Preta" : {
         imagem: "produtos-bikes/bikearo24-preta.webp",
-        titulo: "Bicicleta Aro 24 | Cor Preta" },
+        titulo: "Bicicleta Aro 24 | Cor Preta"
+     },
+
         "Bicicleta Caloi Ceci | aro 26 | Cor Rosa": {  
         imagem: "produtos-bikes/image (3).webp",
         titulo: "Bicicleta Caloi Ceci | aro 26 | Cor Rosa", 
+    },
+
+    ">Bicicleta aro 24 Sport Xr | Cor verde": {
+        imagem: "produtos-bikes/bikearo24mobilete.webp",
+        titulo: ">Bicicleta aro 24 Sport Xr | Cor verde"
     },
 
     "Bicicleta Monaco Aro 29": {
