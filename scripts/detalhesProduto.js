@@ -1,6 +1,45 @@
 document.addEventListener('DOMContentLoaded', () => {
   const produtosData = {
 
+    "Bicicleta aro29 verde" : {
+
+        imagem: "produtos-bikes/bike-aro29-verde.webp",
+        titulo: "Bicicleta aro29 verde"
+    },
+
+    "Bicicleta Evolo cor azul | aro 29" : {
+        imagem: "produtos-bikes/bike-aro29-azul1.webp",
+        titulo: "Bicicleta Evolo cor azul | aro 29"
+    },
+
+    "Bicicleta aro 16 | Cor verde" : {
+        imagem: "produtos-bikes/bike-aro16-verde.webp",
+        titulo: "Bicicleta aro 16 | Cor verde"
+    },
+
+    "Bicicleta z-rader retrô aro 26 | cor azul" : {
+        imagem: "produtos-bikes/retro-azul.webp",
+        titulo: "Bicicleta z-rader retrô aro 26 | cor azul"
+    },
+
+    "Bicicleta aro 20 cor vermelho" : {
+        imagem: "produtos-bikes/bikearo20-vermelho.webp",
+        titulo: "Bicicleta aro 20 cor vermelho"
+    },
+
+    "Bicicleta aro 20 cor rosa" : {
+        imagem: "produtos-bikes/bikearo20-rosa.webp",
+        titulo: "Bicicleta aro 20 cor rosa"
+    },
+
+    "Bicicleta aro 20 cor Lilás" : {
+        imagem: "produtos-bikes/bikearo20-roxo.webp",
+        titulo: "Bicicleta aro 20 cor Lilás"
+    }, 
+
+
+
+
     "Bicicleta Aro 26 Sans - cor Violeta" : {
         imagem: "produtos-bikes/bike-violeta-26.webp",
         titulo: "Bicicleta Aro 26 Sans - cor Violeta"

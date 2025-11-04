@@ -10,4 +10,4 @@ function nextCarrossel() {
     }
     document.getElementById("radio" + count).checked = true;
 }
-setInterval(nextCarrossel, 6000);
+setInterval(nextCarrossel, 4000);
