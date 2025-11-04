@@ -159,14 +159,16 @@ position: relative;}
     width: 20px;
     height: 100%;
     object-fit: cover;
-    object-position: center;}
+    object-position: center;
+}
 .banner p{
     font-weight: bold;
     font-family: 'arial';
     text-align: center;
     flex: 0 0 auto;
     flex-shrink: 0;
-    margin-right: 100px;}
+    margin-right: 100px;
+}
 main{
     box-shadow: 5px 2px 1px rgba(0, 0, 0, 0.163);
     background-color: #ffffff;
@@ -189,35 +191,43 @@ h1{
     padding-top: 25px;
     padding-left: 5px;
      padding-right: 5px;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178) ;}
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178);
+}
 .slider-principal-home{  
     width: 99%;
     height: 90%;
     margin: 0 auto;
     overflow: hidden;
-    position: relative;}
+    position: relative;
+}
 .slides-inputs{
+    margin-left: -5px;
  width: 400%;
  height: 100%;
- display: flex;}
+ display: flex;
+}
 .slides-inputs input {display: none;}
 .imgagem-one-slide{
     width: 25%;
     position: relative;
-    transition: .8s ease-in-out;}
+    transition: .8s ease-in-out;
+}
 .imgagem-one-slide img{
     width: 100%;
     border-radius: 3% 3% 0% 0%;
-    filter: contrast(115%);}
+    filter: contrast(115%);
+}
 .imgagem-one-slide img:hover {
    transition: all .3s linear;
-    cursor: pointer;}
+    cursor: pointer;
+}
 .manual-navegation {
 position: absolute;
 width: 100%;
 margin-top: -16px;
 display: flex;
-justify-content: center;}   
+justify-content: center;
+}   
 
 .manual-nav {
     border: 3px solid var(--cor-amarelalogo);
@@ -731,11 +741,13 @@ div.vip-containe {
 .produto-linha-vip {
     display: flex;
     width: 90%;
+    margin-bottom: 1px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     }
 .produto-item-vip {
+    margin-bottom: 15px;
     background-color: #fdfdfdfb; 
     border-radius: 6%;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.255);
@@ -916,7 +928,8 @@ span#mais > img {
     background-color: #f9f9f9; 
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.527);
-   
+   margin-bottom: 10px;
+    padding: 5px;
     text-align: left;
     box-sizing: border-box;
     display: flex;
@@ -1509,13 +1522,13 @@ hr {
   color: #000;
   text-decoration: none;}
 a.destaque {    
-    margin-bottom: -30px;
-    color: var(--cor-vermelhoescuro);
+  font-size: 1.4em;
+    color: var(--cor-amarelalogo);
     font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.5s ease, color 0.3s ease;
-    margin-top: 10px;}
+    margin-top: 20px;}
 a.destaque:hover {
     border-radius: 5%;
     background-color: var(--cor-amareloclaro) ;
