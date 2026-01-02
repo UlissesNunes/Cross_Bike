@@ -1,6 +1,39 @@
 document.addEventListener('DOMContentLoaded', () => {
   const produtosData = {
 
+    "Bicicleta montadinha aro 24 | cor lilás" : {
+        imagem: "produtos-bikes/bike-aro24-montadinha.webp",
+        titulo: "Bicicleta montadinha aro 24 | cor lilás"
+    },
+
+    "Bicicleta aro 26 | Cor branca" : {
+        imagem: "produtos-bikes/bike-aro26-branca-vermelha.webp",
+        titulo: "Bicicleta aro 26 | Cor branca"
+    },
+
+    "Bicicleta aro 26 | Cor azul" : {
+        imagem: "produtos-bikes/bike-aro26-azul.webp",
+        titulo: "Bicicleta aro 26 | Cor azul"
+    },
+
+
+    "Bicicleta Ecos cor cinza & verde aro 29" : {
+        imagem: "produtos-bikes/bike-aro29-ecos-cinza-verde.webp",
+        titulo: "Bicicleta Ecos cor cinza & verde | aro 29"
+    },
+
+    "Bicicleta aro 26 | cor branca" : {
+        imagem: "produtos-bikes/bike-aro26-branca-comcestamarrom.webp",
+        titulo: "Bicicleta aro 26 | cor branca"
+    },
+
+
+
+    "Bicicleta Ecos cor azul & preto aro 29" : {
+        imagem: "produtos-bikes/bike-aro29-ecos-azul-preto.webp",
+        titulo: "Bicicleta Ecos cor azul & preto aro 29"    
+    },
+
     "Bicicleta aro29 verde" : {
 
         imagem: "produtos-bikes/bike-aro29-verde.webp",
