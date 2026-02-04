@@ -245,11 +245,15 @@ main h1 {
     width: 100%;
   }
   .img-formas-pag {
+  
     width: 45%;
     padding:1em;
     cursor: pointer;
   }
   .img-formas-ssl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width:100px;
     padding: 1.1em 1.5em;
     cursor: pointer;
@@ -257,7 +261,7 @@ main h1 {
   }
   .displayONFF {
     display: inline-block;
-    width: 95px;
+    width: 95px;  
   }
   .ssl {
     padding:8px 9px;
@@ -665,7 +669,7 @@ p.on {
      .slider-principal-home {
     margin: 0 auto;
     width: 98%;
-    height: 425px;
+    height: 400px;
     overflow: hidden;
    }
   .imgagem-one-slide img {
