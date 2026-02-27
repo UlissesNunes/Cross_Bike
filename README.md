@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://www.oficinacrossbike.com.br/imagens/crossbike-redimensionada.webp" alt="Oficina Cross Bike Logo" width="300">
+  <img src="https://www.oficinacrossbike.com.br/imagens/crossbike-redimensionada.webp" alt="Oficina Cross Bike Logo" width="200">
 </p>
 
-# <p align="center">🚲 Oficina Cross Bike: Digital Store</p>
+# <p align="center" Oficina Cross Bike: Digital Store</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Online-green?style=for-the-badge" alt="Status Online" />
@@ -39,6 +39,5 @@ O portal **Oficina Cross Bike** foi desenvolvido para transpor a tradição da l
 ---
 
 <p align="center">
-  Desenvolvido para <strong>Oficina Cross Bike</strong>.<br>
-  <sub><i>"Transformação que combina com o seu pedal."</i></sub>
+  Desenvolvido para <strong>Ulisses Nunes</strong>.<br>
 </p>    # Assets Visuais e Branding
