@@ -37,7 +37,3 @@ O portal **Oficina Cross Bike** foi desenvolvido para transpor a tradição da l
 | **Integrações** | WhatsApp Business API, Google Maps Platform |
 
 ---
-
-<p align="center">
-  Desenvolvido para <strong>Ulisses Nunes</strong>.<br>
-</p>    # Assets Visuais e Branding
