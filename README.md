@@ -2,7 +2,7 @@
   <img src="https://www.oficinacrossbike.com.br/imagens/crossbike-redimensionada.webp" alt="Oficina Cross Bike Logo" width="200">
 </p>
 
-# <p align="center" Oficina Cross Bike: Digital Store</p>
+# <p align="center"> Oficina Cross Bike: Digital Store </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Online-green?style=for-the-badge" alt="Status Online" />
