@@ -7,20 +7,20 @@
     <meta name="description" content="Desde 2004, a Cross Bike é líder em custo-benefício. COMPRE agora mesmo sua bike">
    
     <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/ux.css">
     <link rel="stylesheet" href="./styles/geral.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward_iosfont"  />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward_ios" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="shortcut icon" href="imagens/crossbike-redimensionada.webp" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlinedfont" rel="stylesheet"  />
-</head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5TJXHFBBTB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-5TJXHFBBTB');
-</script>
-<script type="application/ld+json">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TJXHFBBTB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5TJXHFBBTB');
+    </script>
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BikeStore",
@@ -80,11 +80,12 @@
   },
   "hasMap": "https://maps.google.com/?cid=611908174625510883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ"
 }
-</script>
+    </script>
+</head>
 <body>
   <header>
    <div class="container-header">
-    <img src="imagens/crossbike-redimensionada.webp" alt="imagem-logo do site" loading="eager">
+    <a href="#Home" aria-label="Ir para o início"><img src="imagens/crossbike-redimensionada.webp" alt="Logo Oficina CrossBike" loading="eager"></a>
      <nav>
       <ul>
         <li class="nav"><a class="active" href="#Home" >Home</a></li>
@@ -98,8 +99,7 @@
   <div class="container-banner">
      <div class="banner">
         <img src="imagens/crossbike-redimensionada.webp" alt="logo imagem" loading="eager">
-         <p>O nosso horário de funcionamento é de segunda á sábado, das 8:30 às 18:30</p>
-         <p>O nosso horário de funcionamento é de Segunda á sábado, das 8:30 às 18:30</p>
+         <p>O nosso horário de funcionamento é de segunda à sábado, das 8:30 às 18:30</p>
          
          
      </div>
@@ -169,11 +169,12 @@
          </div>  
         
          <p class="chamada-mapa-pai"><a href="#Contato">Clique e Visite nossa loja <img src="imagens/mapas-do-google.png" alt="ícone do google maps" loading="lazy"> </a></p>
+        </div>
          </article>
           </section>        
      <section class="conteiner-D swiper" >
             <div class="depoimentos-D card-wrapper"> <a href="https://maps.google.com/?cid=611908174625510883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ"
-              target="_blank" class="destaque">O que falam da CrossBike?</a></h2>   
+              target="_blank" class="destaque">O que falam da CrossBike?</a>   
                 <ul class="cards-D swiper-wrapper">
                  <li class="cards-itens-D  swiper-slide">             
                     <a href="#"  class="cards-link-D">
@@ -234,7 +235,6 @@
                         <a href="#"  class="cards-link-D">
                            <img src="imagens/pexels-munbaik-cycling-clothing-3893851-5851037.webp" alt="foto de depoimento1" class="img-D">
                              <p class="p-D">Jean Uarney - Cliente</p>
-                             </p>
                                <div class="perifericos-D">
                             <div class="selo-pai-de-estrela">
                            <img src="imagens/qualidade.png" alt="selos" class="qualidade-selo-D">
@@ -327,7 +327,7 @@
                         <p class="preço-desconto-visual-vip">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container-vip">
-                        <a href="" target="_blank" rel="external" class="carousel-button-vip compra-agora-vip" onclick="comprar('Bicicleta Ecos cor azul & preto aro 29')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button-vip compra-agora-vip" onclick="comprar('Bicicleta Ecos cor azul & preto aro 29')">Comprar Agora</a>
                         <button class="carousel-button-vip view-button-vip view-button " data-product-id="Bicicleta Ecos cor azul & preto aro 29" >Ver Bike</button>
                     </div>
         </div>
@@ -339,14 +339,14 @@
         <img src="imagens/trovao (1).png" alt="imagem ilustrativa crossbike">
     </div><hr> 
   </div>        
-      <div id="modal-dinamico" class="modal">
+      <div id="modal-dinamico" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo-produto" aria-hidden="true">
   <div class="modal-conteudo">
-    <span class="fechar-modal">&times;</span>
+    <button type="button" class="fechar-modal" aria-label="Fechar">&times;</button>
     <img id="modal-imagem-produto" src="" alt="" class="modal-imagem">
     <div class="modal-descricao">
       <h2 id="modal-titulo-produto"></h2>
       <p id="modal-texto-produto"></p>
-      <a href="https://wa.me/5571987261711" target ="_blank" rel="external"class="carousel-button compra-agora">Comprar Agora</a>
+      <a href="https://wa.me/5571987261711" target ="_blank" rel="external" class="carousel-button compra-agora">Comprar Agora</a>
     </div>
   </div>
 </div>
@@ -365,11 +365,11 @@
                     <div class="product-price">
                         <del>DE R$ 1479,99</del>
                         <p class="preco-parcelado"> POR 6x de <span>R$214,99</span> sem juros</p>
-                        <p class="preco-avista">OU R$ R$1189,99 no Pix</p>
+                        <p class="preco-avista">OU R$1189,99 no Pix</p>
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro29 verde')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro29 verde')">Comprar Agora</a>
                         <button class="carousel-button-vip view-button view-button " data-product-id="Bicicleta aro29 verde" >Ver Bike</button>
                     </div>
                 </div>
@@ -388,7 +388,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Ecos cor cinza & verde aro 29')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Ecos cor cinza & verde aro 29')">Comprar Agora</a>
                         <button class="carousel-button view-button " data-product-id="Bicicleta Ecos cor cinza & verde aro 29" >Ver Bike</button>
                     </div>
                 </div>
@@ -410,11 +410,11 @@
                     <div class="product-price">
                         <del>DE R$ 1279,99</del>
                         <p class="preco-parcelado"> POR 4x de <span>R$ 219,89</span> sem juros</p>
-                        <p class="preco-avista">OU R$ R$999,99 no Pix</p>
+                        <p class="preco-avista">OU R$999,99 no Pix</p>
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 26 | cor branca')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 26 | cor branca')">Comprar Agora</a>
                         <button class="carousel-button-vip view-button view-button " data-product-id="Bicicleta aro 26 | cor branca" >Ver Bike</button>
                     </div>
                 </div>
@@ -433,7 +433,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 26 | Cor azul')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 26 | Cor azul')">Comprar Agora</a>
                         <button class="carousel-button view-button " data-product-id="Bicicleta aro 26 | Cor azul" >Ver Bike</button>
                     </div>
                 </div>
@@ -459,7 +459,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta montadinha aro 24 | cor lilás')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta montadinha aro 24 | cor lilás')">Comprar Agora</a>
                         <button class="carousel-button-vip view-button view-button " data-product-id="Bicicleta montadinha aro 24 | cor lilás" >Ver Bike</button>
                     </div>
                 </div>
@@ -478,7 +478,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 26 | Cor branca')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 26 | Cor branca')">Comprar Agora</a>
                         <button class="carousel-button view-button " data-product-id="Bicicleta aro 26 | Cor branca" >Ver Bike</button>
                     </div>
                 </div>
@@ -505,7 +505,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Evolo cor azul | aro 29')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Evolo cor azul | aro 29')">Comprar Agora</a>
                         <button class="carousel-button-vip view-button view-button " data-product-id="Bicicleta Evolo cor azul | aro 29" >Ver Bike</button>
                     </div>
                 </div>
@@ -524,7 +524,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 16 | Cor verde')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 16 | Cor verde')">Comprar Agora</a>
                         <button class="carousel-button view-button " data-product-id="Bicicleta aro 16 | Cor verde" >Ver Bike</button>
                     </div>
                 </div>
@@ -550,7 +550,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta z-rader retrô aro 26 | cor azul')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta z-rader retrô aro 26 | cor azul')">Comprar Agora</a>
                         <button class="carousel-button-vip view-button view-button " data-product-id="Bicicleta z-rader retrô aro 26 | cor azul" >Ver Bike</button>
                     </div>
                 </div>
@@ -570,7 +570,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Monaco Aro 29 Cor Preto')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Monaco Aro 29 Cor Preto')">Comprar Agora</a>
                         <button class="carousel-button view-button " data-product-id="Bicicleta Monaco Aro 29" >Ver Detalhes</button>
                     </div>
                 </div>
@@ -597,7 +597,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Aro 29 Absolute Azul/Rosa')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Aro 29 Absolute Azul/Rosa')">Comprar Agora</a>
                         <button class="carousel-button-vip view-button view-button " data-product-id="Bicicleta Absolute | aro 29" >Ver Bike</button>
                     </div>
                 </div>
@@ -616,7 +616,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 29 Cor Laranja')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 29 Cor Laranja')">Comprar Agora</a>
                         <button class="carousel-button view-button " data-product-id="Bicicleta aro 29 Cor Laranja" >Ver Detalhes</button>
                     </div>
                 </div>
@@ -641,7 +641,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external"class="carousel-button compra-agora"onclick="comprar('Bicicleta Aro 29 EVOLO - cor amarela')">Comprar Agora</a>
+                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Aro 29 EVOLO - cor amarela')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Bicicleta EVOLO | aro 29 | Cor Amarela" >Ver Detalhes</button>
                     </div>
                 </div>
@@ -660,7 +660,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Caloi Ceci - Aro 26 - cor verde')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Caloi Ceci - Aro 26 - cor verde')">Comprar Agora</a>
                         <button class="carousel-button view-button " data-product-id="Bicicleta Caloi Ceci | aro 26 | Cor Verde" >Ver Detalhes</button>
                     </div>
                 </div>
@@ -685,7 +685,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external"class="carousel-button compra-agora"onclick="comprar('Bicicleta Aro 26 Sans - cor Violeta')">Comprar Agora</a>
+                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Aro 26 Sans - cor Violeta')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Bicicleta Aro 26 Sans - cor Violeta" >Ver Detalhes</button>
                     </div>
                 </div>
@@ -704,8 +704,8 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('>Bicicleta aro 24 Sport Xr | Cor verde')">Comprar Agora</a>
-                        <button class="carousel-button view-button " data-product-id=">Bicicleta aro 24 Sport Xr | Cor verde" >Ver Detalhes</button>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 24 Sport Xr | Cor verde')">Comprar Agora</a>
+                        <button class="carousel-button view-button " data-product-id="Bicicleta aro 24 Sport Xr | Cor verde" >Ver Detalhes</button>
                     </div>
                 </div>
             </div>
@@ -737,7 +737,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external"class="carousel-button compra-agora" onclick="comprar('Bicicleta Caloi Ceci - Aro 26 - cor azul')">Comprar Agora</a>
+                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Caloi Ceci - Aro 26 - cor azul')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Bicicleta Caloi Ceci | aro 26 | Cor Azul">Ver Detalhes</button>
                     </div>
                 </div>
@@ -757,7 +757,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Caloi Ceci - Aro 26 - cor preta')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Caloi Ceci - Aro 26 - cor preta')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Bicicleta Caloi Ceci | aro 26 | Cor Preto">Ver Detalhes</button>
                     </div>
                 </div>
@@ -782,7 +782,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external"class="carousel-button compra-agora"onclick="comprar('Bicicleta Aro 29 EVOLO - cor Preto/Roxo')">Comprar Agora</a>
+                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Aro 29 EVOLO - cor Preto/Roxo')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Bicicleta EVOLO | aro 29 | Cor Preto/Roxo">Ver Detalhes</button>
                     </div>
                 </div>
@@ -802,7 +802,7 @@
                         <p class="preco-desconto-visual">(5% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora"onclick="comprar('Bicicleta Aro 26 - cor Laranja')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Aro 26 - cor Laranja')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Bicicleta aro 26 | Cor Laranja">Ver Detalhes</button>
                     </div>
                 </div>  
@@ -828,7 +828,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external"class="carousel-button compra-agora"onclick="comprar('Bicicleta aro 20 cor vermelho')">Comprar Agora</a>
+                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 20 cor vermelho')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Bicicleta aro 20 cor vermelho">Ver Detalhes</button>
                     </div>
                 </div>
@@ -838,7 +838,6 @@
                 <div class="produto-detalhes">
                    <h3 class="product-description">Bicicleta aro 20 | Cor Rosa</h3>
                     <p class="breve-descricao">Elegante</p>
-                    </p>
                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
                      <div class="product-price">
                         <del>DE R$ 719,99</del>
@@ -847,7 +846,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora"onclick="comprar('Bicicleta aro 20 cor rosa')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 20 cor rosa')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Bicicleta aro 20 cor rosa">Ver Detalhes</button>
                     </div>
                 </div>
@@ -872,7 +871,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external"class="carousel-button compra-agora"onclick="comprar('Bicicleta aro 20 cor Lilás')">Comprar Agora</a>
+                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 20 cor Lilás')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Bicicleta aro 20 cor Lilás">Ver Detalhes</button>
                     </div>
                 </div>
@@ -882,7 +881,6 @@
                 <div class="produto-detalhes">
                    <h3 class="product-description">Bicicleta aro 16 cor verde</h3>
                     <p class="breve-descricao"> Qualidade</p>
-                    </p>
                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
                      <div class="product-price">
                         <del>DE R$ 279,99</del>
@@ -891,7 +889,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora"onclick="comprar('Bicicleta aro 16 | Cor verde')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 16 | Cor verde')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Bicicleta aro 16 | Cor verde">Ver Detalhes</button>
                     </div>
                 </div>
@@ -917,7 +915,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external"class="carousel-button compra-agora"onclick="comprar('Bicicleta Infantil aro 14/16 - Multicores')">Comprar Agora</a>
+                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Infantil aro 14/16 - Multicores')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Bicicleta Infantil | cor vermelha">Ver Detalhes</button>
                     </div>
                 </div>
@@ -928,7 +926,6 @@
                 <div class="produto-detalhes">
                    <h3 class="product-description">Quadros para Bikes multicores</h3>
                     <p class="breve-descricao">Temos variedade | Qualidade</p>
-                    </p>
                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
                      <div class="product-price">
                         <del>DE R$ 279,99</del>
@@ -937,7 +934,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora"onclick="comprar('Quadro para Bike | Novas cores ')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Quadro para Bike | Novas cores ')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Quadro para bikes multicores">Ver Detalhes</button>
                     </div>
                 </div>
@@ -964,7 +961,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external"class="carousel-button compra-agora"onclick="comprar('bike-branca-26')">Comprar Agora</a>
+                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('bike-branca-26')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Bicicleta aro 26 | Cor Branca">Ver Detalhes</button>
                     </div>
                 </div>
@@ -983,7 +980,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora"onclick="comprar('Bicicleta aro 26 | Cor Verde')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 26 | Cor Verde')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Bicicleta aro 26 | Cor Verde">Ver Detalhes</button>
                     </div>
                 </div>
@@ -1008,7 +1005,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external"class="carousel-button compra-agora"onclick="comprar('Bicicleta Aro 24 | Cor Preta')">Comprar Agora</a>
+                        <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Aro 24 | Cor Preta')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Bicicleta Aro 24 | Cor Preta" >Ver Detalhes</button>
                     </div>
                 </div>
@@ -1027,7 +1024,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Caloi Ceci | aro 26 | Cor Rosa')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Caloi Ceci | aro 26 | Cor Rosa')">Comprar Agora</a>
                         <button class="carousel-button view-button " data-product-id="Bicicleta Caloi Ceci | aro 26 | Cor Rosa" >Ver Detalhes</button>
                     </div>
                 </div>
@@ -1059,7 +1056,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora"onclick="comprar('Garrafas de plástico squeeze PTK')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Garrafas de plástico squeeze PTK')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Garrafas de plástico squeeze PTK">Ver Detalhes</button>
                     </div>
                 </div>
@@ -1068,7 +1065,7 @@
                 <img src="produtos-acessorios/pedal-prata.webp" alt="Outra Bicicleta" loading="lazy">
                 <div class="produto-detalhes">
                    <h3 class="product-description">Pedal de alumínio | Cor Prata </h3>
-                    <p class="breve-descricao">Alta durabilidade
+                    <p class="breve-descricao">Alta durabilidade</p>
                       <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 89,99</del>
@@ -1077,7 +1074,7 @@
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/..." target="_blank" rel="external" class="carousel-button compra-agora"onclick="comprar('Pedal de alumínio')">Comprar Agora</a>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Pedal de alumínio')">Comprar Agora</a>
                         <button class="carousel-button view-button" data-product-id="Pedal de alumínio | Cor Prata">Ver Detalhes</button>
                     </div>
                 </div>
@@ -1122,7 +1119,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1169,7 +1166,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1223,7 +1220,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1270,7 +1267,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1325,7 +1322,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1373,7 +1370,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1429,7 +1426,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1477,7 +1474,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1531,7 +1528,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1578,7 +1575,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1638,7 +1635,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1685,7 +1682,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1740,7 +1737,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1787,7 +1784,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1821,7 +1818,6 @@
                     </h3>
                     <p class="breve-descricao">
                       Marcha leve e ágil
-                      >
                     </p>
                     <div class="pai-A">
                       <img
@@ -1842,7 +1838,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1889,7 +1885,7 @@
                     </div>
                     <div class="botoes-produto-container">
                       <a
-                        href="https://wa.me/..."
+                        href="https://wa.me/5571987261711"
                         target="_blank"
                         rel="external"
                         class="carousel-button compra-agora"
@@ -1919,8 +1915,8 @@
                     </div>
                     <div class="links-cta"> 
 
-            <a href="pages/nossasbikes.html" class="bike">Bikes: Acesse Promoções</a> 
-           </a><a href="pages/nossositens.html" class="bike"> Veja: Peças & acessórios</a>
+            <a href="pages/nossasbikes.html" class="bike">Bikes: Acesse Promoções</a>
+           <a href="pages/nossositens.html" class="bike"> Veja: Peças & acessórios</a>
        
           </div>
                   
@@ -1945,13 +1941,12 @@
                         <p >
                           A oficina CrossBike nasceu no ano de 2004, para fornecer a sociedade<span> Bikes de qualidade. </span>Diomario de Oliveira ainda muito jovem iniciou a historia no distrito de<a href="https://maps.google.com/?cid=611908174625510883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" rel="external" > Vila de Abrantes,</a> em Camaçari, cerca de 18km de Salvador com um objetivo muito claro<span id="pontos">...</span></p> <br>
 
-                          <p> <span id="mais">
-                              
+                          <p><span id="mais">
                          Foram anos de muito trabalho, esforço e amor ao que fazia, se tornando referência para todos na região.
-                         Por essa razão, em 2009, a empresa se mudou para o <a href="https://maps.google.com/?cid=611908174625510883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" rel="external">endereço atual</a>, visando atender mais pessoas. Consequentemente tivemos a expansão do nossa missão: oferecer serviços de valor, <a href="pages/nossasbikes.html">bicicletas eficientes</a> com peças confiáveis <span>para você</p><span>                        
-                        <div class="button-sobre-div"><button onclick="lerMais()" id="buttonLeiaMais" class="sobre-botao">Leia mais</button></div>                           
+                         Por essa razão, em 2009, a empresa se mudou para o <a href="https://maps.google.com/?cid=611908174625510883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" rel="external">endereço atual</a>, visando atender mais pessoas. Consequentemente tivemos a expansão da nossa missão: oferecer serviços de valor, <a href="pages/nossasbikes.html">bicicletas eficientes</a> com peças confiáveis para você</span>.</p>                        
+                        <div class="button-sobre-div"><button type="button" onclick="lerMais()" id="buttonLeiaMais" class="sobre-botao" aria-expanded="false">Leia mais</button></div>                           
                         <span class="off">
-                            <div class="img-centro-sobre"><img src="imagens/crossbike-frente-antiga-redimencionada.webp"alt="frente da CrossBike antigamente" class="img-sobre"></div>
+                            <div class="img-centro-sobre"><img src="imagens/crossbike-frente-antiga-redimencionada.webp" alt="frente da CrossBike antigamente" class="img-sobre"></div>
                             <p class="especsobre">Oficina à uma década atrás ( ... 2015)</p>
                         </span>
                           <p class="off">
@@ -1978,7 +1973,7 @@
                         <div class="mapa">
                           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6716.751576095365!2d-38.254762!3d-12.827422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7163f68748443fd%3A0x87def3e27b615e3!2sOficina%20Cross%20Bike!5e1!3m2!1spt-BR!2sbr!4v1747798772974!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <p class="chamada-mapa-pai"><a href="https://maps.google.com/?cid=611908174625510883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank"rel="external">Acessar Google maps<img src="imagens/google-maps.png" alt="ícone do google maps"> </a></p>
+                        <p class="chamada-mapa-pai"><a href="https://maps.google.com/?cid=611908174625510883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" rel="external">Acessar Google maps<img src="imagens/google-maps.png" alt="ícone do google maps"> </a></p>
                     
                              <div class="Destaque">
                                <p class="destaque"> Estamos localizados na Rua das Árvores, S/N - Vila de Abrantes, Camaçari - BA, 42840-000. Próximo da Unidade de pronto atendimento 24H de Abrantes</p>
@@ -2041,6 +2036,7 @@
       </div>
      <p class="marca-direitos-autorais"> Copyright &copy; 2025 Oficina CrossBike todos os direitos reservados <br> <br> CEP: 42840-000 | CNPJ: 11.185.346/0001-28 <br><br></p>     
     </footer>
+        <script src="./scripts/ux.js" defer></script>
         <script src="./scripts/detalhesProduto.js" defer></script>
         <script src="./scripts/scrollMenu.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>

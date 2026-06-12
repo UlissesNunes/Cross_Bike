@@ -1,7 +1,13 @@
+const depoimentosEl = document.querySelector('.depoimentos-D');
+if (depoimentosEl) {
 new Swiper('.depoimentos-D', {
     loop: true,
     spaceBetween: 30,
-    autoplay: { delay: 3000 },  
+    autoplay: { delay: 3000, pauseOnMouseEnter: true },
+    a11y: {
+      prevSlideMessage: 'Depoimento anterior',
+      nextSlideMessage: 'Próximo depoimento',
+    },  
     pagination: {
       el: '.swiper-pagination',
       clickable : true ,
@@ -30,3 +36,4 @@ new Swiper('.depoimentos-D', {
       },
     }
   });
+}

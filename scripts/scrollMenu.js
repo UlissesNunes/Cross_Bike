@@ -4,7 +4,7 @@ const sectionPage = document.querySelectorAll('.section')
 window.addEventListener('scroll', () => {
   sectionPage.forEach(section => {
     const posScroll = window.scrollY;//Posição da rolagem da página
-    const posInitial = section.offsetTop - 40;//Posição inicial da section
+    const posInitial = section.offsetTop - 88;//Posição inicial da section (altura do header)
     const heightSection = section.offsetHeight; //Altura da section
     const idSection = section.getAttribute('id') //id da section
     if (posScroll >= posInitial && posScroll < posInitial + heightSection) {
@@ -22,7 +22,7 @@ const scrollSection = (event) => {
     const href = event.currentTarget.getAttribute('href');
     const element = document.querySelector(href);
     if (element) {
-        const positionScroll = element.offsetTop -32.36;
+        const positionScroll = element.offsetTop - 88;
         window.scrollTo({
         top: positionScroll,
         behavior: 'smooth'

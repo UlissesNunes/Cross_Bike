@@ -244,23 +244,38 @@ document.addEventListener('DOMContentLoaded', () => {
         modalImagem.src = produto.imagem;
         modalImagem.alt = produto.titulo;
         modalTitulo.textContent = produto.titulo;
-        modalTexto.textContent = produto.descricao;
-        modalDinamico.style.display = 'flex';
+        modalTexto.textContent = produto.descricao || '';
+        abrirModal();
       }
     });
   });
-  // Funcionalidade para fechar o modal
-  fecharModalBtn.addEventListener('click', () => {
+
+  function abrirModal() {
+    modalDinamico.style.display = 'flex';
+    modalDinamico.classList.add('modal--visible');
+    modalDinamico.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+    fecharModalBtn.focus();
+  }
+
+  function fecharModal() {
     modalDinamico.style.display = 'none';
-  });
+    modalDinamico.classList.remove('modal--visible');
+    modalDinamico.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+  }
+
+  fecharModalBtn.addEventListener('click', fecharModal);
+
   modalDinamico.addEventListener('click', (event) => {
-    if (event.target === modalDinamico) { // Se clicou no fundo escuro, fecha
-      modalDinamico.style.display = 'none';
+    if (event.target === modalDinamico) {
+      fecharModal();
     }
   });
+
   document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && modalDinamico.style.display === 'flex') {
-      modalDinamico.style.display = 'none';
+    if (event.key === 'Escape' && modalDinamico.classList.contains('modal--visible')) {
+      fecharModal();
     }
   });
 });

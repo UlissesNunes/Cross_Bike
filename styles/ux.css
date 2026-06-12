@@ -1,0 +1,291 @@
+/* Melhorias de UX — mantém identidade visual CrossBike */
+
+:root {
+  --ux-focus: #fff4c2;
+  --ux-focus-ring: #620b0b;
+  --ux-touch-min: 44px;
+  --ux-transition: 0.2s ease;
+}
+
+/* Acessibilidade: reduzir animações quando o usuário preferir */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Skip link — primeiro foco para teclado */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  padding: 0.75rem 1.25rem;
+  background: var(--cor-amarelalogo, #eccb25);
+  color: var(--cor-vermelhoescuro, #620b0b);
+  font-weight: bold;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition: top var(--ux-transition);
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid var(--ux-focus-ring);
+  outline-offset: 2px;
+}
+
+/* Foco visível para navegação por teclado */
+:focus-visible {
+  outline: 3px solid var(--ux-focus);
+  outline-offset: 2px;
+}
+
+header nav ul li a:focus-visible,
+.compra-agora:focus-visible,
+.view-button:focus-visible,
+.sobre-botao:focus-visible,
+.links-cta a.bike:focus-visible {
+  outline: 3px solid var(--ux-focus-ring);
+  outline-offset: 2px;
+}
+
+/* Header com mais destaque ao rolar */
+header.header--scrolled {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+header .container-header > a {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Áreas de toque maiores no mobile */
+@media (max-width: 767px) {
+  header nav ul li a {
+    min-height: var(--ux-touch-min);
+    min-width: var(--ux-touch-min);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+  }
+
+  .compra-agora,
+  .view-button,
+  .compra-agora-vip,
+  .view-button-vip {
+    min-height: var(--ux-touch-min);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sobre-botao {
+    min-height: var(--ux-touch-min);
+    padding: 12px 20px;
+  }
+}
+
+/* Indicadores do slider principal visíveis */
+.manual-nav {
+  opacity: 0.55 !important;
+}
+
+.manual-nav:hover,
+.manual-nav:active {
+  opacity: 1 !important;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Feedback tátil nos botões */
+.compra-agora:active,
+.view-button:active,
+.compra-agora-vip:active,
+.view-button-vip:active,
+.sobre-botao:active,
+.links-cta a.bike:active {
+  transform: scale(0.97);
+}
+
+.compra-agora,
+.view-button,
+.compra-agora-vip,
+.view-button-vip,
+.sobre-botao {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Modal: animação e botão fechar visível */
+body.modal-open {
+  overflow: hidden;
+}
+
+.modal.modal--visible {
+  display: flex;
+  animation: ux-fade-in 0.25s ease;
+}
+
+.modal-conteudo {
+  animation: ux-slide-up 0.3s ease;
+}
+
+@keyframes ux-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes ux-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fechar-modal {
+  color: var(--cor-vermelhoclaro, #be3537) !important;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.fechar-modal:hover,
+.fechar-modal:focus-visible {
+  color: var(--cor-vermelhoescuro, #620b0b) !important;
+  background: var(--cor-amarelalogo, #eccb25);
+}
+
+/* Botão voltar ao topo flutuante */
+.btn-topo-flutuante {
+  position: fixed;
+  bottom: 5.5rem;
+  right: 1rem;
+  z-index: 2020;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: var(--cor-amarelalogo, #eccb25);
+  color: var(--cor-vermelhoescuro, #620b0b);
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity var(--ux-transition), visibility var(--ux-transition), transform var(--ux-transition), background var(--ux-transition);
+}
+
+.btn-topo-flutuante--visivel {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.btn-topo-flutuante:hover,
+.btn-topo-flutuante:focus-visible {
+  background: var(--cor-vermelhoclaro, #be3537);
+  color: var(--cor-amarelalogo, #eccb25);
+}
+
+/* WhatsApp flutuante */
+.btn-whatsapp-flutuante {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 2020;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25d366;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--ux-transition), box-shadow var(--ux-transition);
+}
+
+.btn-whatsapp-flutuante img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.btn-whatsapp-flutuante:hover,
+.btn-whatsapp-flutuante:focus-visible {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Placeholder suave enquanto imagens carregam */
+img[loading="lazy"] {
+  background: linear-gradient(110deg, #f5f5f5 8%, #ebebeb 18%, #f5f5f5 33%);
+  background-size: 200% 100%;
+}
+
+/* Links de produto com feedback */
+.produto-item {
+  transition: box-shadow var(--ux-transition);
+}
+
+.produto-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Breadcrumb mais legível */
+.home-link-Periferico a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.home-link-Periferico a:hover {
+  color: var(--cor-vermelhoclaro, #be3537);
+}
+
+/* Botão voltar ao topo no header das subpáginas */
+.botao-voltar-ao-topo {
+  min-width: var(--ux-touch-min);
+  min-height: var(--ux-touch-min);
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(190, 53, 55, 0.12);
+}
+
+.botao-voltar-ao-topo:hover {
+  background: var(--cor-vermelhoclaro, #be3537);
+  color: var(--cor-amarelalogo, #eccb25) !important;
+}
+
+@media (min-width: 768px) {
+  .btn-topo-flutuante {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
+
+  .btn-whatsapp-flutuante {
+    bottom: 1.5rem;
+    right: 5.5rem;
+  }
+}
