@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CrossBike - Oficina e loja de bicicletas em camaçari</title>
-    <meta name="description" content="Desde 2004, a Cross Bike é líder em custo-benefício. COMPRE agora mesmo sua bike">
-   
+    <title>Oficina CrossBike – Bicicletas em Camaçari, Bahia</title>
+    <meta name="description" content="Desde 2004 a Oficina CrossBike é referência em bicicletas em Camaçari, Bahia. Variedade, qualidade e os melhores preços.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://oficinacrossbike.com.br/">
+    <link rel="shortcut icon" href="imagens/crossbike-redimensionada.webp" type="image/x-icon">
+    <link rel="apple-touch-icon" href="imagens/crossbike-redimensionada.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://oficinacrossbike.com.br/">
+    <meta property="og:title" content="Oficina CrossBike – Bicicletas em Camaçari, Bahia">
+    <meta property="og:description" content="Desde 2004 a Oficina CrossBike é referência em bicicletas em Camaçari, Bahia. Variedade, qualidade e os melhores preços.">
+    <meta property="og:image" content="https://oficinacrossbike.com.br/imagens/crossbike-frente-redimencionada.webp">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Oficina CrossBike">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Oficina CrossBike – Bicicletas em Camaçari, Bahia">
+    <meta name="twitter:description" content="Desde 2004 a Oficina CrossBike é referência em bicicletas em Camaçari, Bahia.">
+    <meta name="twitter:image" content="https://oficinacrossbike.com.br/imagens/crossbike-frente-redimencionada.webp">
     <link rel="stylesheet" href="./styles/mobile.css">
     <link rel="stylesheet" href="./styles/ux.css">
     <link rel="stylesheet" href="./styles/geral.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward_ios" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward_ios,business_center,call,description,gavel,mail,photo_camera,smartphone">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <link rel="shortcut icon" href="imagens/crossbike-redimensionada.webp" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5TJXHFBBTB"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -54,16 +68,16 @@
         "Monday",
         "Tuesday",
         "Wednesday",
+        "Thursday",
         "Friday",
         "Saturday"
       ],
-      "opens": "08:00",
+      "opens": "08:30",
       "closes": "18:30"
     },
     {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": [
-        "Thursday",
         "Sunday"
       ],
       "opens": "00:00",
@@ -86,19 +100,37 @@
   <header>
    <div class="container-header">
     <a href="#Home" aria-label="Ir para o início"><img src="imagens/crossbike-redimensionada.webp" alt="Logo Oficina CrossBike" loading="eager"></a>
-     <nav>
+     <nav aria-label="Menu principal">
       <ul>
         <li class="nav"><a class="active" href="#Home" >Home</a></li>
-        <li class="nav"><a href="#Serviços">Serviços</a></li>
+        <li class="nav"><a href="#Serviços">Produtos</a></li>
         <li class="nav "><a href="#Sobre" >Sobre</a></li>
         <li class="nav "><a href="#Contato" class="not">Contato</a></li>
        </ul>
      </nav>
+     <button class="btn-hamburguer" id="btn-hamburguer" aria-label="Abrir menu" aria-expanded="false" aria-controls="sidebar-nav">
+       <span></span>
+       <span></span>
+       <span></span>
+     </button>
    </div>
   </header>
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <nav class="sidebar-nav" id="sidebar-nav" aria-label="Menu lateral" aria-hidden="true">
+    <div class="sidebar-cabecalho">
+      <img src="imagens/crossbike-redimensionada.webp" alt="Logo Oficina CrossBike" class="sidebar-logo" loading="lazy">
+      <button class="sidebar-fechar" id="sidebar-fechar" aria-label="Fechar menu">&times;</button>
+    </div>
+    <ul>
+      <li class="nav"><a href="#Home">Home</a></li>
+      <li class="nav"><a href="#Serviços">Produtos</a></li>
+      <li class="nav"><a href="#Sobre">Sobre</a></li>
+      <li class="nav"><a href="#Contato">Contato</a></li>
+    </ul>
+  </nav>
   <div class="container-banner">
      <div class="banner">
-        <img src="imagens/crossbike-redimensionada.webp" alt="logo imagem" loading="eager">
+        <img src="imagens/crossbike-redimensionada.webp" alt="" loading="eager">
          <p>O nosso horário de funcionamento é de segunda à sábado, das 8:30 às 18:30</p>
          
          
@@ -113,22 +145,22 @@
         
      <div class="imgagem-one-slide first">
         <a href="pages/nossasbikes.html">
-         <img src="imagens/crossbike-public.webp" alt="imagem ilustrativa crossbike" loading="eager" >
+         <img src="imagens/crossbike-public.webp" alt="Fachada da Oficina CrossBike em Vila de Abrantes" loading="eager" >
         </a>
       </div>
        <div class="imgagem-one-slide">
           <a href="pages/nossasbikes.html">
-            <img src="imagens/CROSSBIKE(2).webp" alt="imagem ilustrativa crossbike" class="aspect" loading="lazy" >
+            <img src="imagens/CROSSBIKE(2).webp" alt="Bicicletas em exposição na Oficina CrossBike" class="aspect" loading="lazy" >
           </a>
        </div>
        <div class="imgagem-one-slide">
          <a href="pages/nossasbikes.html">
-           <img src="imagens/CROSSBIKE(5).webp" alt="imagem ilustrativa crossbike" class="aspect" loading="lazy">
+           <img src="imagens/CROSSBIKE(5).webp" alt="Vitrine de modelos CrossBike" class="aspect" loading="lazy">
          </a>
        </div>
        <div class="imgagem-one-slide">
              <a href="pages/nossasbikes.html">
-               <img src="imagens/CROSSBIKE(amarela).webp" alt="imagem ilustrativa crossbike" class="aspect" loading="lazy">
+               <img src="imagens/CROSSBIKE(amarela).webp" alt="Bicicleta amarela na Oficina CrossBike" class="aspect" loading="lazy">
              </a>
        </div>
         
@@ -149,13 +181,13 @@
     <section class="section" id="Home">
     <main class="home">
         <article>
-            <h1>Oficina Cross Bike</h1>
+            <h1>Oficina CrossBike</h1>
         <div class="conteudo">
           <h2 class="destaque" id="slogan">A confiança que te leva mais longe</h2> 
          <p> Desde 2004 <strong>Líder</strong> em custo-benefício na <span>Bahia</span>.
-            </p>      
+            </p>
             <div class="div-imagem-satisfação">
-              <a href="pages/nossasbikes.html"><img src="imagens/oferta-capacete.webp" alt="imagem ilustrativa crossbike"  class="aspect satisfa" loading="eager"></a>
+              <a href="pages/nossasbikes.html"><img src="imagens/CROSSBIKE(55).webp" alt="Oferta de capacetes e equipamentos CrossBike"  class="aspect satisfa" loading="eager"></a>
                  </div> 
                  <h3 class="slogan-home"> Somos Loja | Oficina | Referência </h3>
            <p>Milhares estão conosco<a href="https://www.instagram.com/oficina_cross_bike/" class="a" target="_blank">@Oficina_Cross_Bike</a></p>      
@@ -163,10 +195,6 @@
             <a href="https://www.instagram.com/oficina_cross_bike/" target = "_blank" rel="external" ><img src="adicionais/icons8-instagram.gif" alt="ícone do instagram comercial" class="ctaWhats"></a><a href="#Serviços" class="bike">Oferta VIP Aqui</a>  <a href="https://wa.me/5571987261711" target = "_blank" rel="external" ><img src="adicionais/icons8-whatsapp.gif" alt="ícone do whatsapp comercial" class="ctaWhats" >
         </a>     
         </div>
-          <div class="div-imagem-satisfação"> 
-            <img src="imagens/bike-rosa-redimencionada.webp" alt="bike rosa" class="img-bike-secund" loading="lazy">
-            <img src="imagens/bike-amarela-redimensionada.webp" alt="foto da bike-amarela-redimensionada para ilustrar" class="img-home" loading="lazy">
-         </div>  
         
          <p class="chamada-mapa-pai"><a href="#Contato">Clique e Visite nossa loja <img src="imagens/mapas-do-google.png" alt="ícone do google maps" loading="lazy"> </a></p>
         </div>
@@ -180,14 +208,17 @@
                     <a href="#"  class="cards-link-D">
                        <img src="imagens/sport-bike.webp" alt="foto de depoimento1" class="img-D" loading="lazy"> 
                          <p class="p-D">Mauricio Santos - Cliente</p>
-                         <div class="perifericos-D">                         
-                          
-                          <div class="selo-pai-de-estrela">
-                           <img src="imagens/cadeado.png" alt="selos" class="cadeado-selo-D" loading="lazy">
-                          </div><div class="selo-pai-de-estrela">
-                            <img src="imagens/estrelas.png" alt="selos" class="estrela-selo-D" loading="lazy">
+                         <div class="perifericos-D">
+                            <div class="selo-pai-de-estrela">
+                           <img src="imagens/qualidade.png" alt="Selo de qualidade" class="qualidade-selo-D">
                           </div>
-                         </div>   
+                           <div class="selo-pai-de-estrela">
+                           <img src="imagens/cadeado.png" alt="Selo de confiança" class="cadeado-selo-D">
+                          </div>
+                          <div class="selo-pai-de-estrela">
+                            <img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrela-selo-D">
+                          </div>
+                         </div>  
                          <h3 class="h3-D">
                            "Show! conta com uma variedade de peças e o melhor de tudo o dono do estabelecimento é uma pessoa maravilhosa e o serviço é top, quem é top só vai lá!"
                          </h3>            
@@ -199,13 +230,13 @@
                        <p class="p-D">Gustavo Pinheiro - Cliente</p>
                           <div class="perifericos-D">
                             <div class="selo-pai-de-estrela">
-                           <img src="imagens/qualidade.png" alt="selos" class="qualidade-selo-D">
+                           <img src="imagens/qualidade.png" alt="Selo de qualidade" class="qualidade-selo-D">
                           </div>
                            <div class="selo-pai-de-estrela">
-                           <img src="imagens/cadeado.png" alt="selos" class="cadeado-selo-D">
+                           <img src="imagens/cadeado.png" alt="Selo de confiança" class="cadeado-selo-D">
                           </div>
                           <div class="selo-pai-de-estrela">
-                            <img src="imagens/estrelas.png" alt="selos" class="estrela-selo-D">
+                            <img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrela-selo-D">
                           </div>
                          </div>
                        <h3 class="h3-D">
@@ -218,13 +249,13 @@
                            <p class="p-D">Danuzia Furtado - Cliente</p>
                                <div class="perifericos-D">
                             <div class="selo-pai-de-estrela">
-                           <img src="imagens/qualidade.png" alt="selos" class="qualidade-selo-D">
+                           <img src="imagens/qualidade.png" alt="Selo de qualidade" class="qualidade-selo-D">
                           </div>
                            <div class="selo-pai-de-estrela">
-                           <img src="imagens/cadeado.png" alt="selos" class="cadeado-selo-D">
+                           <img src="imagens/cadeado.png" alt="Selo de confiança" class="cadeado-selo-D">
                           </div>                    
                           <div class="selo-pai-de-estrela">
-                            <img src="imagens/estrelas.png" alt="selos" class="estrela-selo-D">
+                            <img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrela-selo-D">
                           </div>                     
                          </div>      
                            <h3 class="h3-D">
@@ -237,13 +268,13 @@
                              <p class="p-D">Jean Uarney - Cliente</p>
                                <div class="perifericos-D">
                             <div class="selo-pai-de-estrela">
-                           <img src="imagens/qualidade.png" alt="selos" class="qualidade-selo-D">
+                           <img src="imagens/qualidade.png" alt="Selo de qualidade" class="qualidade-selo-D">
                           </div>
                            <div class="selo-pai-de-estrela">
-                           <img src="imagens/cadeado.png" alt="selos" class="cadeado-selo-D">
+                           <img src="imagens/cadeado.png" alt="Selo de confiança" class="cadeado-selo-D">
                           </div>    
                           <div class="selo-pai-de-estrela">
-                            <img src="imagens/estrelas.png" alt="selos" class="estrela-selo-D">
+                            <img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrela-selo-D">
                           </div>                         
                          </div>                                        
                              <h3 class="h3-D">
@@ -257,13 +288,13 @@
                              <p class="p-D">Leandro C B - Cliente</p>
                                <div class="perifericos-D">
                             <div class="selo-pai-de-estrela">
-                           <img src="imagens/qualidade.png" alt="selos" class="qualidade-selo-D">
+                           <img src="imagens/qualidade.png" alt="Selo de qualidade" class="qualidade-selo-D">
                           </div>
                            <div class="selo-pai-de-estrela">
-                           <img src="imagens/cadeado.png" alt="selos" class="cadeado-selo-D">
+                           <img src="imagens/cadeado.png" alt="Selo de confiança" class="cadeado-selo-D">
                           </div>
                           <div class="selo-pai-de-estrela">
-                            <img src="imagens/estrelas.png" alt="selos" class="estrela-selo-D">
+                            <img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrela-selo-D">
                           </div>
                          </div>                          
                              <h3 class="h3-D">
@@ -278,13 +309,13 @@
                            <p class="p-D">Cleiton Soares - Cliente</p>
                               <div class="perifericos-D">
                             <div class="selo-pai-de-estrela">
-                           <img src="imagens/qualidade.png" alt="selos" class="qualidade-selo-D">
+                           <img src="imagens/qualidade.png" alt="Selo de qualidade" class="qualidade-selo-D">
                           </div>
                            <div class="selo-pai-de-estrela">
-                           <img src="imagens/cadeado.png" alt="selos" class="cadeado-selo-D">
+                           <img src="imagens/cadeado.png" alt="Selo de confiança" class="cadeado-selo-D">
                           </div>  
                          <div class="selo-pai-de-estrela">
-                            <img src="imagens/estrelas.png" alt="selos" class="estrela-selo-D">
+                            <img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrela-selo-D">
                           </div>
                          </div>
                            <h3 class="h3-D">
@@ -303,7 +334,7 @@
          <main>
             <article>
                     <div class="conteudo">
-                       <h1>  Área Premium CrossBike</h1>
+                       <h2 class="titulo-secao">Loja Premium</h2>
                         
                   
                <div class="links-cta"> 
@@ -311,20 +342,20 @@
         </a><a href="pages/nossositens.html" class="bike">  Setor peças</a>
         </div><hr>
               <div class="vip-containe">              
-      <div class="vip-slide active"><h2 class="destaque">Oferta VIP relâmpago: topo de linha | 30% de desconto |<img src="imagens/trovao (1).png" alt="imagem ilustrativa crossbike"> </h2>
+      <div class="vip-slide active"><h2 class="destaque">Oferta VIP relâmpago | 20% de desconto <img src="imagens/trovao (1).png" alt=""> </h2>
         <div class="produto-linha-vip">
             <div class="produto-item-vip"> 
-                <img src="produtos-bikes/bike-aro29-ecos-azul-preto.webp" alt="Bicicleta aro29 verde" loading="lazy"> 
+                <img src="produtos-bikes/bike-aro29-ecos-azul-preto.webp" alt="Bicicleta Ecos cor azul e preto aro 29" loading="lazy"> 
                 <div class="produto-detalhes-vip">
                     <h3 class="product-description-vip">Bicicleta Ecos cor azul & preto | aro 29 </h3>
                     <p class="breve-descricao"><span>Qualidade & esportividade</span>.
                     </p>
-                    <div class="div-estrelas-D-vip"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelas-D-vip"></div>
+                    <div class="div-estrelas-D-vip"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelas-D-vip"></div>
                     <div class="product-price-vip">
                         <del>DE R$ 1789,99</del>
-                        <p class="preco-parcelado-vip"> POR 6x de <span>R$214,99</span> sem juros</p>
+                        <p class="preco-parcelado-vip"> POR 6x de <span>R$215,00</span> sem juros</p>
                         <p class="preco-avista-vip">OU R$1189,99 no Pix</p>
-                        <p class="preço-desconto-visual-vip">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preço-desconto-visual-vip">(20% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container-vip">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button-vip compra-agora-vip" onclick="comprar('Bicicleta Ecos cor azul & preto aro 29')">Comprar Agora</a>
@@ -333,10 +364,10 @@
         </div>
       </div>
           <div class="banner-cronometro">
-              <img src="imagens/trovao (1).png" alt="imagem ilustrativa crossbike">
+              <img src="imagens/trovao (1).png" alt="">
         <div class="cronometro-texto"> Termina em:</div>
         <div id="contagem" class="cronometro">05:31</div>
-        <img src="imagens/trovao (1).png" alt="imagem ilustrativa crossbike">
+        <img src="imagens/trovao (1).png" alt="">
     </div><hr> 
   </div>        
       <div id="modal-dinamico" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo-produto" aria-hidden="true">
@@ -350,23 +381,23 @@
     </div>
   </div>
 </div>
-    <h2 class="destaque">Mais vendidos</h2>
+    <h2 class="destaque">Últimas Vendas</h2>
 
      <div class="carousel-container">
     <div class="carousel-slide active">
         <div class="produto-linha">
             <div class="produto-item">
-                <img src="produtos-bikes/bike-aro29-verde.webp" alt="Bicicleta Evolo cor azul aro 29" loading="lazy">
+                <img src="produtos-bikes/bike-aro29-verde.webp" alt="Bicicleta Evolo cor verde aro 29" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta Evolo cor verde | aro 29</h3>
                      <p class="breve-descricao">Suavidade e conforto
                     </p>
-                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 1479,99</del>
-                        <p class="preco-parcelado"> POR 6x de <span>R$214,99</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 6x de <span>R$215,00</span> sem juros</p>
                         <p class="preco-avista">OU R$1189,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(20% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro29 verde')">Comprar Agora</a>
@@ -375,17 +406,17 @@
                 </div>
             </div>
             <div class="produto-item">
-                <img src="produtos-bikes/bike-aro29-ecos-cinza-verde.webp" alt="Outra Bicicleta" loading="lazy">
+                <img src="produtos-bikes/bike-aro29-ecos-cinza-verde.webp" alt="Bicicleta Ecos cor cinza aro 29" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta Ecos cor cinza | aro 29</h3>
                     <p class="breve-descricao">resistente e leve
                     </p>
-                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
-                        <del>DE R$ 779,99</del>
-                        <p class="preco-parcelado"> POR 6x de <span>R$214,99</span> sem juros</p>
+                        <del>DE R$ 1479,99</del>
+                        <p class="preco-parcelado"> POR 6x de <span>R$215,00</span> sem juros</p>
                         <p class="preco-avista">OU R$1189,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                      
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Ecos cor cinza & verde aro 29')">Comprar Agora</a>
@@ -401,17 +432,17 @@
     <div class="carousel-slide active">
         <div class="produto-linha">
             <div class="produto-item">
-                <img src="produtos-bikes/bike-aro26-branca-comcestamarrom.webp" alt="Bicicleta Evolo cor azul aro 29" loading="lazy">
+                <img src="produtos-bikes/bike-aro26-branca-comcestamarrom.webp" alt="Bicicleta aro 26 quadro rebaixado cor branca com cestinha" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta aro 26 Quadro rebaixado | cor branca</h3>
                      <p class="breve-descricao">cestinha inclusa
                     </p>
-                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 1279,99</del>
-                        <p class="preco-parcelado"> POR 4x de <span>R$ 219,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$275,00</span> sem juros</p>
                         <p class="preco-avista">OU R$999,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(22% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 26 | cor branca')">Comprar Agora</a>
@@ -420,17 +451,17 @@
                 </div>
             </div>
             <div class="produto-item">
-                <img src="produtos-bikes/bike-aro26-azul.webp" alt="Outra Bicicleta" loading="lazy">
+                <img src="produtos-bikes/bike-aro26-azul.webp" alt="Bicicleta aro 26 com marcha cor azul" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta aro 26 com marcha | Cor azul</h3>
                     <p class="breve-descricao">com descanso incluso
                     </p>
-                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 779,99</del>
-                        <p class="preco-parcelado"> POR 4x de <span>R$ 189,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$187,50</span> sem juros</p>
                         <p class="preco-avista">OU R$ 699,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(10% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 26 | Cor azul')">Comprar Agora</a>
@@ -446,17 +477,17 @@
     <div class="carousel-slide active">
         <div class="produto-linha">
             <div class="produto-item">
-                <img src="produtos-bikes/bike-aro24-montadinha.webp" alt="Bicicleta Evolo cor azul aro 29" loading="lazy">
+                <img src="produtos-bikes/bike-aro24-montadinha.webp" alt="Bicicleta montadinha aro 24 cor lilás" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta montadinha aro 24 | cor lilás</h3>
                      <p class="breve-descricao">Suavidade e conforto
                     </p>
-                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 1479,99</del>
-                        <p class="preco-parcelado"> POR 6x de <span>R$ 195,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$237,50</span> sem juros</p>
                         <p class="preco-avista">OU R$ 849,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(43% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta montadinha aro 24 | cor lilás')">Comprar Agora</a>
@@ -465,17 +496,17 @@
                 </div>
             </div>
             <div class="produto-item">
-                <img src="produtos-bikes/bike-aro26-branca-vermelha.webp" alt="Outra Bicicleta" loading="lazy">
+                <img src="produtos-bikes/bike-aro26-branca-vermelha.webp" alt="Bicicleta aro 26 cor branca com marcha" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta aro 26 | Cor branca </h3>
                     <p class="breve-descricao">Com marcha
                     </p>
-                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 779,99</del>
-                        <p class="preco-parcelado"> POR 4x de <span>R$ 185,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$187,50</span> sem juros</p>
                         <p class="preco-avista">OU R$ 699,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(10% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 26 | Cor branca')">Comprar Agora</a>
@@ -497,12 +528,12 @@
                     <h3 class="product-description">Bicicleta Evolo cor azul | aro 29</h3>
                      <p class="breve-descricao">Suavidade e conforto
                     </p>
-                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 1479,99</del>
-                        <p class="preco-parcelado"> POR 6x de <span>R$ 220,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 6x de <span>R$215,00</span> sem juros</p>
                         <p class="preco-avista">OU R$ 1189,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(20% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Evolo cor azul | aro 29')">Comprar Agora</a>
@@ -511,17 +542,17 @@
                 </div>
             </div>
             <div class="produto-item">
-                <img src="produtos-bikes/bike-aro16-verde.webp" alt="Outra Bicicleta" loading="lazy">
+                <img src="produtos-bikes/bike-aro16-verde.webp" alt="Bicicleta aro 16 cor verde" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta aro 16 | Cor verde</h3>
                     <p class="breve-descricao">resistente e leve
                     </p>
-                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 779,99</del>
-                        <p class="preco-parcelado"> POR 4x de <span>R$ 135,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$150,00</span> sem juros</p>
                         <p class="preco-avista">OU R$ 549,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(29% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 16 | Cor verde')">Comprar Agora</a>
@@ -537,17 +568,17 @@
     <div class="carousel-slide active">
         <div class="produto-linha">
             <div class="produto-item">
-                <img src="produtos-bikes/retro-azul.webp" alt="retro-azul" loading="lazy">
+                <img src="produtos-bikes/retro-azul.webp" alt="Bicicleta retrô Z-Rader aro 26 cor azul" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta z-rader retrô aro 26 | cor azul</h3>
                      <p class="breve-descricao"> conforto puro
                     </p>
-                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 1679,99</del>
-                        <p class="preco-parcelado"> POR 6x de <span>R$ 250,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$372,50</span> sem juros</p>
                         <p class="preco-avista">OU R$ 1389,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(17% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta z-rader retrô aro 26 | cor azul')">Comprar Agora</a>
@@ -556,18 +587,18 @@
                 </div>
             </div>
             <div class="produto-item">
-                <img src="produtos-bikes/29monaco.webp" alt="Outra Bicicleta" loading="lazy" class="estoque-zerado">
+                <img src="produtos-bikes/29monaco.webp" alt="Bicicleta Monaco aro 29 cor preto" loading="lazy" class="estoque-zerado">
                 <div class="produto-detalhes">
                   <p class="estoque-msg">ESGOTADO</p>
                     <h3 class="product-description">Bicicleta Monaco aro 29 | Cor preto </h3>
                     <p class="breve-descricao">versão de luxo: c/ câmbios shimano
                     </p>
-                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 1679,99</del>
-                        <p class="preco-parcelado"> POR 6x de <span>R$ 250,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 6x de <span>R$250,00</span> sem juros</p>
                         <p class="preco-avista">OU R$ 1399,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(17% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Monaco Aro 29 Cor Preto')">Comprar Agora</a>
@@ -583,18 +614,18 @@
     <div class="carousel-slide active">
         <div class="produto-linha">
             <div class="produto-item">
-                <img src="produtos-bikes/29absolute.webp" alt="Bicicleta absolute 29" loading="lazy" class="estoque-zerado">
+                <img src="produtos-bikes/29absolute.webp" alt="Bicicleta Absolute aro 29" loading="lazy" class="estoque-zerado">
                 <div class="produto-detalhes">
                    <p class="estoque-msg">ESGOTADO</p>
                     <h3 class="product-description">Bicicleta Absolute | aro 29</h3>
                      <p class="breve-descricao">Suavidade e conforto
                     </p>
-                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 1479,99</del>
-                        <p class="preco-parcelado"> POR 6x de <span>R$ 220,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 6x de <span>R$233,33</span> sem juros</p>
                         <p class="preco-avista">OU R$ 1299,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(12% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Aro 29 Absolute Azul/Rosa')">Comprar Agora</a>
@@ -603,17 +634,17 @@
                 </div>
             </div>
             <div class="produto-item">
-                <img src="produtos-bikes/bike29laranja.webp" alt="Outra Bicicleta" loading="lazy">
+                <img src="produtos-bikes/bike29laranja.webp" alt="Bicicleta aro 29 cor laranja" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta aro 29 | Cor Laranja </h3>
                     <p class="breve-descricao">Elegante e leve
                     </p>
-                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 1379,99</del>
-                        <p class="preco-parcelado"> POR 6x de <span>R$ 210,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 6x de <span>R$216,67</span> sem juros</p>
                         <p class="preco-avista">OU R$ 1199,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(13% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 29 Cor Laranja')">Comprar Agora</a>
@@ -628,17 +659,17 @@
     <div class="carousel-slide active">
         <div class="produto-linha">
             <div class="produto-item">
-                <img src="produtos-bikes/bike-amarela-29.webp" alt="Bicicleta EVOLO Aro 29 amarela" loading="lazy">
+                <img src="produtos-bikes/bike-amarela-29.webp" alt="Bicicleta Evolo aro 29 cor amarela" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta EVOLO | aro 29 | Cor Amarela</h3>
                      <p class="breve-descricao">Freio a disco
                     </p>
-                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 1279,99</del>
-                        <p class="preco-parcelado"> POR 6x de <span>R$ 239,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 6x de <span>R$216,67</span> sem juros</p>
                         <p class="preco-avista">OU R$ 1199,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(6% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Aro 29 EVOLO - cor amarela')">Comprar Agora</a>
@@ -647,17 +678,17 @@
                 </div>
             </div>
             <div class="produto-item">
-                <img src="produtos-bikes/bike-verde-1200.webp" alt="Outra Bicicleta" loading="lazy">
+                <img src="produtos-bikes/bike-verde-1200.webp" alt="Bicicleta Caloi Ceci aro 26 cor verde" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta Caloi Ceci | aro 26 | Cor Verde </h3>
                     <p class="breve-descricao">Resistente e moderno
                     </p>
-                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 1279,99</del>
-                        <p class="preco-parcelado"> POR 6x de <span>R$ 210,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 5x de <span>R$220,00</span> sem juros</p>
                         <p class="preco-avista">OU R$ 1000,00 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(22% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Caloi Ceci - Aro 26 - cor verde')">Comprar Agora</a>
@@ -672,17 +703,17 @@
     <div class="carousel-slide active">
         <div class="produto-linha">
             <div class="produto-item">
-                <img src="produtos-bikes/bike-violeta-26.webp" alt="Bicicleta EVOLO Aro 29 amarela" loading="lazy">
+                <img src="produtos-bikes/bike-violeta-26.webp" alt="Bicicleta aro 26 San's cor violeta" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta Aro 26 san's | Cor Violeta</h3>
                      <p class="breve-descricao">Custo-benefício
                     </p>
-                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 879,99</del>
-                        <p class="preco-parcelado"> POR 4x de <span>R$ 175,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$175,00</span> sem juros</p>
                         <p class="preco-avista">OU R$ 649,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(26% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Aro 26 Sans - cor Violeta')">Comprar Agora</a>
@@ -691,17 +722,17 @@
                 </div>
             </div>
             <div class="produto-item">
-                <img src="produtos-bikes/bikearo24mobilete.webp" alt="Outra Bicicleta" loading="lazy">
+                <img src="produtos-bikes/bikearo24mobilete.webp" alt="Bicicleta aro 24 Sport Xr cor verde" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta aro 24 Sport Xr | Cor verde  </h3>
                     <p class="breve-descricao">Resistente e moderno
                     </p>
-                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 979,99</del>
-                        <p class="preco-parcelado"> POR 4x de <span>R$ 232,99</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$237,50</span> sem juros</p>
                         <p class="preco-avista">OU R$ 849,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(13% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 24 Sport Xr | Cor verde')">Comprar Agora</a>
@@ -714,7 +745,7 @@
 </div>
   <div class="imgagem-one">
             <a href="pages/nossasbikes.html">
-              <img src="imagens/CROSSBIKE (10).png" alt="imagem ilustrativa crossbike" loading="lazy">
+              <img src="imagens/CROSSBIKE (10).png" alt="Promoção de bicicletas Oficina CrossBike" loading="lazy">
             </a>
           </div>
           <br>
@@ -724,17 +755,17 @@
     <div class="carousel-slide active">
         <div class="produto-linha">
             <div class="produto-item">
-                <img src="produtos-bikes/bike-azul1200.webp" alt="Bicicleta CrossBike" loading="lazy">
+                <img src="produtos-bikes/bike-azul1200.webp" alt="Bicicleta Caloi Ceci aro 26 cor azul" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta Caloi Ceci | aro 26 | Cor Azul </h3>
                     <p class="breve-descricao">Confiaça e qualidade
                     </p>
-                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 1279,99</del>
-                        <p class="preco-parcelado"> POR 6x de <span>R$ 209,89</span> sem juros</p>      
+                        <p class="preco-parcelado"> POR 5x de <span>R$220,00</span> sem juros</p>      
                         <p class="preco-avista">OU R$ 1000,00 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(22% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Caloi Ceci - Aro 26 - cor azul')">Comprar Agora</a>
@@ -743,18 +774,18 @@
                 </div>
             </div>
             <div class="produto-item">
-                <img src="produtos-bikes/bike-preta-branca-1200.webp" alt="Outra Bicicleta" loading="lazy">
+                <img src="produtos-bikes/bike-preta-branca-1200.webp" alt="Bicicleta Caloi Ceci aro 26 cor preta" loading="lazy">
                 <div class="produto-detalhes">
                    <h3 class="product-description">Bicicleta Caloi Ceci | aro 26 | Cor Preto</h3>
                     <p class="breve-descricao">
                         Design moderno e leve
                     </p>
-                     <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                     <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                      <div class="product-price">
                         <del>DE R$ 1279,99</del>
-                        <p class="preco-parcelado"> POR 6x de <span>R$ 189,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 5x de <span>R$220,00</span> sem juros</p>
                         <p class="preco-avista">OU R$ 1000,00 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(22% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Caloi Ceci - Aro 26 - cor preta')">Comprar Agora</a>
@@ -769,17 +800,17 @@
     <div class="carousel-slide active">
         <div class="produto-linha">
             <div class="produto-item">
-                <img src="produtos-bikes/bike-preto-roxo-29.webp" alt="Bicicleta EVOLO Aro 29 amarela" loading="lazy">
+                <img src="produtos-bikes/bike-preto-roxo-29.webp" alt="Bicicleta Evolo aro 29 cor preto e roxo" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta EVOLO | aro 29 | Cor Preto/Roxo</h3>
                      <p class="breve-descricao">Freio a disco
                     </p>
-                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 1479,99</del>
-                        <p class="preco-parcelado"> POR 6x de <span>R$ 249,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 6x de <span>R$216,67</span> sem juros</p>
                         <p class="preco-avista">OU R$ 1199,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(19% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Aro 29 EVOLO - cor Preto/Roxo')">Comprar Agora</a>
@@ -788,18 +819,18 @@
                 </div>
             </div>
             <div class="produto-item">
-                <img src="produtos-bikes/bike-laranja-26.webp" alt="Outra Bicicleta" loading="lazy">
+                <img src="produtos-bikes/bike-laranja-26.webp" alt="Bicicleta aro 26 cor laranja" loading="lazy">
                 <div class="produto-detalhes">
                    <h3 class="product-description">Bicicleta aro 26 | Cor Laranja </h3>
                     <p class="breve-descricao">
                        design argonomico 
                     </p>
-                     <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                     <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                      <div class="product-price">
                         <del>DE R$ 779,99</del>
-                        <p class="preco-parcelado"> POR 6x de <span>R$ 119,99</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$175,00</span> sem juros</p>
                         <p class="preco-avista">OU R$ 649,99 no Pix</p>
-                        <p class="preco-desconto-visual">(5% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(17% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Aro 26 - cor Laranja')">Comprar Agora</a>
@@ -820,12 +851,12 @@
                     <h3 class="product-description">Bicicleta aro 20 | Cor Vermelho </h3>
                     <p class="breve-descricao">seguro pro dia a dia
                     </p>
-                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 719,99</del>
-                        <p class="preco-parcelado"> POR 4x de <span>R$ 164,99</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$162,50</span> sem juros</p>
                         <p class="preco-avista">OU R$ 599,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(17% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 20 cor vermelho')">Comprar Agora</a>
@@ -834,16 +865,16 @@
                 </div>
             </div>
             <div class="produto-item">
-                <img src="produtos-bikes/bikearo20-rosa.webp" alt="Outra Bicicleta" loading="lazy">
+                <img src="produtos-bikes/bikearo20-rosa.webp" alt="Bicicleta aro 20 cor rosa" loading="lazy">
                 <div class="produto-detalhes">
                    <h3 class="product-description">Bicicleta aro 20 | Cor Rosa</h3>
                     <p class="breve-descricao">Elegante</p>
-                     <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                     <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                      <div class="product-price">
                         <del>DE R$ 719,99</del>
-                        <p class="preco-parcelado"> POR 4x de <span>R$ 169,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$162,50</span> sem juros</p>
                         <p class="preco-avista">OU R$ 599,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(17% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 20 cor rosa')">Comprar Agora</a>
@@ -858,17 +889,17 @@
     <div class="carousel-slide active">
         <div class="produto-linha">
             <div class="produto-item">
-                <img src="produtos-bikes/bikearo20-roxo.webp" alt="Bicicleta EVOLO Aro 29 Laranja" loading="lazy">
+                <img src="produtos-bikes/bikearo20-roxo.webp" alt="Bicicleta aro 20 cor lilás" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta aro 20 | Cor Lilás </h3>
                     <p class="breve-descricao">Pro dia a dia
                     </p>
-                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 679,99</del>
-                        <p class="preco-parcelado"> POR 4x de <span>R$ 162,99</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$162,50</span> sem juros</p>
                         <p class="preco-avista">OU R$ 599,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(12% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 20 cor Lilás')">Comprar Agora</a>
@@ -877,20 +908,20 @@
                 </div>
             </div>
             <div class="produto-item">
-                <img src="produtos-bikes/bike-aro16-verde.webp" alt="Outra Bicicleta" loading="lazy">
+                <img src="produtos-bikes/bike-aro16-verde.webp" alt="Bicicleta aro 16 cor verde" loading="lazy">
                 <div class="produto-detalhes">
                    <h3 class="product-description">Bicicleta aro 16 cor verde</h3>
                     <p class="breve-descricao"> Qualidade</p>
-                     <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                     <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                      <div class="product-price">
-                        <del>DE R$ 279,99</del>
-                        <p class="preco-parcelado"> POR 4x de <span>R$ 134,89</span> sem juros</p>
+                        <del>DE R$ 779,99</del>
+                        <p class="preco-parcelado"> POR 4x de <span>R$150,00</span> sem juros</p>
                         <p class="preco-avista">OU R$ 549,99 no Pix</p>
                         <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
-                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 16 | Cor verde')">Comprar Agora</a>
-                        <button class="carousel-button view-button" data-product-id="Bicicleta aro 16 | Cor verde">Ver Detalhes</button>
+                        <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 16 cor verde')">Comprar Agora</a>
+                        <button class="carousel-button view-button" data-product-id="Bicicleta aro 16 cor verde">Ver Detalhes</button>
                     </div>
                 </div>
             </div>
@@ -902,17 +933,17 @@
     <div class="carousel-slide active">
         <div class="produto-linha">
             <div class="produto-item">
-                <img src="imagens/bike-infantil-redimencionada.webp" alt="Bicicleta EVOLO Aro 29 Laranja" loading="lazy">
+                <img src="imagens/bike-infantil-redimencionada.webp" alt="Bicicleta infantil aro 16 cor vermelho" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta aro 16 | Cor Vermelho </h3>
                     <p class="breve-descricao">seguro pro dia a dia
                     </p>
-                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 679,99</del>
-                        <p class="preco-parcelado"> POR 4x de <span>R$ 122,99</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$162,50</span> sem juros</p>
                         <p class="preco-avista">OU R$ 599,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(12% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Infantil aro 14/16 - Multicores')">Comprar Agora</a>
@@ -922,16 +953,16 @@
             </div>
             
             <div class="produto-item">
-                <img src="imagens/bikes-quadro-redimencionada.webp" alt="Outra Bicicleta" loading="lazy">
+                <img src="imagens/bikes-quadro-redimencionada.webp" alt="Quadros para bikes em várias cores" loading="lazy">
                 <div class="produto-detalhes">
                    <h3 class="product-description">Quadros para Bikes multicores</h3>
                     <p class="breve-descricao">Temos variedade | Qualidade</p>
-                     <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                     <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                      <div class="product-price">
                         <del>DE R$ 279,99</del>
-                        <p class="preco-parcelado"> POR 2x de <span>R$ 129,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 3x de <span>R$85,00</span> sem juros</p>
                         <p class="preco-avista">OU R$ 249,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(11% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Quadro para Bike | Novas cores ')">Comprar Agora</a>
@@ -948,17 +979,17 @@
     <div class="carousel-slide active">
         <div class="produto-linha">
             <div class="produto-item">
-                <img src="produtos-bikes/bike-branca-26.webp" alt="Bicicleta EVOLO Aro 29 Laranja" loading="lazy">
+                <img src="produtos-bikes/bike-branca-26.webp" alt="Bicicleta Evolo aro 26 cor branca" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta EVOLO | aro 26 | Cor Branca</h3>
                     <p class="breve-descricao"> Design único e leve
                     </p>
-                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 879,99</del>
-                        <p class="preco-parcelado"> POR 4x de <span>R$ 239,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$175,00</span> sem juros</p>
                         <p class="preco-avista">OU R$ 649,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(26% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('bike-branca-26')">Comprar Agora</a>
@@ -967,17 +998,17 @@
                 </div>
             </div>
             <div class="produto-item">
-                <img src="produtos-bikes/bike-verde-26.webp" alt="Outra Bicicleta" loading="lazy">
+                <img src="produtos-bikes/bike-verde-26.webp" alt="Bicicleta aro 26 cor verde" loading="lazy">
                 <div class="produto-detalhes">
                    <h3 class="product-description">Bicicleta aro 26 | Cor Verde</h3>
                     <p class="breve-descricao">Moderna e leve
                     </p>
-                     <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                     <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                      <div class="product-price">
                         <del>DE R$ 779,99</del>
-                        <p class="preco-parcelado"> POR 4x de <span>R$ 239,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$175,00</span> sem juros</p>
                         <p class="preco-avista">OU R$ 649,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(17% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta aro 26 | Cor Verde')">Comprar Agora</a>
@@ -992,17 +1023,17 @@
     <div class="carousel-slide active">
         <div class="produto-linha">
             <div class="produto-item">
-                <img src="produtos-bikes/bikearo24-preta.webp" alt="Bicicleta EVOLO Aro 29 amarela" loading="lazy">
+                <img src="produtos-bikes/bikearo24-preta.webp" alt="Bicicleta aro 24 cor preta" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta Aro 24 | Cor Preta</h3>
                      <p class="breve-descricao">Flexibidade e resistência
                     </p>
-                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                    <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 979,99</del>
-                        <p class="preco-parcelado"> POR 4x de <span>R$ 213,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 4x de <span>R$175,00</span> sem juros</p>
                         <p class="preco-avista">OU R$ 649,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(34% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/c/557187261711" target ="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Aro 24 | Cor Preta')">Comprar Agora</a>
@@ -1011,17 +1042,17 @@
                 </div>
             </div>
             <div class="produto-item">
-                <img src="produtos-bikes/image (3).webp" alt="Outra Bicicleta" loading="lazy">
+                <img src="produtos-bikes/image (3).webp" alt="Bicicleta Caloi Ceci aro 26 cor rosa" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Bicicleta Caloi Ceci | aro 26 | Cor Rosa </h3>
                     <p class="breve-descricao">Resistente e moderno
                     </p>
-                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 1179,99</del>
-                        <p class="preco-parcelado"> POR 6x de <span>R$ 210,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 5x de <span>R$220,00</span> sem juros</p>
                         <p class="preco-avista">OU R$ 1000,00 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(15% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Bicicleta Caloi Ceci | aro 26 | Cor Rosa')">Comprar Agora</a>
@@ -1034,7 +1065,7 @@
 </div>
     <div class="imgagem-one">
             <a href="pages/nossasbikes.html">
-              <img src="imagens/CROSSBIKE (10).png" alt="imagem ilustrativa crossbike" loading="lazy">
+              <img src="imagens/CROSSBIKE (10).png" alt="Promoção de bicicletas Oficina CrossBike" loading="lazy">
             </a>
           </div>
           <br>
@@ -1043,17 +1074,17 @@
     <div class="carousel-slide active">
         <div class="produto-linha">
             <div class="produto-item">
-                <img src="produtos-acessorios/garrafa-trio.webp" alt="Bicicleta EVOLO Aro 29 Laranja" loading="lazy">
+                <img src="produtos-acessorios/garrafa-trio.webp" alt="Garrafas squeeze PTK para ciclismo" loading="lazy">
                 <div class="produto-detalhes">
                     <h3 class="product-description">Garrafas de plástico squeeze PTK</h3>
                     <p class="breve-descricao"> Alta qualidade
                     </p>
-                     <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                     <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 29,99</del>
-                        <p class="preco-parcelado"> POR 2x de <span>R$ 19,89</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 2x de <span>R$12,50</span> sem juros</p>
                         <p class="preco-avista">OU R$ 19,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(33% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Garrafas de plástico squeeze PTK')">Comprar Agora</a>
@@ -1062,16 +1093,16 @@
                 </div>
             </div>
             <div class="produto-item">
-                <img src="produtos-acessorios/pedal-prata.webp" alt="Outra Bicicleta" loading="lazy">
+                <img src="produtos-acessorios/pedal-prata.webp" alt="Pedal de alumínio cor prata" loading="lazy">
                 <div class="produto-detalhes">
                    <h3 class="product-description">Pedal de alumínio | Cor Prata </h3>
                     <p class="breve-descricao">Alta durabilidade</p>
-                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação" class="estrelaA" ></div>
+                      <div class="pai-A"><img src="imagens/estrelas.png" alt="Avaliação 5 estrelas" class="estrelaA" ></div>
                     <div class="product-price">
                         <del>DE R$ 89,99</del>
-                        <p class="preco-parcelado"> POR 2x de <span>R$ 26,99</span> sem juros</p>
+                        <p class="preco-parcelado"> POR 2x de <span>R$27,50</span> sem juros</p>
                         <p class="preco-avista">OU R$ 49,99 no Pix</p>
-                        <p class="preco-desconto-visual">(10% DE DESCONTO A VISTA) </p>
+                        <p class="preco-desconto-visual">(44% DE DESCONTO À VISTA) </p>
                     </div>
                     <div class="botoes-produto-container">
                         <a href="https://wa.me/5571987261711" target="_blank" rel="external" class="carousel-button compra-agora" onclick="comprar('Pedal de alumínio')">Comprar Agora</a>
@@ -1091,7 +1122,7 @@
                 <div class="produto-item">
                   <img
                     src="produtos-acessorios/camara-de-ar-pirelli.webp"
-                    alt="Bicicleta EVOLO Aro 29 Laranja" loading="lazy"
+                    alt="Câmara de ar Pirelli para bicicleta" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1103,18 +1134,18 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
                       <del>DE R$ 49,99</del>
                       <p class="preco-parcelado">
-                        POR 2x de <span>R$ 12,89</span> sem juros
+                        POR 2x de <span>R$15,00</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 24,99 no Pix</p>
                       <p class="preco-desconto-visual">
-                        (10% DE DESCONTO A VISTA)
+                        (50% DE DESCONTO À VISTA)
                       </p>
                     </div>
                     <div class="botoes-produto-container">
@@ -1138,7 +1169,7 @@
                 <div class="produto-item">
                   <img
                     src="produtos-acessorios/camara-de-ar-kenda.webp"
-                    alt="Outra Bicicleta" loading="lazy"
+                    alt="Câmara de ar Kenda para bicicleta" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1150,18 +1181,18 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
                       <del>DE R$ 29,99</del>
                       <p class="preco-parcelado">
-                        POR 2x de <span>R$ 11,99</span> sem juros
+                        POR 2x de <span>R$14,00</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 22,99 no Pix</p>
                       <p class="preco-desconto-visual">
-                        (10% DE DESCONTO A VISTA)
+                        (23% DE DESCONTO À VISTA)
                       </p>
                     </div>
                     <div class="botoes-produto-container">
@@ -1192,7 +1223,7 @@
                 <div class="produto-item tamanho-menor ">
                   <img class="guidom-p"
                     src="produtos-acessorios/guidon-prata.webp"
-                    alt="Bicicleta EVOLO Aro 29 Laranja" loading="lazy"
+                    alt="Guidom esportivo de alumínio cor prata" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1204,18 +1235,18 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
                       <del>DE R$ 49,99</del>
                       <p class="preco-parcelado">
-                        POR 3x de <span>R$ 13,99</span> sem juros
+                        POR 2x de <span>R$20,00</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 34,99 no Pix</p>
                       <p class="preco-desconto-visual">
-                        (10% DE DESCONTO A VISTA)
+                        (30% DE DESCONTO À VISTA)
                       </p>
                     </div>
                     <div class="botoes-produto-container">
@@ -1239,7 +1270,7 @@
                 <div class="produto-item tamanho-menor ">
                   <img class="guidom-p"
                     src="produtos-acessorios/guidon-preto (2).webp"
-                    alt="Outra Bicicleta" loading="lazy"
+                    alt="Guidom esportivo de alumínio reto cor preto" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1251,18 +1282,18 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
                       <del>DE R$ 79,99</del>
                       <p class="preco-parcelado">
-                        POR 2x de <span>R$ 18,89</span> sem juros
+                        POR 2x de <span>R$32,50</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 59,99 no Pix</p>
                       <p class="preco-desconto-visual">
-                        (10% DE DESCONTO A VISTA)
+                        (25% DE DESCONTO À VISTA)
                       </p>
                     </div>
                     <div class="botoes-produto-container">
@@ -1276,7 +1307,7 @@
                       >
                       <button
                         class="carousel-button view-button"
-                        data-product-id=" Guidom esportivo Alumínio Reto | Cor preto"
+                        data-product-id="Guidom esportivo Alumínio Reto | Cor preto"
                       >
                         Ver Detalhes
                       </button>
@@ -1294,7 +1325,7 @@
                 <div class="produto-item">
                   <img
                     src="produtos-acessorios/tubo-de-enrolamento-removebg-preview.webp"
-                    alt="Bicicleta EVOLO Aro 29 Laranja" loading="lazy"
+                    alt="Par de cubos de rolamento" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1306,18 +1337,18 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
                       <del>DE R$ 139,99</del>
                       <p class="preco-parcelado">
-                        POR 2x de <span>R$ 51,99</span> sem juros
+                        POR 2x de <span>R$52,50</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 99,99 no Pix</p>
                       <p class="preco-desconto-visual">
-                        (10% DE DESCONTO A VISTA)
+                        (29% DE DESCONTO À VISTA)
                       </p>
                     </div>
                     <div class="botoes-produto-container">
@@ -1342,7 +1373,7 @@
                 <div class="produto-item">
                   <img
                     src="produtos-acessorios/camara-de-ar-levorin.webp"
-                    alt="Outra Bicicleta" loading="lazy"
+                    alt="Câmara de ar Levorin para bicicleta" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1354,18 +1385,18 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
                       <del>DE R$ 39,99</del>
                       <p class="preco-parcelado">
-                        POR 2x de <span>R$ 12,98</span> sem juros
+                        POR 2x de <span>R$15,00</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 24,99 no Pix</p>
                       <p class="preco-desconto-visual">
-                        (10% DE DESCONTO A VISTA)
+                        (38% DE DESCONTO À VISTA)
                       </p>
                     </div>
                     <div class="botoes-produto-container">
@@ -1397,7 +1428,7 @@
                 <div class="produto-item">
                   <img
                     src="produtos-acessorios/corrente-9velocidades-removebg-preview.webp"
-                    alt="corrente 9v" loading="lazy"
+                    alt="Corrente de 9 velocidades para bicicleta" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1410,14 +1441,14 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
-                      <del>DE R$ 59,99</del>
+                      <del>DE R$ 109,99</del>
                       <p class="preco-parcelado">
-                        POR 2x de <span>R$ 18,89</span> sem juros
+                        POR 2x de <span>R$42,50</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 79,99 no Pix</p>
                       <p class="preco-desconto-visual">
@@ -1445,7 +1476,7 @@
                 <div class="produto-item">
                   <img
                     src="produtos-acessorios/movimento-central-e-rosca-removebg-preview.webp"
-                    alt="Outra Bicicleta" loading="lazy"
+                    alt="Movimento central e rosca para bicicleta" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1458,18 +1489,18 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
                       <del>DE R$ 79,99</del>
                       <p class="preco-parcelado">
-                        POR 2x de <span>R$ 27,89</span> sem juros
+                        POR 2x de <span>R$30,00</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 54,99 no Pix</p>
                       <p class="preco-desconto-visual">
-                        (10% DE DESCONTO A VISTA)
+                        (31% DE DESCONTO À VISTA)
                       </p>
                     </div>
                     <div class="botoes-produto-container">
@@ -1499,7 +1530,7 @@
                 <div class="produto-item">
                   <img
                     src="produtos-acessorios/corrente-evolo-bike-removebg-preview.webp"
-                    alt="Bicicleta EVOLO Aro 29 Laranja" loading="lazy"
+                    alt="Corrente Evolo para bicicleta sem marcha" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1512,18 +1543,18 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
                       <del>DE R$ 39,99</del>
                       <p class="preco-parcelado">
-                        POR 2x de <span>R$ 17,89</span> sem juros
+                        POR 2x de <span>R$15,00</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 24,99 no Pix</p>
                       <p class="preco-desconto-visual">
-                        (10% DE DESCONTO A VISTA)
+                        (38% DE DESCONTO À VISTA)
                       </p>
                     </div>
                     <div class="botoes-produto-container">
@@ -1537,7 +1568,7 @@
                       >
                       <button
                         class="carousel-button view-button"
-                        data-product-id=" Corrente para Bikes sem marcha"
+                        data-product-id="Corrente para Bikes sem marcha"
                       >
                         Ver Detalhes
                       </button>
@@ -1547,7 +1578,7 @@
                 <div class="produto-item">
                   <img
                     src="produtos-acessorios/corrente-de-marcha-removebg-preview.webp"
-                    alt="Outra Bicicleta" loading="lazy"
+                    alt="Corrente YBN de marcha para bicicleta" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1559,18 +1590,18 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
                       <del>DE R$ 49,99</del>
                       <p class="preco-parcelado">
-                        POR 2x de <span>R$ 17,89</span> sem juros
+                        POR 2x de <span>R$17,49</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 29,99 no Pix</p>
                       <p class="preco-desconto-visual">
-                        (10% DE DESCONTO A VISTA)
+                        (40% DE DESCONTO À VISTA)
                       </p>
                     </div>
                     <div class="botoes-produto-container">
@@ -1606,7 +1637,7 @@
                 <div class="produto-item">
                   <img
                     src="produtos-acessorios/cadeado-evelo-amplo.webp"
-                    alt="Bicicleta EVOLO Aro 29 Laranja" loading="lazy"
+                    alt="Cadeado Evolo com chave tamanho P" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1619,18 +1650,18 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
                       <del>DE R$ 49,99</del>
                       <p class="preco-parcelado">
-                        POR 2x de <span>R$ 13,89</span> sem juros
+                        POR 2x de <span>R$15,00</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 24,99 no Pix</p>
                       <p class="preco-desconto-visual">
-                        (10% DE DESCONTO A VISTA)
+                        (50% DE DESCONTO À VISTA)
                       </p>
                     </div>
                     <div class="botoes-produto-container">
@@ -1654,7 +1685,7 @@
                 <div class="produto-item">
                   <img
                     src="produtos-acessorios/cadeado-evolo-chaves.webp"
-                    alt="Outra Bicicleta" loading="lazy"
+                    alt="Cadeado Evolo amplo com chaves tamanho G" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1666,18 +1697,18 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
                       <del>DE R$ 49,99</del>
                       <p class="preco-parcelado">
-                        POR 2x de <span>R$ 19,89</span> sem juros
+                        POR 2x de <span>R$20,00</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 34,99 no Pix</p>
                       <p class="preco-desconto-visual">
-                        (10% DE DESCONTO A VISTA)
+                        (30% DE DESCONTO À VISTA)
                       </p>
                     </div>
                     <div class="botoes-produto-container">
@@ -1708,7 +1739,7 @@
                 <div class="produto-item">
                   <img
                     src="produtos-acessorios/catraca-24dentes-inviktus.webp"
-                    alt="Bicicleta EVOLO Aro 29 Laranja" loading="lazy"
+                    alt="Catraca de 24 dentes Inviktus" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1721,18 +1752,18 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
                       <del>DE R$ 79,99</del>
                       <p class="preco-parcelado">
-                        POR 2x de <span>R$ 19,89</span> sem juros
+                        POR 2x de <span>R$17,49</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 29,99 no Pix</p>
                       <p class="preco-desconto-visual">
-                        (10% DE DESCONTO A VISTA)
+                        (63% DE DESCONTO À VISTA)
                       </p>
                     </div>
                     <div class="botoes-produto-container">
@@ -1746,7 +1777,7 @@
                       >
                       <button
                         class="carousel-button view-button"
-                        data-product-id=" Catraca 24 Dentes | Inviktus"
+                        data-product-id="Catraca 24 Dentes | Inviktus"
                       >
                         Ver Detalhes
                       </button>
@@ -1756,7 +1787,7 @@
                 <div class="produto-item">
                   <img
                     src="produtos-acessorios/garrafa-branca.webp"
-                    alt="Outra Bicicleta" loading="lazy"
+                    alt="Garrafa PTK cor branca para ciclismo" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1768,18 +1799,18 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
                       <del>DE R$ 29,99</del>
                       <p class="preco-parcelado">
-                        POR 2x de <span>R$ 17,89</span> sem juros
+                        POR 2x de <span>R$12,50</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 19,99 no Pix</p>
                       <p class="preco-desconto-visual">
-                        (10% DE DESCONTO A VISTA)
+                        (33% DE DESCONTO À VISTA)
                       </p>
                     </div>
                     <div class="botoes-produto-container">
@@ -1793,7 +1824,7 @@
                       >
                       <button
                         class="carousel-button view-button"
-                        data-product-id=" Garrafa Termica PTK | Cor branco"
+                        data-product-id="Garrafa Termica PTK | Cor branco"
                       >
                         Ver Detalhes
                       </button>
@@ -1810,7 +1841,7 @@
                 <div class="produto-item">
                   <img
                     src="produtos-acessorios/catraca-20dentes-evolo-removebg-preview.webp"
-                    alt="Bicicleta EVOLO Aro 29 Laranja" loading="lazy"
+                    alt="Catraca de 20 dentes Evolo" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1822,18 +1853,18 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
                       <del>DE R$ 29,99</del>
                       <p class="preco-parcelado">
-                        POR 2x de <span>R$ 13,89</span> sem juros
+                        POR 2x de <span>R$15,00</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 25,00 no Pix</p>
                       <p class="preco-desconto-visual">
-                        (10% DE DESCONTO A VISTA)
+                        (17% DE DESCONTO À VISTA)
                       </p>
                     </div>
                     <div class="botoes-produto-container">
@@ -1857,7 +1888,7 @@
                 <div class="produto-item">
                   <img
                     src="produtos-acessorios/catraca-22dentes-shiftech-removebg-preview.webp"
-                    alt="Outra Bicicleta" loading="lazy"
+                    alt="Catraca de 22 dentes Shiftech" loading="lazy"
                   />
                   <div class="produto-detalhes">
                     <h3 class="product-description">
@@ -1869,18 +1900,18 @@
                     <div class="pai-A">
                       <img
                         src="imagens/estrelas.png"
-                        alt="Avaliação"
+                        alt="Avaliação 5 estrelas"
                         class="estrelaA"
                       />
                     </div>
                     <div class="product-price">
                       <del>DE R$ 33,99</del>
                       <p class="preco-parcelado">
-                        POR 2x de <span>R$ 16,89</span> sem juros
+                        POR 2x de <span>R$17,49</span> sem juros
                       </p>
                       <p class="preco-avista">OU R$ 29,99 no Pix</p>
                       <p class="preco-desconto-visual">
-                        (10% DE DESCONTO A VISTA)
+                        (12% DE DESCONTO À VISTA)
                       </p>
                     </div>
                     <div class="botoes-produto-container">
@@ -1906,7 +1937,7 @@
           </div>
            <p class="link-ultra-periférico"><a href="pages/nossositens.html"> > últimas unidades! bicicletas em Camaçari Bahia Bicicletas com 25% de desconto</a></p>
           <div class="imgagem-one">
-          <a href="pages/nossasbikes.html"><img src="imagens/CROSSBIKE(55).webp" alt="imagem ilustrativa crossbike" loading="lazy"></a>
+          <a href="pages/nossasbikes.html"><img src="imagens/crossbike-public-01.webp" alt="Bicicletas em promoção Oficina CrossBike" loading="lazy"></a>
           </div>
 
           <div class="links-cta"> <a href="https://www.instagram.com/oficina_cross_bike/" target = "_blank" rel="external" ><img src="adicionais/icons8-instagram.gif" alt="ícone do instagram comercial" class="ctaWhats"></a><a href="#Contato" class="bike">Fale conosco pelo whatsapp </a>  <a href="https://wa.me/5571987261711" target = "_blank" rel="external" ><img src="adicionais/icons8-whatsapp.gif" alt="ícone do whatsapp comercial" class="ctaWhats" ></a></div>
@@ -1927,31 +1958,42 @@
     <section class="section" id="Sobre">    
          <main class="sobre">
               <article>
-                     <h1 class="sobre">Transformação que combina <br> com você</h1>
+                     <h2 class="sobre titulo-secao">Transformação que combina <br> com você</h2>
 
                      <div class="img-centro-sobre">
-                      <img src="imagens/crossbike-frente-antiga-redimencionada.webp" alt="" class="img-sobre off" loading="lazy">
+                      <img src="imagens/crossbike-frente-antiga-redimencionada.webp" alt="Fachada antiga da Oficina CrossBike" class="img-sobre off" loading="lazy">
                            
-                      <img src="imagens/crossbike-frente-redimencionada.webp" alt="" class="img-sobre" loading="lazy">
+                      <img src="imagens/crossbike-frente-redimencionada.webp" alt="Fachada atual da Oficina CrossBike" class="img-sobre" loading="lazy">
                           
                       </div>
                         
                     <h2 class="destaque">O orgulho de ser Crossbike</h2>
                         
-                        <p >
-                          A oficina CrossBike nasceu no ano de 2004, para fornecer a sociedade<span> Bikes de qualidade. </span>Diomario de Oliveira ainda muito jovem iniciou a historia no distrito de<a href="https://maps.google.com/?cid=611908174625510883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" rel="external" > Vila de Abrantes,</a> em Camaçari, cerca de 18km de Salvador com um objetivo muito claro<span id="pontos">...</span></p> <br>
+<p>
+  A oficina CrossBike nasceu no ano de 2004, para fornecer à sociedade<span> Bikes de qualidade. </span>Diomario de Oliveira, ainda muito jovem, iniciou a história no distrito de 
+  <a href="https://maps.google.com/?cid=611908174625510883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" rel="external"> Vila de Abrantes,</a> em Camaçari, cerca de 18km de Salvador, com um objetivo muito claro: transformar o sonho de pedalar em realidade para todos que buscavam confiança, desempenho e paixão sobre duas rodas. 
+  Desde o primeiro dia, a CrossBike se destacou pela dedicação, pelo atendimento humano e pela busca incansável em oferecer o melhor para cada cliente<span id="pontos">...</span>
+</p> <br>
 
-                          <p><span id="mais">
-                         Foram anos de muito trabalho, esforço e amor ao que fazia, se tornando referência para todos na região.
-                         Por essa razão, em 2009, a empresa se mudou para o <a href="https://maps.google.com/?cid=611908174625510883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" rel="external">endereço atual</a>, visando atender mais pessoas. Consequentemente tivemos a expansão da nossa missão: oferecer serviços de valor, <a href="pages/nossasbikes.html">bicicletas eficientes</a> com peças confiáveis para você</span>.</p>                        
+<p><span id="mais">
+  Foram anos de muito trabalho, esforço e amor ao que fazia, tornando-se rapidamente referência para todos na região. A cada bicicleta entregue, a cada peça ajustada, a cada sorriso de cliente satisfeito, a CrossBike consolidava sua reputação como símbolo de qualidade e credibilidade. 
+  Por essa razão, em 2009, a empresa se mudou para o 
+  <a href="https://maps.google.com/?cid=611908174625510883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" rel="external">endereço atual</a>, visando atender mais pessoas e expandir sua missão. 
+  Consequentemente, ampliamos nossa essência: oferecer serviços de valor, <a href="pages/nossasbikes.html">bicicletas eficientes</a> com peças confiáveis para você, mas também entregar inspiração, motivação e a certeza de que pedalar é um estilo de vida.
+  <br><br>
+  Hoje, a CrossBike é reconhecida em Salvador, Camaçari e em toda a Bahia como muito mais do que uma oficina: é um espaço de encontro, de histórias e de conquistas. 
+  Ciclistas profissionais, iniciantes e famílias encontram aqui não apenas produtos de excelência, mas também um ambiente acolhedor, onde cada detalhe é pensado para que a experiência seja única. 
+  <br><br>
+  O orgulho de ser CrossBike é o orgulho de carregar consigo um legado de superação e paixão. É saber que cada pedalada impulsionada por nossas bicicletas representa liberdade, saúde e alegria. 
+  É ter a certeza de que o sonho de um jovem empreendedor, Diomario de Oliveira, se transformou em um patrimônio do ciclismo baiano, inspirando gerações e fortalecendo a cultura da bike em nossa região.
+</span></p>
+                   
                         <div class="button-sobre-div"><button type="button" onclick="lerMais()" id="buttonLeiaMais" class="sobre-botao" aria-expanded="false">Leia mais</button></div>                           
                         <span class="off">
-                            <div class="img-centro-sobre"><img src="imagens/crossbike-frente-antiga-redimencionada.webp" alt="frente da CrossBike antigamente" class="img-sobre"></div>
+                            <div class="img-centro-sobre"><img src="imagens/crossbike-frente-antiga-redimencionada.webp" alt="Fachada antiga da Oficina CrossBike" class="img-sobre"></div>
                             <p class="especsobre">Oficina à uma década atrás ( ... 2015)</p>
                         </span>
-                          <p class="off">
-                                Evoluimos diariamente para que você tenha a <span>melhor experiência com sua bike</span>.
-                          </p>
+                         
                 <div class="img-centro-sobre">
                   <iframe width="100%" height="100%"  src="https://www.youtube-nocookie.com/embed/Hg30DSCm5Aw?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&" 
                           title="Vídeo da CrossBike" 
@@ -1960,8 +2002,7 @@
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;picture-in-picture; web-share" 
                           allowfullscreen ></iframe>
                 </div>
-                <p class="on">Evoluimos diariamente para que tenha a melhor experiência possível com sua bike.
-                  </p>
+               
              </article>             
         </main>
     </section>
@@ -1969,9 +2010,9 @@
          <main class="contato">
             <article class="footer-mobile">               
                     <article class="contato-mapa">
-                                <h1 class="contato">Venha nos conhecer:</h1>
+                                <h2 class="contato titulo-secao">Venha nos conhecer:</h2>
                         <div class="mapa">
-                          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6716.751576095365!2d-38.254762!3d-12.827422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7163f68748443fd%3A0x87def3e27b615e3!2sOficina%20Cross%20Bike!5e1!3m2!1spt-BR!2sbr!4v1747798772974!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6716.751576095365!2d-38.254762!3d-12.827422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7163f68748443fd%3A0x87def3e27b615e3!2sOficina%20Cross%20Bike!5e1!3m2!1spt-BR!2sbr!4v1747798772974!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                         </div>
                         <p class="chamada-mapa-pai"><a href="https://maps.google.com/?cid=611908174625510883&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" rel="external">Acessar Google maps<img src="imagens/google-maps.png" alt="ícone do google maps"> </a></p>
                     
@@ -1980,7 +2021,7 @@
                              </div>            
                               </article>
                              <hr>
-              <div class="marca-logo-footer"> <img src="imagens/crossbike-redimensionada.webp" alt="">
+              <div class="marca-logo-footer"> <img src="imagens/crossbike-redimensionada.webp" alt="Oficina CrossBike">
               <div class="marca-p-footer">
                 <p>Desde 2004 </p>
               </div>
@@ -2013,15 +2054,15 @@
          </main>
     </section><hr>
     <section class="formas-pag">
-      <img src="imagens/lyra_media_pack_1.png" alt="" class="img-formas-pag">
+      <img src="imagens/lyra_media_pack_1.png" alt="Formas de pagamento aceitas" class="img-formas-pag">
     </section><hr>
     <section class="formas-pag">
       
-      <img src="imagens/ssl.png" alt="imagens-selos de ssl" class="img-formas-ssl">
-      <img src="imagens/dados-seguros.png" alt="imagens-selos de ssl" class="img-formas-ssl displayONFF" > 
-      <img src="imagens/google.png" alt="imagens-selos de ssl" class="img-formas-ssl displayONFF" >
-      <img src="imagens/protecao-da-web.png" alt="imagens-selos de ssl" class="img-formas-ssl displayONFF" >
-      <img src="imagens/https.png" alt="selos para https de confiança" class="img-formas-ssl">
+      <img src="imagens/ssl.png" alt="Certificado SSL de segurança" class="img-formas-ssl">
+      <img src="imagens/dados-seguros.png" alt="Dados seguros" class="img-formas-ssl displayONFF" > 
+      <img src="imagens/google.png" alt="Site verificado pelo Google" class="img-formas-ssl displayONFF" >
+      <img src="imagens/protecao-da-web.png" alt="Proteção da web" class="img-formas-ssl displayONFF" >
+      <img src="imagens/https.png" alt="Protocolo HTTPS seguro" class="img-formas-ssl">
        <p class="ssl">ssl | https +9</p>
     </section>
     <footer>   
@@ -2044,6 +2085,19 @@
         <script src="./scripts/moverCarrossel.js" defer></script>
         <script src="./scripts/compreWhats.js" defer></script>
         <script src="./scripts/lerMais.js" defer></script>
-        <script> c=document.getElementById('contagem');s=330;setInterval(function(){m=Math.floor(s/60);sec=s%60;c.textContent=(m<10?'0':'')+m+':'+(sec<10?'0':'')+sec;s=(s<=0)?150:s-1},1000); </script>
+        <script src="./scripts/menu.js" defer></script>
+        <script>
+(function() {
+    var el = document.getElementById('contagem');
+    if (!el) return;
+    var tempo = 330;
+    setInterval(function() {
+        var min = Math.floor(tempo / 60);
+        var sec = tempo % 60;
+        el.textContent = (min < 10 ? '0' : '') + min + ':' + (sec < 10 ? '0' : '') + sec;
+        tempo = tempo <= 0 ? 150 : tempo - 1;
+    }, 1000);
+})();
+</script>
 </body>
 </html>

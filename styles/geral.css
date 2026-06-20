@@ -1,7 +1,11 @@
-
 @media  screen and (min-width: 640px) {
+
+ .btn-hamburguer { display: none; }
+ .sidebar-nav,
+ .sidebar-overlay { display: none; }
+
  header {
-  height: auto;
+  height: 100px;
  }
   #Sobre, #Serviços {
     margin-top: 1px;
@@ -18,8 +22,9 @@
     margin-right: 10px;
    }
   header img {
-   height: 150px;
-    width: 240px;
+    max-width: 150px;
+    max-height: 84px;
+    height: auto;
   }
   .banner {
     height: 20px;
@@ -157,7 +162,7 @@ main h1 {
       width: 100%;
       margin: 0 auto;
      }
-     #Sobre h1 br  {
+     #Sobre .titulo-secao br  {
        display: block;
      }
      #Sobre .img-centro-sobre {
@@ -305,6 +310,16 @@ hr {
     margin: 0 auto;
 }} 
 @media screen and (min-width: 1024px) {
+
+  .btn-hamburguer { display: none; }
+  .sidebar-nav,
+  .sidebar-overlay { display: none; }
+
+  header {
+    height: 112px;
+  }
+
+
 
   .imgagem-one {
     display: none;
@@ -463,7 +478,6 @@ hr {
     main {
     max-width: 800px;
     padding: 0 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.208);
   }
     .container {
         width: 100%;
@@ -508,7 +522,9 @@ hr {
     margin-right: 10px;
   }
   header img {
-    max-width: 140px;
+    max-width: 175px;
+    max-height: 92px;
+    height: auto;
   }
   .banner {
     height: 20px;
@@ -525,6 +541,15 @@ hr {
     padding: 10px;
   }
   @media screen and (min-width: 1200px) {
+
+  .btn-hamburguer { display: none; }
+  .sidebar-nav,
+  .sidebar-overlay { display: none; }
+
+  header {
+    height: 130px;
+  }
+
 .banner p{
     font-weight: bold;
     font-family: 'arial';
@@ -570,11 +595,11 @@ position: relative;
     width: 99%;
     margin: 0 auto;
   }
-    .container-header img { 
-      height: 200px;  
-      width: 380px;
+    header img {
+      max-width: 210px;
+      max-height: 108px;
       height: auto;
-    }  
+    }
     .container-banner {
       max-width: 2200px; 
     }
@@ -650,19 +675,26 @@ p.on {
   }}
   @media screen and (min-width: 1400px) {
 
+  .btn-hamburguer { display: none; }
+  .sidebar-nav,
+  .sidebar-overlay { display: none; }
+
       header {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         width: 100%;
         max-width: 3200px;
-        margin: 0
+        height: 100px;
+        margin: 0 auto;
+      }
+      header .container-header {
+        max-width: 1600px;
       }
       header img {
-        max-width: 150px;
-      position: relative; 
-     left: -35%;
-
+        max-width: 230px;
+        max-height: 122px;
+        height: auto;
       }
 
 
@@ -675,12 +707,7 @@ p.on {
   .imgagem-one-slide img {
     width: 100%;
   }
-    .container-header img { 
-    
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0 auto;
-  }  
+
     .container-banner {max-width: 3200px;}
     .banner {width: 100%;}
     #Home {padding: 30px 0;}
